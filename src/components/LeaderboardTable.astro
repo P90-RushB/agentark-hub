@@ -1,0 +1,43 @@
+---
+import { formatPercent, formatScore } from "../lib/site.js";
+
+const { rows = [], showTaskCount = false } = Astro.props;
+---
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Model</th>
+        <th>Provider</th>
+        <th>Mean score</th>
+        <th>Success rate</th>
+        <th>{showTaskCount ? "Tasks" : "Seeds"}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        rows.length === 0 ? (
+          <tr>
+            <td colspan="6" class="muted">No complete public leaderboard yet.</td>
+          </tr>
+        ) : (
+          rows.map((row, index) => (
+            <tr>
+              <td>{index + 1}</td>
+              <td>
+                <strong>{row.model_name}</strong>
+                <div class="muted">{row.model}</div>
+              </td>
+              <td>{row.provider}</td>
+              <td class="score">{formatScore(row.score_mean)}</td>
+              <td>{formatPercent(row.success_rate)}</td>
+              <td>{showTaskCount ? row.task_count : row.seed_count}</td>
+            </tr>
+          ))
+        )
+      }
+    </tbody>
+  </table>
+</div>

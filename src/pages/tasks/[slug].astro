@@ -1,0 +1,87 @@
+---
+import LeaderboardTable from "../../components/LeaderboardTable.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import leaderboards from "../../data/leaderboards.json";
+import { getTaskBySlug, taskEntries } from "../../lib/tasks.js";
+import { withBase } from "../../lib/site.js";
+
+export function getStaticPaths() {
+  return taskEntries.map((entry) => ({
+    params: { slug: entry.slug }
+  }));
+}
+
+const task = getTaskBySlug(Astro.params.slug);
+const Content = task.Content;
+const taskBoard = leaderboards.tasks.find((item) => item.task_id === task.data.taskId);
+const rows = taskBoard?.leaderboard ?? [];
+---
+
+<BaseLayout title={task.data.title} description={task.data.summary}>
+  <section class="task-hero">
+    <div class="task-hero-media">
+      {task.data.cover ? <img alt="" src={withBase(task.data.cover)} /> : <div class="fallback-cover"><strong>{task.data.title}</strong></div>}
+    </div>
+    <div class="task-hero-copy">
+      <div class="pill-row">
+        <span class="pill">{task.data.taskId}</span>
+        <span class="pill">{task.data.dimension.toUpperCase()}</span>
+        <span class={`pill ${task.data.status}`}>{task.data.status}</span>
+      </div>
+      <h1>{task.data.title}</h1>
+      <p class="lead">{task.data.summary}</p>
+      <div class="button-row">
+        {
+          task.data.modUrl ? (
+            <a class="button primary" href={task.data.modUrl}>Download mod</a>
+          ) : (
+            <span class="button primary disabled">Mod coming soon</span>
+          )
+        }
+        {
+          task.data.videoUrl ? (
+            <a class="button" href={task.data.videoUrl}>Watch video</a>
+          ) : (
+            <span class="button disabled">Video coming soon</span>
+          )
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="detail-grid">
+      <article class="detail-panel content-body">
+        <Content />
+      </article>
+      <aside>
+        <div class="detail-panel">
+          <h2>Evaluation</h2>
+          <p class="muted">Score source: aggregate JSONL import from local AgentArk runs.</p>
+          <dl>
+            <dt>Leaderboard status</dt>
+            <dd>{taskBoard?.status ?? "pending"}</dd>
+            <dt>Seed set</dt>
+            <dd>{taskBoard?.seeds?.join(", ") || "pending"}</dd>
+            <dt>Models</dt>
+            <dd>{rows.length}</dd>
+          </dl>
+        </div>
+        <div class="detail-panel">
+          <h2>Video</h2>
+          <div class="video-placeholder">Task video placeholder</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Scoreboard</p>
+        <h2>Task leaderboard</h2>
+      </div>
+    </div>
+    <LeaderboardTable rows={rows} />
+  </section>
+</BaseLayout>

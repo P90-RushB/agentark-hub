@@ -1,0 +1,45 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE, withBase } from "../lib/site.js";
+import "../styles/global.css";
+
+const {
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION
+} = Astro.props;
+
+const fullTitle = title === SITE_TITLE ? SITE_TITLE : `${title} | ${SITE_TITLE}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={withBase("/")}>
+        <span class="brand-mark">AA</span>
+        <span>
+          <strong>AgentArk</strong>
+          <small>Hub</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href={withBase("/tasks/")}>Tasks</a>
+        <a href={withBase("/leaderboard/")}>Leaderboard</a>
+        <a href="https://github.com/P90-RushB/agentark-hub">GitHub</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <span>AgentArk Hub</span>
+      <span>Unity environments for code-acting multimodal agents.</span>
+    </footer>
+  </body>
+</html>

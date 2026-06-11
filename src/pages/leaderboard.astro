@@ -1,0 +1,45 @@
+---
+import LeaderboardTable from "../components/LeaderboardTable.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import leaderboards from "../data/leaderboards.json";
+---
+
+<BaseLayout title="Leaderboard">
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Cross-task results</p>
+        <h1>Global leaderboard</h1>
+        <p>
+          Model scores are averaged across complete public task leaderboards. The raw JSONL
+          records remain local and are not shipped with this site.
+        </p>
+      </div>
+    </div>
+    <LeaderboardTable rows={leaderboards.global_leaderboard} showTaskCount />
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Import notes</p>
+        <h2>Skipped or pending tasks</h2>
+      </div>
+    </div>
+    <div class="detail-panel">
+      {
+        leaderboards.skipped_tasks.length === 0 ? (
+          <p class="muted">No skipped tasks in the latest import.</p>
+        ) : (
+          <ul>
+            {leaderboards.skipped_tasks.map((task) => (
+              <li>
+                <strong>{task.task_id}</strong>: {task.reason}
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>
