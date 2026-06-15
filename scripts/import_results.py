@@ -17,9 +17,37 @@ from collections import defaultdict
 from pathlib import Path
 
 
-TASK_RANGE = set(range(0, 11))
-SKIP_TASK_NUMBERS = {3}
-TASK_FILE_RE = re.compile(r"^Task(?P<number>\d+)[_-]", re.IGNORECASE)
+TASKS = {
+    "MarbleStop": {"id": 0, "aliases": ["Task0_marble", "Task0_PlayMarbles", "MarbleTask"]},
+    "Snake": {"id": 1, "aliases": ["Task1_Snake", "Task1_snake", "SnakeTask"]},
+    "Pushbox": {"id": 2, "aliases": ["Task2_Pushbox", "Task2_pushbox", "PushBox"]},
+    "ObjectRotationMatch": {"id": 3, "aliases": ["Task3_ObjectRotationMatch", "ObjectRotationMatchTask"]},
+    "ColorFovCount": {"id": 4, "aliases": ["Task4_ColorFovCount", "ColorFovCountTask"]},
+    "DoorSpin3Turns": {"id": 5, "aliases": ["Task5_DoorSpin3Turns", "DoorSpin3TurnsTask"]},
+    "GoldMiner2D": {"id": 6, "aliases": ["Task6_GoldMiner2D", "GoldMiner2DTask"]},
+    "StickBridgeEstimate2D": {"id": 7, "aliases": ["Task7_StickBridgeEstimate2D", "StickBridgeEstimate2DTask"]},
+    "ZigzagPillarJump3D": {"id": 8, "aliases": ["Task8_ZigzagPillarJump3D", "ZigzagPillarJump3DTask"]},
+    "FishingJoy2D": {"id": 9, "aliases": ["Task9_FishingJoy2D", "FishingJoy2DTask"]},
+    "AxleBoardAlignment3D": {"id": 10, "aliases": ["Task10_AxleBoardAlignment3D", "AxleBoardAlignment3DTask"]},
+    "Tetris": {"id": 12, "aliases": ["Task12_Tetris"]},
+    "TetrisHard": {"id": 13, "aliases": ["Task13_TetrisHard"]},
+    "MirrorRelay2D": {"id": 14, "aliases": ["Task14_MirrorRelay2D", "MirrorRelay2DTask"]},
+    "SpatialRelationMatch3D": {"id": 15, "aliases": ["Task15_SpatialRelationMatch3D", "SpatialRelationMatch3DTask"]},
+    "SpatialRelationAxisOrder3D": {"id": 16, "aliases": ["Task16_SpatialRelationCopyTrue3D", "SpatialRelationCopyTrue3DTask"]},
+    "CraneStackTower2D": {"id": 17, "aliases": ["Task17_CraneStackTower2D", "CraneStackTower2DTask"]},
+    "GrenadeClusterCalibration3D": {"id": 18, "aliases": ["Task18_GrenadeClusterCalibration3D", "GrenadeClusterCalibration3DTask"]},
+    "Match3ScoreGoal2D": {"id": 19, "aliases": ["Task19_Match3ScoreGoal2D"]},
+    "Reach2048Tile2D": {"id": 20, "aliases": ["Task20_2048ReachTile2D", "Reach2048Tile2D"]},
+    "StarterRouteJump3D": {"id": 21, "aliases": ["Task21_StarterRouteJump3D"]},
+    "BlockWorldPathCopy3D": {"id": 22, "aliases": ["Task22_BlockWorldPathCopy3D", "BlockWorldPathCopy3DTask"]},
+    "RotationSpeedSort3D": {"id": 23, "aliases": ["Task23_RotationSpeedSort3D", "RotationSpeedSort3DTask"]},
+    "DelayTrain": {"id": 24, "aliases": ["Task24_DelayTrain"]},
+}
+ALIAS_TO_TASK_ID = {
+    alias: task_id
+    for task_id, meta in TASKS.items()
+    for alias in [task_id, *meta["aliases"]]
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -37,13 +65,12 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def task_number_from_file(path: Path) -> int | None:
-    match = TASK_FILE_RE.match(path.name)
-    return int(match.group("number")) if match else None
-
-
 def stable_slug(task_id: str) -> str:
-    words = re.sub(r"([a-z0-9])([A-Z])", r"\1-\2", task_id)
+    words = str(task_id)
+    words = words.replace("2D", "2d").replace("3D", "3d")
+    words = re.sub(r"([A-Za-z])([0-9])", r"\1-\2", words)
+    words = re.sub(r"([0-9]+)([A-Z])", r"\1-\2", words)
+    words = re.sub(r"([a-z0-9])([A-Z])", r"\1-\2", words)
     words = words.replace("_", "-")
     words = re.sub(r"[^A-Za-z0-9-]+", "-", words)
     words = re.sub(r"-+", "-", words).strip("-")
@@ -65,10 +92,11 @@ def read_jsonl(path: Path) -> list[dict]:
 
 
 def public_row(raw: dict, source_file: str, source_index: int, human_file: bool) -> dict | None:
-    task_id = raw.get("actual_task_name") or raw.get("requested_task_name")
+    raw_task_id = raw.get("actual_task_name") or raw.get("requested_task_name")
+    task_id = ALIAS_TO_TASK_ID.get(str(raw_task_id), str(raw_task_id))
     seed = raw.get("actual_group_seed", raw.get("requested_group_seed"))
     score = raw.get("score_reward")
-    if not task_id or seed is None or score is None:
+    if not task_id or task_id not in TASKS or seed is None or score is None:
         return None
     provider = raw.get("provider") or ("human" if human_file else "unknown")
     model_name = raw.get("model_name") or raw.get("model") or provider
@@ -89,27 +117,13 @@ def public_row(raw: dict, source_file: str, source_index: int, human_file: bool)
 
 def collect_rows(results_dir: Path) -> tuple[list[dict], list[dict]]:
     rows: list[dict] = []
-    skipped_by_task: dict[int, dict] = {}
     for path in sorted(results_dir.glob("*.jsonl")):
-        task_number = task_number_from_file(path)
-        if task_number is None or task_number not in TASK_RANGE:
-            continue
-        if task_number in SKIP_TASK_NUMBERS:
-            skipped_by_task[task_number] = {
-                "task_id": f"Task{task_number}",
-                "files": sorted(
-                    item.name
-                    for item in results_dir.glob(f"Task{task_number}*.jsonl")
-                ),
-                "reason": "Skipped for the first public import because model seed coverage is incomplete.",
-            }
-            continue
         human_file = "human" in path.stem.lower()
         for index, raw in enumerate(read_jsonl(path)):
             row = public_row(raw, path.name, index, human_file)
             if row:
                 rows.append(row)
-    return rows, list(skipped_by_task.values())
+    return rows, []
 
 
 def dedupe_rows(rows: list[dict]) -> tuple[list[dict], list[str]]:
@@ -209,8 +223,8 @@ def build_task_summaries(rows: list[dict], skipped: list[dict]) -> list[dict]:
 
 
 def natural_task_key(task_id: str) -> tuple[int, str]:
-    match = re.match(r"Task(\d+)", task_id, re.IGNORECASE)
-    return (int(match.group(1)) if match else 9999, task_id.lower())
+    task_meta = TASKS.get(task_id, {})
+    return (int(task_meta.get("id", 9999)), task_id.lower())
 
 
 def build_global_leaderboard(task_summaries: list[dict]) -> list[dict]:

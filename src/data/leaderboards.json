@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-10T16:09:01.053557+00:00",
+  "generated_at": "2026-06-15T16:52:20.995668+00:00",
   "source_dir": "../agent-ark/tmp",
   "policy": {
     "published_granularity": "aggregate-only",
@@ -10,8 +10,8 @@
   },
   "tasks": [
     {
-      "task_id": "Task0_marble",
-      "slug": "task0-marble",
+      "task_id": "MarbleStop",
+      "slug": "marble-stop",
       "status": "complete",
       "seeds": [
         1,
@@ -156,8 +156,8 @@
       ]
     },
     {
-      "task_id": "Task1_Snake",
-      "slug": "task1-snake",
+      "task_id": "Snake",
+      "slug": "snake",
       "status": "complete",
       "seeds": [
         1,
@@ -302,8 +302,8 @@
       ]
     },
     {
-      "task_id": "Task2_Pushbox",
-      "slug": "task2-pushbox",
+      "task_id": "Pushbox",
+      "slug": "pushbox",
       "status": "complete",
       "seeds": [
         1,
@@ -446,8 +446,103 @@
       ]
     },
     {
-      "task_id": "Task4_ColorFovCount",
-      "slug": "task4-color-fov-count",
+      "task_id": "ObjectRotationMatch",
+      "slug": "object-rotation-match",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "human",
+          "model_name": "human-local",
+          "model": "human",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": true
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 0.8,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.2,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.2,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.2,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "ColorFovCount",
+      "slug": "color-fov-count",
       "status": "complete",
       "seeds": [
         1,
@@ -541,8 +636,8 @@
       ]
     },
     {
-      "task_id": "Task5_DoorSpin3Turns",
-      "slug": "task5-door-spin3-turns",
+      "task_id": "DoorSpin3Turns",
+      "slug": "door-spin-3-turns",
       "status": "complete",
       "seeds": [
         1,
@@ -635,8 +730,8 @@
       ]
     },
     {
-      "task_id": "Task6_GoldMiner2D",
-      "slug": "task6-gold-miner2-d",
+      "task_id": "GoldMiner2D",
+      "slug": "gold-miner-2d",
       "status": "complete",
       "seeds": [
         1,
@@ -730,8 +825,8 @@
       ]
     },
     {
-      "task_id": "Task7_StickBridgeEstimate2D",
-      "slug": "task7-stick-bridge-estimate2-d",
+      "task_id": "StickBridgeEstimate2D",
+      "slug": "stick-bridge-estimate-2d",
       "status": "complete",
       "seeds": [
         1,
@@ -825,8 +920,8 @@
       ]
     },
     {
-      "task_id": "Task8_ZigzagPillarJump3D",
-      "slug": "task8-zigzag-pillar-jump3-d",
+      "task_id": "ZigzagPillarJump3D",
+      "slug": "zigzag-pillar-jump-3d",
       "status": "complete",
       "seeds": [
         1,
@@ -920,8 +1015,8 @@
       ]
     },
     {
-      "task_id": "Task9_FishingJoy2D",
-      "slug": "task9-fishing-joy2-d",
+      "task_id": "FishingJoy2D",
+      "slug": "fishing-joy-2d",
       "status": "complete",
       "seeds": [
         1,
@@ -1015,8 +1110,8 @@
       ]
     },
     {
-      "task_id": "Task10_AxleBoardAlignment3D",
-      "slug": "task10-axle-board-alignment3-d",
+      "task_id": "AxleBoardAlignment3D",
+      "slug": "axle-board-alignment-3d",
       "status": "complete",
       "seeds": [
         1,
@@ -1108,6 +1203,952 @@
           "is_human": false
         }
       ]
+    },
+    {
+      "task_id": "Tetris",
+      "slug": "tetris",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.2800000041723251,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 0.1600000023841858,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "TetrisHard",
+      "slug": "tetris-hard",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.24000000357627868,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 0.22000000327825547,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.04000000059604645,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.020000000298023225,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "MirrorRelay2D",
+      "slug": "mirror-relay-2d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.4,
+          "success_rate": 0.4,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.2,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "SpatialRelationMatch3D",
+      "slug": "spatial-relation-match-3d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.2,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "SpatialRelationAxisOrder3D",
+      "slug": "spatial-relation-axis-order-3d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 2.6,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 1.6,
+          "success_rate": 0.4,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 1.2,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.6,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "CraneStackTower2D",
+      "slug": "crane-stack-tower-2d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.4182721972465515,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.8891461104154587,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.8086021721363068,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.7428308732807636,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "GrenadeClusterCalibration3D",
+      "slug": "grenade-cluster-calibration-3d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 0.8,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.4,
+          "success_rate": 0.4,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.4,
+          "success_rate": 0.4,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.2,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "Match3ScoreGoal2D",
+      "slug": "match-3-score-goal-2d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.0000000029802323,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.9849999826401472,
+          "success_rate": 0.0,
+          "seed_count": 4,
+          "seeds": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.9719999797642231,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.735999996215105,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "StarterRouteJump3D",
+      "slug": "starter-route-jump-3d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 3.8,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 3.6,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 3.4,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 3.2,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "BlockWorldPathCopy3D",
+      "slug": "block-world-path-copy-3d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "RotationSpeedSort3D",
+      "slug": "rotation-speed-sort-3d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.2,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "DelayTrain",
+      "slug": "delay-train",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 2.8,
+          "success_rate": 0.6,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 2.4,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 2.0,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 1.25,
+          "success_rate": 0.0,
+          "seed_count": 4,
+          "seeds": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "is_human": false
+        }
+      ]
     }
   ],
   "global_leaderboard": [
@@ -1115,30 +2156,40 @@
       "provider": "human",
       "model_name": "human-local",
       "model": "human",
-      "score_mean": 2.794399994537234,
-      "success_rate": 0.78,
-      "task_count": 10,
-      "seed_count": 65,
+      "score_mean": 2.631272722306577,
+      "success_rate": 0.8,
+      "task_count": 11,
+      "seed_count": 70,
       "is_human": true
     },
     {
       "provider": "openrouter",
       "model_name": "openrouter-gpt-5.5",
       "model": "openai/gpt-5.5",
-      "score_mean": 2.16619999691844,
-      "success_rate": 0.6599999999999999,
-      "task_count": 10,
-      "seed_count": 65,
+      "score_mean": 1.6287074858727664,
+      "success_rate": 0.5739130434782609,
+      "task_count": 23,
+      "seed_count": 130,
       "is_human": false
     },
     {
       "provider": "openrouter",
       "model_name": "openrouter-gemini-3.5-flash",
       "model": "google/gemini-3.5-flash",
-      "score_mean": 1.9593999979645011,
-      "success_rate": 0.53,
-      "task_count": 10,
-      "seed_count": 64,
+      "score_mean": 1.362571569305399,
+      "success_rate": 0.39565217391304347,
+      "task_count": 23,
+      "seed_count": 129,
+      "is_human": false
+    },
+    {
+      "provider": "openrouter",
+      "model_name": "openrouter-qwen37-plus",
+      "model": "qwen/qwen3.7-plus",
+      "score_mean": 0.6834274280006472,
+      "success_rate": 0.16231884057971016,
+      "task_count": 23,
+      "seed_count": 129,
       "is_human": false
     },
     {
@@ -1153,34 +2204,54 @@
     },
     {
       "provider": "openrouter",
-      "model_name": "openrouter-qwen37-plus",
-      "model": "qwen/qwen3.7-plus",
-      "score_mean": 0.5583999990671873,
-      "success_rate": 0.15333333333333332,
-      "task_count": 10,
-      "seed_count": 64,
-      "is_human": false
-    },
-    {
-      "provider": "openrouter",
       "model_name": "grok-4.20",
       "model": "x-ai/grok-4.20",
-      "score_mean": 0.40419999785721306,
-      "success_rate": 0.16,
-      "task_count": 10,
-      "seed_count": 65,
+      "score_mean": 0.5011131362584622,
+      "success_rate": 0.13043478260869565,
+      "task_count": 23,
+      "seed_count": 128,
       "is_human": false
     }
   ],
   "skipped_tasks": [
     {
-      "task_id": "Task3",
-      "files": [
-        "Task3_ObjectRotationMatch_seed1_10_human.jsonl",
-        "Task3_ObjectRotationMatch_seed1_5.jsonl"
-      ],
-      "reason": "Skipped for the first public import because model seed coverage is incomplete."
+      "task_id": "Tetris",
+      "reason": "Human result was not published because its seed set does not cover model seeds."
+    },
+    {
+      "task_id": "TetrisHard",
+      "reason": "Human result was not published because its seed set does not cover model seeds."
+    },
+    {
+      "task_id": "MirrorRelay2D",
+      "reason": "Human result was not published because its seed set does not cover model seeds."
+    },
+    {
+      "task_id": "SpatialRelationMatch3D",
+      "reason": "Human result was not published because its seed set does not cover model seeds."
+    },
+    {
+      "task_id": "SpatialRelationAxisOrder3D",
+      "reason": "Human result was not published because its seed set does not cover model seeds."
+    },
+    {
+      "task_id": "Match3ScoreGoal2D",
+      "reason": "Human result was not published because its seed set does not cover model seeds."
+    },
+    {
+      "task_id": "StarterRouteJump3D",
+      "reason": "Human result was not published because its seed set does not cover model seeds."
+    },
+    {
+      "task_id": "BlockWorldPathCopy3D",
+      "reason": "Human result was not published because its seed set does not cover model seeds."
+    },
+    {
+      "task_id": "RotationSpeedSort3D",
+      "reason": "Human result was not published because its seed set does not cover model seeds."
     }
   ],
-  "warnings": []
+  "warnings": [
+    "duplicate result kept last: AxleBoardAlignment3D human-local seed 1 (axle_board_alignment_3d_seeds_1_5_human.jsonl -> Task10_AxleBoardAlignment3D_seeds_1_5_human.jsonl)"
+  ]
 }
