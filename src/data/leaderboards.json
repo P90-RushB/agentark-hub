@@ -1,13 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-15T16:52:20.995668+00:00",
-  "source_dir": "../agent-ark/tmp",
-  "policy": {
-    "published_granularity": "aggregate-only",
-    "score_field": "score_reward",
-    "success_field": "rollout_success",
-    "raw_jsonl_included": false
-  },
+  "generated_at": "2026-06-16T16:44:56.622829+00:00",
   "tasks": [
     {
       "task_id": "MarbleStop",
@@ -2250,8 +2243,5 @@
       "task_id": "RotationSpeedSort3D",
       "reason": "Human result was not published because its seed set does not cover model seeds."
     }
-  ],
-  "warnings": [
-    "duplicate result kept last: AxleBoardAlignment3D human-local seed 1 (axle_board_alignment_3d_seeds_1_5_human.jsonl -> Task10_AxleBoardAlignment3D_seeds_1_5_human.jsonl)"
   ]
 }

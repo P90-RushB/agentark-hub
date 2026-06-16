@@ -54,7 +54,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Import public AgentArk leaderboard summaries.")
     parser.add_argument(
         "--results-dir",
-        default="../agent-ark/tmp",
+        default="../agent-ark/tmp/task_name_migrated",
         help="Directory containing AgentArk JSONL result files.",
     )
     parser.add_argument(
@@ -91,7 +91,7 @@ def read_jsonl(path: Path) -> list[dict]:
     return rows
 
 
-def public_row(raw: dict, source_file: str, source_index: int, human_file: bool) -> dict | None:
+def public_row(raw: dict, human_file: bool) -> dict | None:
     raw_task_id = raw.get("actual_task_name") or raw.get("requested_task_name")
     task_id = ALIAS_TO_TASK_ID.get(str(raw_task_id), str(raw_task_id))
     seed = raw.get("actual_group_seed", raw.get("requested_group_seed"))
@@ -110,23 +110,23 @@ def public_row(raw: dict, source_file: str, source_index: int, human_file: bool)
         "score": float(score),
         "success": bool(raw.get("rollout_success", False)),
         "human": bool(human_file or provider == "human" or model == "human"),
-        "source_file": source_file,
-        "source_index": source_index,
     }
 
 
-def collect_rows(results_dir: Path) -> tuple[list[dict], list[dict]]:
+def collect_rows(results_dir: Path) -> tuple[list[dict], dict[int, str], list[dict]]:
     rows: list[dict] = []
+    provenance: dict[int, str] = {}
     for path in sorted(results_dir.glob("*.jsonl")):
         human_file = "human" in path.stem.lower()
         for index, raw in enumerate(read_jsonl(path)):
-            row = public_row(raw, path.name, index, human_file)
+            row = public_row(raw, human_file)
             if row:
+                provenance[id(row)] = f"{path.name}:{index + 1}"
                 rows.append(row)
-    return rows, []
+    return rows, provenance, []
 
 
-def dedupe_rows(rows: list[dict]) -> tuple[list[dict], list[str]]:
+def dedupe_rows(rows: list[dict], provenance: dict[int, str]) -> tuple[list[dict], list[str]]:
     deduped: dict[tuple[str, str, str, str, int], dict] = {}
     warnings: list[str] = []
     for row in rows:
@@ -142,7 +142,7 @@ def dedupe_rows(rows: list[dict]) -> tuple[list[dict], list[str]]:
             warnings.append(
                 "duplicate result kept last: "
                 f"{row['task_id']} {row['model_name']} seed {row['seed']} "
-                f"({previous['source_file']} -> {row['source_file']})"
+                f"({provenance.get(id(previous), 'previous row')} -> {provenance.get(id(row), 'current row')})"
             )
         deduped[key] = row
     return list(deduped.values()), warnings
@@ -266,15 +266,14 @@ def build_global_leaderboard(task_summaries: list[dict]) -> list[dict]:
 
 def main() -> int:
     args = parse_args()
-    source_label = args.results_dir.replace("\\", "/")
     results_dir = Path(args.results_dir).resolve()
     output = Path(args.output)
     if not results_dir.exists():
         print(f"error: results directory does not exist: {results_dir}", file=sys.stderr)
         return 2
 
-    rows, skipped = collect_rows(results_dir)
-    rows, duplicate_warnings = dedupe_rows(rows)
+    rows, provenance, skipped = collect_rows(results_dir)
+    rows, duplicate_warnings = dedupe_rows(rows, provenance)
     for warning in duplicate_warnings:
         print(f"warning: {warning}", file=sys.stderr)
 
@@ -282,17 +281,9 @@ def main() -> int:
     payload = {
         "schema_version": 1,
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "source_dir": source_label,
-        "policy": {
-            "published_granularity": "aggregate-only",
-            "score_field": "score_reward",
-            "success_field": "rollout_success",
-            "raw_jsonl_included": False,
-        },
         "tasks": tasks,
         "global_leaderboard": build_global_leaderboard(tasks),
         "skipped_tasks": skipped,
-        "warnings": duplicate_warnings,
     }
 
     output.parent.mkdir(parents=True, exist_ok=True)

@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "import:results": "python scripts/import_results.py --results-dir ../agent-ark/tmp"
+    "import:results": "python scripts/import_results.py --results-dir ../agent-ark/tmp/task_name_migrated"
   },
   "dependencies": {
     "@astrojs/mdx": "3.1.9",

@@ -10,7 +10,7 @@ npm run import:results
 npm run dev
 ```
 
-The import command reads local AgentArk JSONL files from `../agent-ark/tmp` and writes
+The import command reads local AgentArk JSONL files from `../agent-ark/tmp/task_name_migrated` and writes
 aggregate-only public data to `src/data/leaderboards.json`.
 
 ## Build
@@ -25,6 +25,7 @@ The site is configured as a GitHub Pages project site with `base: "/agentark-hub
 ## Published Data Policy
 
 - Published leaderboard data is aggregate-only.
+- Published leaderboard data does not include local import paths or import warnings.
 - Raw JSONL trajectories, prompts, model responses, API config, usage, and image payloads are not committed.
 - Task3 is intentionally skipped in the first import until model seed coverage is complete.
 
