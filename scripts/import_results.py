@@ -29,6 +29,7 @@ TASKS = {
     "ZigzagPillarJump3D": {"id": 8, "aliases": ["Task8_ZigzagPillarJump3D", "ZigzagPillarJump3DTask"]},
     "FishingJoy2D": {"id": 9, "aliases": ["Task9_FishingJoy2D", "FishingJoy2DTask"]},
     "AxleBoardAlignment3D": {"id": 10, "aliases": ["Task10_AxleBoardAlignment3D", "AxleBoardAlignment3DTask"]},
+    "TightropeSprint3D": {"id": 11, "aliases": ["Task11_TightropeSprint3D", "TightropeSprint3DTask"]},
     "Tetris": {"id": 12, "aliases": ["Task12_Tetris"]},
     "TetrisHard": {"id": 13, "aliases": ["Task13_TetrisHard"]},
     "MirrorRelay2D": {"id": 14, "aliases": ["Task14_MirrorRelay2D", "MirrorRelay2DTask"]},
@@ -185,18 +186,23 @@ def build_task_summaries(rows: list[dict], skipped: list[dict]) -> list[dict]:
         model_summaries = [aggregate_model(group_rows) for group_rows in grouped.values()]
 
         if human_rows and machine_seed_set:
-            human_seed_set = {row["seed"] for row in human_rows}
-            if human_seed_set.issuperset(machine_seed_set):
-                human_grouped: dict[tuple[str, str, str, bool], list[dict]] = defaultdict(list)
-                for row in human_rows:
-                    human_grouped[(row["provider"], row["model_name"], row["model"], True)].append(row)
-                for group_rows in human_grouped.values():
-                    model_summaries.append(aggregate_model(group_rows, task_seed_set=machine_seed_set))
-            else:
+            human_grouped: dict[tuple[str, str, str, bool], list[dict]] = defaultdict(list)
+            for row in human_rows:
+                human_grouped[(row["provider"], row["model_name"], row["model"], True)].append(row)
+
+            published_human = False
+            required_seed_count = len(machine_seed_set)
+            for group_rows in human_grouped.values():
+                human_seed_count = len({row["seed"] for row in group_rows})
+                if human_seed_count >= required_seed_count:
+                    model_summaries.append(aggregate_model(group_rows))
+                    published_human = True
+
+            if not published_human:
                 skipped.append(
                     {
                         "task_id": task_id,
-                        "reason": "Human result was not published because its seed set does not cover model seeds.",
+                        "reason": "Human result was not published because its seed count is lower than model seed count.",
                     }
                 )
 

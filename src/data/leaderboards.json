@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-16T16:44:56.622829+00:00",
+  "generated_at": "2026-06-22T15:18:35.821309+00:00",
   "tasks": [
     {
       "task_id": "MarbleStop",
@@ -457,13 +457,18 @@
           "model": "human",
           "score_mean": 1.0,
           "success_rate": 1.0,
-          "seed_count": 5,
+          "seed_count": 10,
           "seeds": [
             1,
             2,
             3,
             4,
-            5
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
           ],
           "is_human": true
         },
@@ -568,13 +573,18 @@
           "model": "human",
           "score_mean": 1.0,
           "success_rate": 1.0,
-          "seed_count": 5,
+          "seed_count": 10,
           "seeds": [
             1,
             2,
             3,
             4,
-            5
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
           ],
           "is_human": true
         },
@@ -1185,6 +1195,85 @@
           "model": "x-ai/grok-4.20",
           "score_mean": 0.2,
           "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "TightropeSprint3D",
+      "slug": "tightrope-sprint-3d",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.21252908706665039,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
           "seed_count": 5,
           "seeds": [
             1,
@@ -1845,24 +1934,8 @@
           "provider": "openrouter",
           "model_name": "openrouter-gpt-5.5",
           "model": "openai/gpt-5.5",
-          "score_mean": 3.8,
-          "success_rate": 0.8,
-          "seed_count": 5,
-          "seeds": [
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "is_human": false
-        },
-        {
-          "provider": "openrouter",
-          "model_name": "openrouter-qwen37-plus",
-          "model": "qwen/qwen3.7-plus",
           "score_mean": 3.6,
-          "success_rate": 0.8,
+          "success_rate": 1.0,
           "seed_count": 5,
           "seeds": [
             1,
@@ -1893,8 +1966,24 @@
           "provider": "openrouter",
           "model_name": "grok-4.20",
           "model": "x-ai/grok-4.20",
-          "score_mean": 3.2,
-          "success_rate": 0.8,
+          "score_mean": 3.4,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 2.6,
+          "success_rate": 0.6,
           "seed_count": 5,
           "seeds": [
             1,
@@ -2152,37 +2241,37 @@
       "score_mean": 2.631272722306577,
       "success_rate": 0.8,
       "task_count": 11,
-      "seed_count": 70,
+      "seed_count": 80,
       "is_human": true
     },
     {
       "provider": "openrouter",
       "model_name": "openrouter-gpt-5.5",
       "model": "openai/gpt-5.5",
-      "score_mean": 1.6287074858727664,
-      "success_rate": 0.5739130434782609,
-      "task_count": 23,
-      "seed_count": 130,
+      "score_mean": 1.5525113406280677,
+      "success_rate": 0.5583333333333333,
+      "task_count": 24,
+      "seed_count": 135,
       "is_human": false
     },
     {
       "provider": "openrouter",
       "model_name": "openrouter-gemini-3.5-flash",
       "model": "google/gemini-3.5-flash",
-      "score_mean": 1.362571569305399,
-      "success_rate": 0.39565217391304347,
-      "task_count": 23,
-      "seed_count": 129,
+      "score_mean": 1.3057977539176742,
+      "success_rate": 0.37916666666666665,
+      "task_count": 24,
+      "seed_count": 134,
       "is_human": false
     },
     {
       "provider": "openrouter",
       "model_name": "openrouter-qwen37-plus",
       "model": "qwen/qwen3.7-plus",
-      "score_mean": 0.6834274280006472,
-      "success_rate": 0.16231884057971016,
-      "task_count": 23,
-      "seed_count": 129,
+      "score_mean": 0.6221399971283973,
+      "success_rate": 0.15555555555555556,
+      "task_count": 24,
+      "seed_count": 134,
       "is_human": false
     },
     {
@@ -2199,49 +2288,53 @@
       "provider": "openrouter",
       "model_name": "grok-4.20",
       "model": "x-ai/grok-4.20",
-      "score_mean": 0.5011131362584622,
-      "success_rate": 0.13043478260869565,
-      "task_count": 23,
-      "seed_count": 128,
+      "score_mean": 0.48856675558102625,
+      "success_rate": 0.13333333333333333,
+      "task_count": 24,
+      "seed_count": 133,
       "is_human": false
     }
   ],
   "skipped_tasks": [
     {
+      "task_id": "TightropeSprint3D",
+      "reason": "Human result was not published because its seed count is lower than model seed count."
+    },
+    {
       "task_id": "Tetris",
-      "reason": "Human result was not published because its seed set does not cover model seeds."
+      "reason": "Human result was not published because its seed count is lower than model seed count."
     },
     {
       "task_id": "TetrisHard",
-      "reason": "Human result was not published because its seed set does not cover model seeds."
+      "reason": "Human result was not published because its seed count is lower than model seed count."
     },
     {
       "task_id": "MirrorRelay2D",
-      "reason": "Human result was not published because its seed set does not cover model seeds."
+      "reason": "Human result was not published because its seed count is lower than model seed count."
     },
     {
       "task_id": "SpatialRelationMatch3D",
-      "reason": "Human result was not published because its seed set does not cover model seeds."
+      "reason": "Human result was not published because its seed count is lower than model seed count."
     },
     {
       "task_id": "SpatialRelationAxisOrder3D",
-      "reason": "Human result was not published because its seed set does not cover model seeds."
+      "reason": "Human result was not published because its seed count is lower than model seed count."
     },
     {
       "task_id": "Match3ScoreGoal2D",
-      "reason": "Human result was not published because its seed set does not cover model seeds."
+      "reason": "Human result was not published because its seed count is lower than model seed count."
     },
     {
       "task_id": "StarterRouteJump3D",
-      "reason": "Human result was not published because its seed set does not cover model seeds."
+      "reason": "Human result was not published because its seed count is lower than model seed count."
     },
     {
       "task_id": "BlockWorldPathCopy3D",
-      "reason": "Human result was not published because its seed set does not cover model seeds."
+      "reason": "Human result was not published because its seed count is lower than model seed count."
     },
     {
       "task_id": "RotationSpeedSort3D",
-      "reason": "Human result was not published because its seed set does not cover model seeds."
+      "reason": "Human result was not published because its seed count is lower than model seed count."
     }
   ]
 }
