@@ -1,5 +1,6 @@
 import leaderboards from "../data/leaderboards.json";
-import { bestResult, formatScore, withBase } from "./site.js";
+import hfArtifacts from "../data/hfArtifacts.json";
+import { bestResult, formatModelName, formatScore, withBase } from "./site.js";
 
 const taskModules = import.meta.glob("../content/tasks/*.mdx", { eager: true });
 
@@ -21,7 +22,7 @@ export const taskEntries = Object.entries(taskModules)
         summary: data.summary,
         cover: data.cover,
         hasLeaderboard: Boolean(best),
-        bestModel: best?.model_name ?? "",
+        bestModel: best ? formatModelName(best.model_name) : "",
         bestScore: best ? formatScore(best.score_mean) : ""
       }
     };
@@ -34,4 +35,11 @@ export function getTaskBySlug(slug) {
 
 export function hrefForTask(slug) {
   return withBase(`/tasks/${slug}/`);
+}
+
+export const hfDatasetUrl = hfArtifacts.dataset_url;
+
+export function downloadsForTask(taskId) {
+  const platforms = hfArtifacts.tasks?.[taskId]?.platforms ?? {};
+  return ["windows", "linux"].map((platform) => platforms[platform]).filter(Boolean);
 }

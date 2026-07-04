@@ -43,6 +43,13 @@ TASKS = {
     "BlockWorldPathCopy3D": {"id": 22, "aliases": ["Task22_BlockWorldPathCopy3D", "BlockWorldPathCopy3DTask"]},
     "RotationSpeedSort3D": {"id": 23, "aliases": ["Task23_RotationSpeedSort3D", "RotationSpeedSort3DTask"]},
     "DelayTrain": {"id": 24, "aliases": ["Task24_DelayTrain"]},
+    "GuiSettingsQuickSwitch": {"id": 25, "aliases": ["Task25_GuiSettingsQuickSwitch"]},
+    "GuiNotesChecklistCleanup": {"id": 28, "aliases": ["Task28_GuiNotesChecklistCleanup"]},
+    "GuiFilesMoveByRule": {"id": 29, "aliases": ["Task29_GuiFilesMoveByRule"]},
+    "GuiMessageToCalendar": {"id": 33, "aliases": ["Task33_GuiMessageToCalendar"]},
+    "GuiImageNoteTranscription": {"id": 36, "aliases": ["Task36_GuiImageNoteTranscription"]},
+    "GuiMapPlaceToMessage": {"id": 37, "aliases": ["Task37_GuiMapPlaceToMessage"]},
+    "GuiShoppingCartFromChat": {"id": 38, "aliases": ["Task38_GuiShoppingCartFromChat"]},
 }
 ALIAS_TO_TASK_ID = {
     alias: task_id
@@ -235,25 +242,42 @@ def natural_task_key(task_id: str) -> tuple[int, str]:
 
 def build_global_leaderboard(task_summaries: list[dict]) -> list[dict]:
     grouped: dict[tuple[str, str, str, bool], list[dict]] = defaultdict(list)
+    champion_counts: defaultdict[tuple[str, str, str, bool], int] = defaultdict(int)
     for task in task_summaries:
         if task["status"] != "complete":
             continue
-        for row in task["leaderboard"]:
-            grouped[(row["provider"], row["model_name"], row["model"], row["is_human"])].append(row)
+        machine_rows = [
+            row
+            for row in task["leaderboard"]
+            if not row["is_human"] and row["score_mean"] is not None
+        ]
+        if not machine_rows:
+            continue
+
+        best_score = max(row["score_mean"] for row in machine_rows)
+        for row in machine_rows:
+            key = (row["provider"], row["model_name"], row["model"], row["is_human"])
+            grouped[key].append(row)
+            if abs(row["score_mean"] - best_score) <= 1e-9:
+                champion_counts[key] += 1
 
     results: list[dict] = []
     for (provider, model_name, model, is_human), rows in grouped.items():
         score_values = [row["score_mean"] for row in rows if row["score_mean"] is not None]
         success_values = [row["success_rate"] for row in rows if row["success_rate"] is not None]
         seed_total = sum(row["seed_count"] for row in rows)
+        champion_count = champion_counts[(provider, model_name, model, is_human)]
+        task_count = len(rows)
         results.append(
             {
                 "provider": provider,
                 "model_name": model_name,
                 "model": model,
+                "champion_count": champion_count,
+                "champion_rate": champion_count / task_count if task_count else None,
                 "score_mean": statistics.fmean(score_values) if score_values else None,
                 "success_rate": statistics.fmean(success_values) if success_values else None,
-                "task_count": len(rows),
+                "task_count": task_count,
                 "seed_count": seed_total,
                 "is_human": is_human,
             }
@@ -261,9 +285,11 @@ def build_global_leaderboard(task_summaries: list[dict]) -> list[dict]:
 
     results.sort(
         key=lambda item: (
-            item["score_mean"] if item["score_mean"] is not None else float("-inf"),
+            item["champion_rate"] if item["champion_rate"] is not None else float("-inf"),
+            item["champion_count"],
             item["task_count"],
             item["success_rate"] if item["success_rate"] is not None else float("-inf"),
+            item["score_mean"] if item["score_mean"] is not None else float("-inf"),
         ),
         reverse=True,
     )
@@ -285,7 +311,7 @@ def main() -> int:
 
     tasks = build_task_summaries(rows, skipped)
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "tasks": tasks,
         "global_leaderboard": build_global_leaderboard(tasks),

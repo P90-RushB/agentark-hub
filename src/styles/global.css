@@ -330,6 +330,9 @@ h3 {
 
 .rank-line strong {
   color: var(--ink);
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-align: right;
 }
 
 .table-wrap {
@@ -474,6 +477,83 @@ tr:last-child td {
   color: var(--ink);
   min-height: 42px;
   padding: 8px 10px;
+}
+
+.task-browser-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+.empty-state {
+  display: grid;
+  min-height: 160px;
+  place-items: center;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  color: var(--muted);
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  min-width: 42px;
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  padding: 7px 12px;
+}
+
+.page-button:hover:not(:disabled),
+.page-button.active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.page-button:disabled {
+  color: var(--muted);
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+.download-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.download-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  color: var(--ink);
+  padding: 12px;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  border-color: var(--accent);
+}
+
+.download-link span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .site-footer {

@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-06-22T15:18:35.821309+00:00",
+  "schema_version": 2,
+  "generated_at": "2026-07-04T09:51:27.177857+00:00",
   "tasks": [
     {
       "task_id": "MarbleStop",
@@ -2231,67 +2231,620 @@
           "is_human": false
         }
       ]
+    },
+    {
+      "task_id": "GuiSettingsQuickSwitch",
+      "slug": "gui-settings-quick-switch",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.6,
+          "success_rate": 0.6,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "GuiNotesChecklistCleanup",
+      "slug": "gui-notes-checklist-cleanup",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.8,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "GuiFilesMoveByRule",
+      "slug": "gui-files-move-by-rule",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.8,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.6,
+          "success_rate": 0.6,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "GuiMessageToCalendar",
+      "slug": "gui-message-to-calendar",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.6,
+          "success_rate": 0.6,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.2,
+          "success_rate": 0.2,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "GuiImageNoteTranscription",
+      "slug": "gui-image-note-transcription",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.8,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 0.8,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.8,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "GuiMapPlaceToMessage",
+      "slug": "gui-map-place-to-message",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 0.8,
+          "success_rate": 0.8,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.6,
+          "success_rate": 0.6,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.4,
+          "success_rate": 0.4,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
+    },
+    {
+      "task_id": "GuiShoppingCartFromChat",
+      "slug": "gui-shopping-cart-from-chat",
+      "status": "complete",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "model_count": 4,
+      "leaderboard": [
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gemini-3.5-flash",
+          "model": "google/gemini-3.5-flash",
+          "score_mean": 1.0,
+          "success_rate": 1.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-qwen37-plus",
+          "model": "qwen/qwen3.7-plus",
+          "score_mean": 0.6,
+          "success_rate": 0.6,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "openrouter-gpt-5.5",
+          "model": "openai/gpt-5.5",
+          "score_mean": 0.6,
+          "success_rate": 0.6,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        },
+        {
+          "provider": "openrouter",
+          "model_name": "grok-4.20",
+          "model": "x-ai/grok-4.20",
+          "score_mean": 0.0,
+          "success_rate": 0.0,
+          "seed_count": 5,
+          "seeds": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_human": false
+        }
+      ]
     }
   ],
   "global_leaderboard": [
     {
-      "provider": "human",
-      "model_name": "human-local",
-      "model": "human",
-      "score_mean": 2.631272722306577,
-      "success_rate": 0.8,
-      "task_count": 11,
-      "seed_count": 80,
-      "is_human": true
-    },
-    {
       "provider": "openrouter",
       "model_name": "openrouter-gpt-5.5",
       "model": "openai/gpt-5.5",
-      "score_mean": 1.5525113406280677,
-      "success_rate": 0.5583333333333333,
-      "task_count": 24,
-      "seed_count": 135,
+      "champion_count": 22,
+      "champion_rate": 0.7096774193548387,
+      "score_mean": 1.4083958766152782,
+      "success_rate": 0.6387096774193549,
+      "task_count": 31,
+      "seed_count": 170,
       "is_human": false
     },
     {
       "provider": "openrouter",
       "model_name": "openrouter-gemini-3.5-flash",
       "model": "google/gemini-3.5-flash",
-      "score_mean": 1.3057977539176742,
-      "success_rate": 0.37916666666666665,
-      "task_count": 24,
-      "seed_count": 134,
+      "champion_count": 13,
+      "champion_rate": 0.41935483870967744,
+      "score_mean": 1.2302950352911026,
+      "success_rate": 0.5129032258064516,
+      "task_count": 31,
+      "seed_count": 169,
       "is_human": false
     },
     {
       "provider": "openrouter",
       "model_name": "openrouter-qwen37-plus",
       "model": "qwen/qwen3.7-plus",
-      "score_mean": 0.6221399971283973,
-      "success_rate": 0.15555555555555556,
-      "task_count": 24,
-      "seed_count": 134,
-      "is_human": false
-    },
-    {
-      "provider": "openrouter",
-      "model_name": "claude-opus-4.8",
-      "model": "anthropic/claude-opus-4.8",
-      "score_mean": 0.6148148148148148,
-      "success_rate": 0.4851851851851852,
-      "task_count": 3,
-      "seed_count": 29,
+      "champion_count": 4,
+      "champion_rate": 0.12903225806451613,
+      "score_mean": 0.6364954816477915,
+      "success_rate": 0.2752688172043011,
+      "task_count": 31,
+      "seed_count": 169,
       "is_human": false
     },
     {
       "provider": "openrouter",
       "model_name": "grok-4.20",
       "model": "x-ai/grok-4.20",
-      "score_mean": 0.48856675558102625,
-      "success_rate": 0.13333333333333333,
-      "task_count": 24,
-      "seed_count": 133,
+      "champion_count": 2,
+      "champion_rate": 0.06451612903225806,
+      "score_mean": 0.5072774881917622,
+      "success_rate": 0.23225806451612904,
+      "task_count": 31,
+      "seed_count": 168,
+      "is_human": false
+    },
+    {
+      "provider": "openrouter",
+      "model_name": "claude-opus-4.8",
+      "model": "anthropic/claude-opus-4.8",
+      "champion_count": 0,
+      "champion_rate": 0.0,
+      "score_mean": 0.6148148148148148,
+      "success_rate": 0.4851851851851852,
+      "task_count": 3,
+      "seed_count": 29,
       "is_human": false
     }
   ],

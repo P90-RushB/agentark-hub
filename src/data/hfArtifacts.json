@@ -1,0 +1,840 @@
+{
+  "repo_id": "P90-RushB/AgentArk",
+  "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
+  "registry_created_at": "2026-07-04T06:53:04+00:00",
+  "current_release": "env-1.0",
+  "tasks": {
+    "MarbleStop": {
+      "task_id": 0,
+      "task_name": "MarbleStop",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0000-MarbleStop/task-v1/env-1.0/windows/MarbleStop-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0000-MarbleStop/task-v1/env-1.0/windows/MarbleStop-task-v1-env-1.0-windows.zip",
+          "size_bytes": 125639,
+          "sha256": "efe88fa341ffeb5afac5914179999eb13b64110de210f55183d7e15656b8e9ee",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0000-MarbleStop/task-v1/env-1.0/linux/MarbleStop-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0000-MarbleStop/task-v1/env-1.0/linux/MarbleStop-task-v1-env-1.0-linux.zip",
+          "size_bytes": 540624,
+          "sha256": "71bd69b220977d157c129a32c0cac029eadf6a37a7f7a186d2c9c3dbd724e563",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Snake": {
+      "task_id": 1,
+      "task_name": "Snake",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0001-Snake/task-v1/env-1.0/windows/Snake-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0001-Snake/task-v1/env-1.0/windows/Snake-task-v1-env-1.0-windows.zip",
+          "size_bytes": 832182,
+          "sha256": "b91187f1c4a6c401f48a7ce1fa0b65bb5c6a45e18c1ae974c1255eaf6f074c2c",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0001-Snake/task-v1/env-1.0/linux/Snake-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0001-Snake/task-v1/env-1.0/linux/Snake-task-v1-env-1.0-linux.zip",
+          "size_bytes": 1247359,
+          "sha256": "4e11f2c405236883aabb15c1a765d99fc6150c0afa8d8c0a7452234b59e9e7d7",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Pushbox": {
+      "task_id": 2,
+      "task_name": "Pushbox",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0002-Pushbox/task-v1/env-1.0/windows/Pushbox-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0002-Pushbox/task-v1/env-1.0/windows/Pushbox-task-v1-env-1.0-windows.zip",
+          "size_bytes": 39661,
+          "sha256": "dd16160dd3e47736683e515aa028b007d74d42fb1ecef61523f2d472224ed97e",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0002-Pushbox/task-v1/env-1.0/linux/Pushbox-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0002-Pushbox/task-v1/env-1.0/linux/Pushbox-task-v1-env-1.0-linux.zip",
+          "size_bytes": 39654,
+          "sha256": "a7031562bac72a5a3c81d09129fcc9a41a0936f6f75410dbb3239253a30a61b6",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ObjectRotationMatch": {
+      "task_id": 3,
+      "task_name": "ObjectRotationMatch",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0003-ObjectRotationMatch/task-v1/env-1.0/windows/ObjectRotationMatch-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0003-ObjectRotationMatch/task-v1/env-1.0/windows/ObjectRotationMatch-task-v1-env-1.0-windows.zip",
+          "size_bytes": 24142,
+          "sha256": "f651193dcc8ecbe03b639f21bb9536c7dd16e3f47723b94941b1a85283f3f132",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0003-ObjectRotationMatch/task-v1/env-1.0/linux/ObjectRotationMatch-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0003-ObjectRotationMatch/task-v1/env-1.0/linux/ObjectRotationMatch-task-v1-env-1.0-linux.zip",
+          "size_bytes": 24135,
+          "sha256": "6aa37361b83b05f1bbb5644615635892cc74dd18b87e063d239046b18c0e4358",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ColorFovCount": {
+      "task_id": 4,
+      "task_name": "ColorFovCount",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0004-ColorFovCount/task-v1/env-1.0/windows/ColorFovCount-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0004-ColorFovCount/task-v1/env-1.0/windows/ColorFovCount-task-v1-env-1.0-windows.zip",
+          "size_bytes": 28454,
+          "sha256": "f3757e0341760b41fea04356dfaf7f2529789dd4f59b966a7425b4a023013b63",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0004-ColorFovCount/task-v1/env-1.0/linux/ColorFovCount-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0004-ColorFovCount/task-v1/env-1.0/linux/ColorFovCount-task-v1-env-1.0-linux.zip",
+          "size_bytes": 28447,
+          "sha256": "875461c001314e054685e0397c4f140b8494df1beaeb2bc62c8a1fd4976b15a6",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "DoorSpin3Turns": {
+      "task_id": 5,
+      "task_name": "DoorSpin3Turns",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0005-DoorSpin3Turns/task-v1/env-1.0/windows/DoorSpin3Turns-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0005-DoorSpin3Turns/task-v1/env-1.0/windows/DoorSpin3Turns-task-v1-env-1.0-windows.zip",
+          "size_bytes": 128646,
+          "sha256": "e85eb4c9629ced5820ca377748c7bf3f69ae7d127fb5cef42e8694090d1aab40",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0005-DoorSpin3Turns/task-v1/env-1.0/linux/DoorSpin3Turns-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0005-DoorSpin3Turns/task-v1/env-1.0/linux/DoorSpin3Turns-task-v1-env-1.0-linux.zip",
+          "size_bytes": 543091,
+          "sha256": "009020649f166c228dd2b2a4770488d876f004c9c9daab4e27a9cd607e730c48",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GoldMiner2D": {
+      "task_id": 6,
+      "task_name": "GoldMiner2D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0006-GoldMiner2D/task-v1/env-1.0/windows/GoldMiner2D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0006-GoldMiner2D/task-v1/env-1.0/windows/GoldMiner2D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 43516,
+          "sha256": "4113ba13d1d4431d00b4cf3b8177b1ccbcdb461a07385fa0151002b7533447e9",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0006-GoldMiner2D/task-v1/env-1.0/linux/GoldMiner2D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0006-GoldMiner2D/task-v1/env-1.0/linux/GoldMiner2D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 43503,
+          "sha256": "0bfe7f0f834b4286fa3919f7422812372e901dbe45a0623836f9ef16afbf7f12",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "StickBridgeEstimate2D": {
+      "task_id": 7,
+      "task_name": "StickBridgeEstimate2D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0007-StickBridgeEstimate2D/task-v1/env-1.0/windows/StickBridgeEstimate2D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0007-StickBridgeEstimate2D/task-v1/env-1.0/windows/StickBridgeEstimate2D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 32501,
+          "sha256": "5ce60b2a3006b4c3edf7739e0886991844663f16f8bbde8ecb64d06b5ce31093",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0007-StickBridgeEstimate2D/task-v1/env-1.0/linux/StickBridgeEstimate2D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0007-StickBridgeEstimate2D/task-v1/env-1.0/linux/StickBridgeEstimate2D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 32497,
+          "sha256": "116852249716fc6453239cba353f81071c7156a8bd4471a64cbb007c3223d37f",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ZigzagPillarJump3D": {
+      "task_id": 8,
+      "task_name": "ZigzagPillarJump3D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0008-ZigzagPillarJump3D/task-v1/env-1.0/windows/ZigzagPillarJump3D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0008-ZigzagPillarJump3D/task-v1/env-1.0/windows/ZigzagPillarJump3D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 38344,
+          "sha256": "ca82253db4ccd7387c55f49342ebe920d40026cf232b6ebabe0e37e548465717",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0008-ZigzagPillarJump3D/task-v1/env-1.0/linux/ZigzagPillarJump3D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0008-ZigzagPillarJump3D/task-v1/env-1.0/linux/ZigzagPillarJump3D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 38345,
+          "sha256": "504eacec9730544371f7c8175662b8e99e99a1af5cd2f8634097bd28162ad3b2",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "FishingJoy2D": {
+      "task_id": 9,
+      "task_name": "FishingJoy2D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0009-FishingJoy2D/task-v1/env-1.0/windows/FishingJoy2D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0009-FishingJoy2D/task-v1/env-1.0/windows/FishingJoy2D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 40084,
+          "sha256": "1ce0f7862fba5510208cc646b7cdcb0fe862142b6b5d038b0eff6db2ac876d76",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0009-FishingJoy2D/task-v1/env-1.0/linux/FishingJoy2D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0009-FishingJoy2D/task-v1/env-1.0/linux/FishingJoy2D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 40083,
+          "sha256": "18f3b876530bb9764360caaf5157883f51878c83ad9eabfb44da09247e0c9e7f",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "AxleBoardAlignment3D": {
+      "task_id": 10,
+      "task_name": "AxleBoardAlignment3D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0010-AxleBoardAlignment3D/task-v1/env-1.0/windows/AxleBoardAlignment3D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0010-AxleBoardAlignment3D/task-v1/env-1.0/windows/AxleBoardAlignment3D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 34040,
+          "sha256": "9ea57e63928a32669476928c0bf60625bca2ad073599e04e82eecae50de92fbd",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0010-AxleBoardAlignment3D/task-v1/env-1.0/linux/AxleBoardAlignment3D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0010-AxleBoardAlignment3D/task-v1/env-1.0/linux/AxleBoardAlignment3D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 34030,
+          "sha256": "884f608f23252ecda584a3325cb437568d923dd72cb9446ef19f87cc948aa617",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "TightropeSprint3D": {
+      "task_id": 11,
+      "task_name": "TightropeSprint3D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0011-TightropeSprint3D/task-v1/env-1.0/windows/TightropeSprint3D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0011-TightropeSprint3D/task-v1/env-1.0/windows/TightropeSprint3D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 16893610,
+          "sha256": "badcda77bdc24d6b393d4f49e33c87a9af447a719a7c00fb8e0d95de3b12b7c3",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0011-TightropeSprint3D/task-v1/env-1.0/linux/TightropeSprint3D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0011-TightropeSprint3D/task-v1/env-1.0/linux/TightropeSprint3D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 17865268,
+          "sha256": "914246bd69f04881ad09dee9f21e1bb8cdda27369cc463adafe93a90286fd0bf",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Tetris": {
+      "task_id": 12,
+      "task_name": "Tetris",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0012-Tetris/task-v1/env-1.0/windows/Tetris-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0012-Tetris/task-v1/env-1.0/windows/Tetris-task-v1-env-1.0-windows.zip",
+          "size_bytes": 30658,
+          "sha256": "84b9d84b47294971b2d1d29bcbd035fd24ec9c485764a2b45910f3d2aad23320",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0012-Tetris/task-v1/env-1.0/linux/Tetris-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0012-Tetris/task-v1/env-1.0/linux/Tetris-task-v1-env-1.0-linux.zip",
+          "size_bytes": 30651,
+          "sha256": "8aa5e649ec1a114a3296587bfa75f2d64a7a376af8bf0de97af8253b775ddd17",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "TetrisHard": {
+      "task_id": 13,
+      "task_name": "TetrisHard",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0013-TetrisHard/task-v1/env-1.0/windows/TetrisHard-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0013-TetrisHard/task-v1/env-1.0/windows/TetrisHard-task-v1-env-1.0-windows.zip",
+          "size_bytes": 32720,
+          "sha256": "262d4e417a236099f2e94e13a97aa2f26492f0bc6bc6b40780b9b466bb150cc4",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0013-TetrisHard/task-v1/env-1.0/linux/TetrisHard-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0013-TetrisHard/task-v1/env-1.0/linux/TetrisHard-task-v1-env-1.0-linux.zip",
+          "size_bytes": 32711,
+          "sha256": "513e7373dba1beaf9341c66bf70d84195f17cac53790661b6809626413efe44b",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "MirrorRelay2D": {
+      "task_id": 14,
+      "task_name": "MirrorRelay2D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0014-MirrorRelay2D/task-v1/env-1.0/windows/MirrorRelay2D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0014-MirrorRelay2D/task-v1/env-1.0/windows/MirrorRelay2D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 33252,
+          "sha256": "7cbff65c152bf2908429a12bcd1f969441a4861e93ff3f57ac0965016d69f575",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0014-MirrorRelay2D/task-v1/env-1.0/linux/MirrorRelay2D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0014-MirrorRelay2D/task-v1/env-1.0/linux/MirrorRelay2D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 33256,
+          "sha256": "bed6672c338a8cb668a8bb904681c5278ce8c4dcfbeb31eb277817e740d9aa66",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "SpatialRelationMatch3D": {
+      "task_id": 15,
+      "task_name": "SpatialRelationMatch3D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0015-SpatialRelationMatch3D/task-v1/env-1.0/windows/SpatialRelationMatch3D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0015-SpatialRelationMatch3D/task-v1/env-1.0/windows/SpatialRelationMatch3D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 147930,
+          "sha256": "953f20966759c60db0b13d25b444a7aa9132214dff282ee13aa1c1c1dcc59f07",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0015-SpatialRelationMatch3D/task-v1/env-1.0/linux/SpatialRelationMatch3D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0015-SpatialRelationMatch3D/task-v1/env-1.0/linux/SpatialRelationMatch3D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 565343,
+          "sha256": "dfbcf27adbe64569f20fcb272fc44ac651bcee2b9cd711e2f4b795c0ef259cf3",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "SpatialRelationAxisOrder3D": {
+      "task_id": 16,
+      "task_name": "SpatialRelationAxisOrder3D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0016-SpatialRelationAxisOrder3D/task-v1/env-1.0/windows/SpatialRelationAxisOrder3D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0016-SpatialRelationAxisOrder3D/task-v1/env-1.0/windows/SpatialRelationAxisOrder3D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 149310,
+          "sha256": "aae5eff1646cfee0c3fdff506395b210dc3fb4d9a49f692993a3f1b1a53557c2",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0016-SpatialRelationAxisOrder3D/task-v1/env-1.0/linux/SpatialRelationAxisOrder3D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0016-SpatialRelationAxisOrder3D/task-v1/env-1.0/linux/SpatialRelationAxisOrder3D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 566383,
+          "sha256": "73f2722d04b923dcaf03a4ae199cf715e01f20937a4f572d96dd8b1ccf0fee76",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CraneStackTower2D": {
+      "task_id": 17,
+      "task_name": "CraneStackTower2D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0017-CraneStackTower2D/task-v1/env-1.0/windows/CraneStackTower2D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0017-CraneStackTower2D/task-v1/env-1.0/windows/CraneStackTower2D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 49123,
+          "sha256": "2d1c91ffb146febbdde347d954d0c2f81536b7504a6a85d916afdb45753d5d65",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0017-CraneStackTower2D/task-v1/env-1.0/linux/CraneStackTower2D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0017-CraneStackTower2D/task-v1/env-1.0/linux/CraneStackTower2D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 49122,
+          "sha256": "884079db276f9262e6ad0880a62e3c9d1c1b9e30fa19fee5a510ab42d61aa13f",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GrenadeClusterCalibration3D": {
+      "task_id": 18,
+      "task_name": "GrenadeClusterCalibration3D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0018-GrenadeClusterCalibration3D/task-v1/env-1.0/windows/GrenadeClusterCalibration3D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0018-GrenadeClusterCalibration3D/task-v1/env-1.0/windows/GrenadeClusterCalibration3D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 134695,
+          "sha256": "2c74478d36af9e991242ae248ad85b05939fb670f671a8a426d660650cd6b02c",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0018-GrenadeClusterCalibration3D/task-v1/env-1.0/linux/GrenadeClusterCalibration3D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0018-GrenadeClusterCalibration3D/task-v1/env-1.0/linux/GrenadeClusterCalibration3D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 548673,
+          "sha256": "2f514017fb9e48c7c63cae27d00e1eed112d9b22c4f54214569e6c89b85b86ea",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Match3ScoreGoal2D": {
+      "task_id": 19,
+      "task_name": "Match3ScoreGoal2D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0019-Match3ScoreGoal2D/task-v1/env-1.0/windows/Match3ScoreGoal2D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0019-Match3ScoreGoal2D/task-v1/env-1.0/windows/Match3ScoreGoal2D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 33078,
+          "sha256": "439b181174b136d91b1f3dc800e721c806c2f4a2831a943ac19d7f3290e43ae2",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0019-Match3ScoreGoal2D/task-v1/env-1.0/linux/Match3ScoreGoal2D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0019-Match3ScoreGoal2D/task-v1/env-1.0/linux/Match3ScoreGoal2D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 33075,
+          "sha256": "3f534028998d856ff08a4b7b7b345a2afb567d2ff9909bc00f912a600ac8faa2",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Reach2048Tile2D": {
+      "task_id": 20,
+      "task_name": "Reach2048Tile2D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0/windows/Reach2048Tile2D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0/windows/Reach2048Tile2D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 34631,
+          "sha256": "e90cd0797b0483a879cd569bacb352f64abe2c6b3a756d953ab70b29cb25c402",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0/linux/Reach2048Tile2D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0/linux/Reach2048Tile2D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 34626,
+          "sha256": "4380b2d353a2150890591cf31cfa3d6fea32a65026848e2654f3101a4a12b528",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "StarterRouteJump3D": {
+      "task_id": 21,
+      "task_name": "StarterRouteJump3D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0021-StarterRouteJump3D/task-v1/env-1.0/windows/StarterRouteJump3D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0021-StarterRouteJump3D/task-v1/env-1.0/windows/StarterRouteJump3D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 17560084,
+          "sha256": "84989f1fc15beeef58732bacb2a6a92caccd6a5d064ff9d80154fce151c43a67",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0021-StarterRouteJump3D/task-v1/env-1.0/linux/StarterRouteJump3D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0021-StarterRouteJump3D/task-v1/env-1.0/linux/StarterRouteJump3D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 18532876,
+          "sha256": "16951effd776c968a00d617866d0f03f8b31b9d04f9f69b0cfbc3f955fa3ef7d",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "BlockWorldPathCopy3D": {
+      "task_id": 22,
+      "task_name": "BlockWorldPathCopy3D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0022-BlockWorldPathCopy3D/task-v1/env-1.0/windows/BlockWorldPathCopy3D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0022-BlockWorldPathCopy3D/task-v1/env-1.0/windows/BlockWorldPathCopy3D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 156126,
+          "sha256": "975a75f096558334b593a6daa9f24a1711ef13fa922d6d7af2cc4e0e31ec966b",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0022-BlockWorldPathCopy3D/task-v1/env-1.0/linux/BlockWorldPathCopy3D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0022-BlockWorldPathCopy3D/task-v1/env-1.0/linux/BlockWorldPathCopy3D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 572553,
+          "sha256": "45cbcc1a84c7a9acab49814683946a43ed668e5a251415161efe33c603c51554",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "RotationSpeedSort3D": {
+      "task_id": 23,
+      "task_name": "RotationSpeedSort3D",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0023-RotationSpeedSort3D/task-v1/env-1.0/windows/RotationSpeedSort3D-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0023-RotationSpeedSort3D/task-v1/env-1.0/windows/RotationSpeedSort3D-task-v1-env-1.0-windows.zip",
+          "size_bytes": 37072,
+          "sha256": "c480eff386f20b7329d2f9ff7f889160432084d263d5c6fbf95822df6db84488",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0023-RotationSpeedSort3D/task-v1/env-1.0/linux/RotationSpeedSort3D-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0023-RotationSpeedSort3D/task-v1/env-1.0/linux/RotationSpeedSort3D-task-v1-env-1.0-linux.zip",
+          "size_bytes": 37065,
+          "sha256": "f02e5cdb7017e84c12ac315f033ad8b809a9aec672ff818da16d7485bd31b211",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "DelayTrain": {
+      "task_id": 24,
+      "task_name": "DelayTrain",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0024-DelayTrain/task-v1/env-1.0/windows/DelayTrain-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0024-DelayTrain/task-v1/env-1.0/windows/DelayTrain-task-v1-env-1.0-windows.zip",
+          "size_bytes": 68157,
+          "sha256": "f4a88ab4dd8d156e63cde6af111f40a5c5aef91694bf5ca08f853dd325570ab9",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0024-DelayTrain/task-v1/env-1.0/linux/DelayTrain-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0024-DelayTrain/task-v1/env-1.0/linux/DelayTrain-task-v1-env-1.0-linux.zip",
+          "size_bytes": 68148,
+          "sha256": "60f62f24cb36dbc964b23d0c68b7784b99795f2aab82a9b1b494162649486463",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiSettingsQuickSwitch": {
+      "task_id": 25,
+      "task_name": "GuiSettingsQuickSwitch",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0025-GuiSettingsQuickSwitch/task-v1/env-1.0/windows/GuiSettingsQuickSwitch-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0025-GuiSettingsQuickSwitch/task-v1/env-1.0/windows/GuiSettingsQuickSwitch-task-v1-env-1.0-windows.zip",
+          "size_bytes": 33142,
+          "sha256": "337958578f2cfa3a58a3062d4406bd9eb351e09f0b8991390fe7b34363fe7ada",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0025-GuiSettingsQuickSwitch/task-v1/env-1.0/linux/GuiSettingsQuickSwitch-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0025-GuiSettingsQuickSwitch/task-v1/env-1.0/linux/GuiSettingsQuickSwitch-task-v1-env-1.0-linux.zip",
+          "size_bytes": 33134,
+          "sha256": "8062bafbc892343f9967a47ab69f3a153bd3c770727d5b5a20dcc8c1b6189fe2",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiNotesChecklistCleanup": {
+      "task_id": 28,
+      "task_name": "GuiNotesChecklistCleanup",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0028-GuiNotesChecklistCleanup/task-v1/env-1.0/windows/GuiNotesChecklistCleanup-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0028-GuiNotesChecklistCleanup/task-v1/env-1.0/windows/GuiNotesChecklistCleanup-task-v1-env-1.0-windows.zip",
+          "size_bytes": 38742,
+          "sha256": "0e06165622759221630e5083ebadc5738930ea9200082e8e3753cd5c1a662ac1",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0028-GuiNotesChecklistCleanup/task-v1/env-1.0/linux/GuiNotesChecklistCleanup-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0028-GuiNotesChecklistCleanup/task-v1/env-1.0/linux/GuiNotesChecklistCleanup-task-v1-env-1.0-linux.zip",
+          "size_bytes": 38740,
+          "sha256": "c40bf84d59f35900d25aecea9fd792931fdc186e31d490b538798131b05092dd",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiFilesMoveByRule": {
+      "task_id": 29,
+      "task_name": "GuiFilesMoveByRule",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0029-GuiFilesMoveByRule/task-v1/env-1.0/windows/GuiFilesMoveByRule-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0029-GuiFilesMoveByRule/task-v1/env-1.0/windows/GuiFilesMoveByRule-task-v1-env-1.0-windows.zip",
+          "size_bytes": 40762,
+          "sha256": "9a570f17d93ceffdaa291f73cd45480ec3d49c20623a317f9abb33bf89473750",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0029-GuiFilesMoveByRule/task-v1/env-1.0/linux/GuiFilesMoveByRule-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0029-GuiFilesMoveByRule/task-v1/env-1.0/linux/GuiFilesMoveByRule-task-v1-env-1.0-linux.zip",
+          "size_bytes": 40755,
+          "sha256": "132d92dae4a0e2aa4e5aa370d9d573cfa623e05f30dd18818c71df6c3ce88db5",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiMessageToCalendar": {
+      "task_id": 33,
+      "task_name": "GuiMessageToCalendar",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0/windows/GuiMessageToCalendar-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0/windows/GuiMessageToCalendar-task-v1-env-1.0-windows.zip",
+          "size_bytes": 40434,
+          "sha256": "6a86e0728fa2f986771b28e27085ca8a8372dd59c180f1b370e9ee09ef62b7d6",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0/linux/GuiMessageToCalendar-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0/linux/GuiMessageToCalendar-task-v1-env-1.0-linux.zip",
+          "size_bytes": 40427,
+          "sha256": "4dcc1ad857a45a9248f6482cfc6a768834f6e315c2b49b1f6def0abe0e6620dc",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiImageNoteTranscription": {
+      "task_id": 36,
+      "task_name": "GuiImageNoteTranscription",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0/windows/GuiImageNoteTranscription-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0/windows/GuiImageNoteTranscription-task-v1-env-1.0-windows.zip",
+          "size_bytes": 38684,
+          "sha256": "b6974c70e8c7a8ad654425f496ca7fed19ba072632d16995c1c3d412ea1a369c",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0/linux/GuiImageNoteTranscription-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0/linux/GuiImageNoteTranscription-task-v1-env-1.0-linux.zip",
+          "size_bytes": 38673,
+          "sha256": "f8e2a10aae728649984fc6b5ec51aaa998296a2dd5584c672e38f24dba6e872f",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiMapPlaceToMessage": {
+      "task_id": 37,
+      "task_name": "GuiMapPlaceToMessage",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0/windows/GuiMapPlaceToMessage-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0/windows/GuiMapPlaceToMessage-task-v1-env-1.0-windows.zip",
+          "size_bytes": 41417,
+          "sha256": "f1c4f65089f199c51cef3b721943417698dfff23ba74412ce61f9225f16dbc79",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0/linux/GuiMapPlaceToMessage-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0/linux/GuiMapPlaceToMessage-task-v1-env-1.0-linux.zip",
+          "size_bytes": 41404,
+          "sha256": "db9298c6ac22f6cf2f9553eac0bc706941a32347f78f052ab64ecf9947668d14",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiShoppingCartFromChat": {
+      "task_id": 38,
+      "task_name": "GuiShoppingCartFromChat",
+      "task_version": "v1",
+      "env_version": "1.0",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0/windows/GuiShoppingCartFromChat-task-v1-env-1.0-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0/windows/GuiShoppingCartFromChat-task-v1-env-1.0-windows.zip",
+          "size_bytes": 43773,
+          "sha256": "cdb6f02ea037d3ff978d38f32ae84db501d8d2fedf052a267bb45f1f8b64cb25",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0/linux/GuiShoppingCartFromChat-task-v1-env-1.0-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0/linux/GuiShoppingCartFromChat-task-v1-env-1.0-linux.zip",
+          "size_bytes": 43773,
+          "sha256": "6f54b266e216d483e028ea9f6fdd6389bba67635a16f9a2835be7985f5def8ec",
+          "archive_format": "zip"
+        }
+      }
+    }
+  }
+}

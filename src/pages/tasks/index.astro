@@ -19,6 +19,6 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
         </p>
       </div>
     </div>
-    <TaskBrowser client:load tasks={taskItems} basePath={basePath} />
+    <TaskBrowser client:load tasks={taskItems} basePath={basePath} pageSize={12} />
   </section>
 </BaseLayout>

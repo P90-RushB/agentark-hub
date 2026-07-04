@@ -17,11 +17,29 @@ export function formatScore(value) {
   return Number.isInteger(number) ? String(number) : number.toFixed(3).replace(/0+$/, "").replace(/\.$/, "");
 }
 
+export function formatModelName(value) {
+  return String(value || "").replace(/^openrouter[-_/]+/i, "");
+}
+
 export function formatPercent(value) {
   if (value === null || value === undefined || Number.isNaN(Number(value))) {
     return "N/A";
   }
   return `${Math.round(Number(value) * 100)}%`;
+}
+
+export function formatBytes(value) {
+  if (value === null || value === undefined || Number.isNaN(Number(value))) {
+    return "N/A";
+  }
+  const units = ["B", "KB", "MB", "GB"];
+  let size = Number(value);
+  let unitIndex = 0;
+  while (size >= 1024 && unitIndex < units.length - 1) {
+    size /= 1024;
+    unitIndex += 1;
+  }
+  return `${size >= 10 || unitIndex === 0 ? Math.round(size) : size.toFixed(1)} ${units[unitIndex]}`;
 }
 
 export function taskRankings(leaderboards, taskId) {
