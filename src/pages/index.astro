@@ -17,6 +17,40 @@ const modelCount = new Set(
   completeTasks.flatMap((task) => task.leaderboard.filter((row) => !row.is_human).map((row) => row.model_name))
 ).size;
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+const resourceLinks = [
+  {
+    label: "AgentArk",
+    meta: "open-source environment shell",
+    href: "https://github.com/P90-RushB/AgentArk"
+  },
+  {
+    label: "Hugging Face artifacts",
+    meta: "datasets, mods, and releases",
+    href: "https://huggingface.co/datasets/P90-RushB/AgentArk"
+  }
+];
+const tutorialLinks = [
+  {
+    label: "01 Human play tutorial",
+    meta: "Playable online in Colab",
+    href: "https://colab.research.google.com/drive/1OdGgcjtNUO5V4W935Qzm1760mO5V_vF1?usp=drive_link"
+  },
+  {
+    label: "02 Model replay tutorial",
+    meta: "Playable online in Colab",
+    href: "https://colab.research.google.com/drive/12rypa1bzmtErXMZ1GJAI8qGzCYAfViQI?usp=drive_link"
+  },
+  {
+    label: "03 Online evaluation tutorial",
+    meta: "Playable online in Colab",
+    href: "https://colab.research.google.com/drive/1hP1OxjbboxEa5rvySwo5UWLT_Wn-PxsK?usp=drive_link"
+  },
+  {
+    label: "04 RL training tutorial",
+    meta: "Playable online in Colab",
+    href: "https://colab.research.google.com/drive/1ktAtXJLyi99FteZpdwnBcF6AiCSvOn4i?usp=drive_link"
+  }
+];
 ---
 
 <BaseLayout>
@@ -49,6 +83,24 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
         <strong>1K+</strong>
         <span>target tasks this year</span>
       </div>
+    </div>
+  </section>
+
+  <section class="resource-strip" aria-labelledby="resources-heading">
+    <p class="resource-strip-title" id="resources-heading">Resources</p>
+    <div class="resource-links">
+      {resourceLinks.map((link) => (
+        <a class="resource-link primary-resource" href={link.href}>
+          <span>{link.label}</span>
+          <small>{link.meta}</small>
+        </a>
+      ))}
+      {tutorialLinks.map((link) => (
+        <a class="resource-link tutorial-resource" href={link.href}>
+          <span>{link.label}</span>
+          <small>{link.meta}</small>
+        </a>
+      ))}
     </div>
   </section>
 
