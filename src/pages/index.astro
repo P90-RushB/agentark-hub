@@ -27,6 +27,11 @@ const resourceLinks = [
     label: "Hugging Face artifacts",
     meta: "datasets, mods, and releases",
     href: "https://huggingface.co/datasets/P90-RushB/AgentArk"
+  },
+  {
+    label: "AgentArk Bench on Kaggle",
+    meta: "hosted tasks and model leaderboard",
+    href: "https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench"
   }
 ];
 const tutorialLinks = [
@@ -101,6 +106,24 @@ const tutorialLinks = [
           <small>{link.meta}</small>
         </a>
       ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Kaggle benchmark</p>
+        <h2>AgentArk Bench</h2>
+        <p>
+          A growing selection of AgentArk tasks is also available on Kaggle Benchmarks for hosted
+          model evaluation. Kaggle leaderboard runs use temperature 1.0 when accepted, or omit it
+          for models that do not allow the parameter. The original Hub scoreboards use temperature
+          0.0, so the two sets of results reflect different evaluation settings.
+        </p>
+      </div>
+      <a class="button" href="https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench">
+        Open AgentArk Bench
+      </a>
     </div>
   </section>
 
