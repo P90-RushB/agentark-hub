@@ -1,8 +1,8 @@
 {
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
-  "registry_created_at": "2026-07-19T16:03:11+00:00",
-  "current_release": "task20-text-20260719",
+  "registry_created_at": "2026-07-19T16:48:12+00:00",
+  "current_release": "tasks-26-31-109-116-20260720",
   "tasks": {
     "MarbleStop": {
       "task_id": 0,
@@ -680,6 +680,58 @@
         }
       }
     },
+    "GuiContactsCreateAndEdit": {
+      "task_id": 26,
+      "task_name": "GuiContactsCreateAndEdit",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0026-GuiContactsCreateAndEdit/task-v1/env-1.0.1/windows/GuiContactsCreateAndEdit-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0026-GuiContactsCreateAndEdit/task-v1/env-1.0.1/windows/GuiContactsCreateAndEdit-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 38809,
+          "sha256": "e4b37b1279038a2f4b63d69bff779306f2f95d0789a97614e11f952ab55931e0",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0026-GuiContactsCreateAndEdit/task-v1/env-1.0.1/linux/GuiContactsCreateAndEdit-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0026-GuiContactsCreateAndEdit/task-v1/env-1.0.1/linux/GuiContactsCreateAndEdit-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 38810,
+          "sha256": "94402c37c1033f98c40645af34b73c86b7d856a0a3314a4d0976b37e17065c77",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiCalendarEventCreate": {
+      "task_id": 27,
+      "task_name": "GuiCalendarEventCreate",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0027-GuiCalendarEventCreate/task-v1/env-1.0.1/windows/GuiCalendarEventCreate-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0027-GuiCalendarEventCreate/task-v1/env-1.0.1/windows/GuiCalendarEventCreate-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 37939,
+          "sha256": "a089dd269f2b4d6bad9d25aee3ae5d1df77b1d6e1383ef1d69a05100267816bc",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0027-GuiCalendarEventCreate/task-v1/env-1.0.1/linux/GuiCalendarEventCreate-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0027-GuiCalendarEventCreate/task-v1/env-1.0.1/linux/GuiCalendarEventCreate-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 37929,
+          "sha256": "79ede694e32e3602400c7475c27c83ff07d66efb72ca084a557635c300beebad",
+          "archive_format": "zip"
+        }
+      }
+    },
     "GuiNotesChecklistCleanup": {
       "task_id": 28,
       "task_name": "GuiNotesChecklistCleanup",
@@ -728,6 +780,58 @@
           "path": "artifacts/tasks/0000-0099/0029-GuiFilesMoveByRule/task-v1/env-1.0/linux/GuiFilesMoveByRule-task-v1-env-1.0-linux.zip",
           "size_bytes": 40755,
           "sha256": "132d92dae4a0e2aa4e5aa370d9d573cfa623e05f30dd18818c71df6c3ce88db5",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiExpenseAddRecord": {
+      "task_id": 30,
+      "task_name": "GuiExpenseAddRecord",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0030-GuiExpenseAddRecord/task-v1/env-1.0.1/windows/GuiExpenseAddRecord-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0030-GuiExpenseAddRecord/task-v1/env-1.0.1/windows/GuiExpenseAddRecord-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 38951,
+          "sha256": "fe452271a792fc8999071e5880b0caae9bbb10d6f32f05950b61b5db908f2bce",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0030-GuiExpenseAddRecord/task-v1/env-1.0.1/linux/GuiExpenseAddRecord-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0030-GuiExpenseAddRecord/task-v1/env-1.0.1/linux/GuiExpenseAddRecord-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 38941,
+          "sha256": "281437b37c62c0775d7affa0728fcb20bc36abf3b8e9756ad9005ae99de744d7",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiRecipeFindAndFavorite": {
+      "task_id": 31,
+      "task_name": "GuiRecipeFindAndFavorite",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0031-GuiRecipeFindAndFavorite/task-v1/env-1.0.1/windows/GuiRecipeFindAndFavorite-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0031-GuiRecipeFindAndFavorite/task-v1/env-1.0.1/windows/GuiRecipeFindAndFavorite-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 39105,
+          "sha256": "5ccdfd35808940de286fed3ed2f918d7ccc96ac49d409a15db945679888427da",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0031-GuiRecipeFindAndFavorite/task-v1/env-1.0.1/linux/GuiRecipeFindAndFavorite-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0031-GuiRecipeFindAndFavorite/task-v1/env-1.0.1/linux/GuiRecipeFindAndFavorite-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 39105,
+          "sha256": "314dc0df7e1f62d4769508e4f5421f472a871bfbea7cfe6955a3e423fa62cac7",
           "archive_format": "zip"
         }
       }
@@ -2314,6 +2418,214 @@
           "path": "artifacts/tasks/0000-0099/0092-ColorWordConflictDispatch2D/task-v1/env-1.0.1/linux/ColorWordConflictDispatch2D-task-v1-env-1.0.1-linux.zip",
           "size_bytes": 33593,
           "sha256": "0d14087edc91f183fc5ba12eb116f58a5bdd313e3d6c3125e17a21b1a6b3bb14",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "SubtractivePigmentRecipe2D": {
+      "task_id": 109,
+      "task_name": "SubtractivePigmentRecipe2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v1/env-1.0.1/windows/SubtractivePigmentRecipe2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v1/env-1.0.1/windows/SubtractivePigmentRecipe2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 33919,
+          "sha256": "d9904d3c4a158b1868ff61bc09beaea2df25485a6b6932392e457ba560c21a69",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v1/env-1.0.1/linux/SubtractivePigmentRecipe2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v1/env-1.0.1/linux/SubtractivePigmentRecipe2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 33918,
+          "sha256": "3efee6b1087154e98ca253fd801adb7c81d129b72d402c9f47f10bcc6f5436ee",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "SpectralMetamerLampLab2D": {
+      "task_id": 110,
+      "task_name": "SpectralMetamerLampLab2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v1/env-1.0.1/windows/SpectralMetamerLampLab2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v1/env-1.0.1/windows/SpectralMetamerLampLab2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 32130,
+          "sha256": "2f5555a4a4c58e279c6da1264109ce98202378997c372e8b276620207c98f274",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v1/env-1.0.1/linux/SpectralMetamerLampLab2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v1/env-1.0.1/linux/SpectralMetamerLampLab2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 32124,
+          "sha256": "d44b551e67c04ea217ee86e6a8d17d1e3df05c4e94741c53cb6addec42942ddd",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "AccessiblePaletteRepair2D": {
+      "task_id": 111,
+      "task_name": "AccessiblePaletteRepair2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v1/env-1.0.1/windows/AccessiblePaletteRepair2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v1/env-1.0.1/windows/AccessiblePaletteRepair2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 36096,
+          "sha256": "7750ab5f9b4793f606b682c42a7bff471765703d967138b11f06b9356d27b75b",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v1/env-1.0.1/linux/AccessiblePaletteRepair2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v1/env-1.0.1/linux/AccessiblePaletteRepair2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 36093,
+          "sha256": "e7f172d5077bc66e806eb9a80467c175d194206ec6904d651cf4ad35201b2af4",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "StainedGlassProjection3D": {
+      "task_id": 112,
+      "task_name": "StainedGlassProjection3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v1/env-1.0.1/windows/StainedGlassProjection3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v1/env-1.0.1/windows/StainedGlassProjection3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 37631,
+          "sha256": "3e95b2c1853dffe75d2bd5fb2f063a45dd24c19d7d7930d980d9fbfd63e93471",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v1/env-1.0.1/linux/StainedGlassProjection3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v1/env-1.0.1/linux/StainedGlassProjection3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 37632,
+          "sha256": "fd3f8a4fe934646a34f30e5dd646c75881a88534319a1a638e2e5ed001b95c83",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ColoredFaceAssemblyCopy3D": {
+      "task_id": 113,
+      "task_name": "ColoredFaceAssemblyCopy3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v1/env-1.0.1/windows/ColoredFaceAssemblyCopy3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v1/env-1.0.1/windows/ColoredFaceAssemblyCopy3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 41438,
+          "sha256": "0148c3adf6d675320a2a64a43d266858738fceeb00ac81b57422a1350528dab8",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v1/env-1.0.1/linux/ColoredFaceAssemblyCopy3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v1/env-1.0.1/linux/ColoredFaceAssemblyCopy3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 41440,
+          "sha256": "5559338a57827ebf118e2bfa5dce23f7baba19cd6d7bfb5622e8f367176d68e6",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "PaletteTransformationInduction2D": {
+      "task_id": 114,
+      "task_name": "PaletteTransformationInduction2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v1/env-1.0.1/windows/PaletteTransformationInduction2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v1/env-1.0.1/windows/PaletteTransformationInduction2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 37164,
+          "sha256": "d4791960f2840293f74f87b674e605ecacc7b284b79e7b33ef9355c365a8e456",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v1/env-1.0.1/linux/PaletteTransformationInduction2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v1/env-1.0.1/linux/PaletteTransformationInduction2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 37166,
+          "sha256": "95a79bef2ebb11c96d89a9779594f8f34af3fadeddfcda8afdbb8305cdbb7c2d",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ChromaticConveyorRouting3D": {
+      "task_id": 115,
+      "task_name": "ChromaticConveyorRouting3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v1/env-1.0.1/windows/ChromaticConveyorRouting3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v1/env-1.0.1/windows/ChromaticConveyorRouting3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 34310,
+          "sha256": "e9f42a8ff8ff8c19e7a7d1bff28284e200ea1ca167e52f7cea8bdbdc9c997aad",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v1/env-1.0.1/linux/ChromaticConveyorRouting3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v1/env-1.0.1/linux/ChromaticConveyorRouting3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 34303,
+          "sha256": "e4a0b92a9c19863870523bb76e2da2a4cb601e9443ef5d542a6c4ef160df67b9",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ReactionColorQuenchLab3D": {
+      "task_id": 116,
+      "task_name": "ReactionColorQuenchLab3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v1/env-1.0.1/windows/ReactionColorQuenchLab3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v1/env-1.0.1/windows/ReactionColorQuenchLab3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 30863,
+          "sha256": "4e2f437fa14503c8657a29d0f969849bd79cd18d9bb300bacd2472684193ad7e",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v1/env-1.0.1/linux/ReactionColorQuenchLab3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v1/env-1.0.1/linux/ReactionColorQuenchLab3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 30857,
+          "sha256": "b4945a43b846bc93e8e39523f862ae640b6d869f3ad3fce000df586ffade6eca",
           "archive_format": "zip"
         }
       }
