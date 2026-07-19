@@ -1,8 +1,8 @@
 {
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
-  "registry_created_at": "2026-07-19T12:30:33+00:00",
-  "current_release": "tasks-32-92-20260719",
+  "registry_created_at": "2026-07-19T16:03:11+00:00",
+  "current_release": "task20-text-20260719",
   "tasks": {
     "MarbleStop": {
       "task_id": 0,
@@ -528,24 +528,24 @@
       "task_id": 20,
       "task_name": "Reach2048Tile2D",
       "task_version": "v1",
-      "env_version": "1.0",
+      "env_version": "1.0.1",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0/windows/Reach2048Tile2D-task-v1-env-1.0-windows.zip",
-          "path": "artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0/windows/Reach2048Tile2D-task-v1-env-1.0-windows.zip",
-          "size_bytes": 34631,
-          "sha256": "e90cd0797b0483a879cd569bacb352f64abe2c6b3a756d953ab70b29cb25c402",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0.1/windows/Reach2048Tile2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0.1/windows/Reach2048Tile2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 36390,
+          "sha256": "0e88b27143aca58f225273bd105361e0ca1daacd93407e0c0ebf744ae0ca39f4",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0/linux/Reach2048Tile2D-task-v1-env-1.0-linux.zip",
-          "path": "artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0/linux/Reach2048Tile2D-task-v1-env-1.0-linux.zip",
-          "size_bytes": 34626,
-          "sha256": "4380b2d353a2150890591cf31cfa3d6fea32a65026848e2654f3101a4a12b528",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0.1/linux/Reach2048Tile2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0020-Reach2048Tile2D/task-v1/env-1.0.1/linux/Reach2048Tile2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 36385,
+          "sha256": "4c4990e7709e9778aabfdb3679b1b7b9f360be473ce4269592a34946cf313824",
           "archive_format": "zip"
         }
       }

@@ -38,7 +38,7 @@ TASKS = {
     "CraneStackTower2D": {"id": 17, "aliases": ["Task17_CraneStackTower2D", "CraneStackTower2DTask"]},
     "GrenadeClusterCalibration3D": {"id": 18, "aliases": ["Task18_GrenadeClusterCalibration3D", "GrenadeClusterCalibration3DTask"]},
     "Match3ScoreGoal2D": {"id": 19, "aliases": ["Task19_Match3ScoreGoal2D"]},
-    "Reach2048Tile2D": {"id": 20, "aliases": ["Task20_2048ReachTile2D", "Reach2048Tile2D"]},
+    "Reach2048Tile2D": {"id": 20, "aliases": ["Task20_2048ReachTile2D", "Reach2048Tile2D", "Reach2048Tile"]},
     "StarterRouteJump3D": {"id": 21, "aliases": ["Task21_StarterRouteJump3D"]},
     "BlockWorldPathCopy3D": {"id": 22, "aliases": ["Task22_BlockWorldPathCopy3D", "BlockWorldPathCopy3DTask"]},
     "RotationSpeedSort3D": {"id": 23, "aliases": ["Task23_RotationSpeedSort3D", "RotationSpeedSort3DTask"]},
