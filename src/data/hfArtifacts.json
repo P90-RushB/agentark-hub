@@ -1,8 +1,8 @@
 {
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
-  "registry_created_at": "2026-07-04T06:53:04+00:00",
-  "current_release": "env-1.0",
+  "registry_created_at": "2026-07-19T12:30:33+00:00",
+  "current_release": "tasks-32-92-20260719",
   "tasks": {
     "MarbleStop": {
       "task_id": 0,
@@ -732,28 +732,106 @@
         }
       }
     },
-    "GuiMessageToCalendar": {
-      "task_id": 33,
-      "task_name": "GuiMessageToCalendar",
+    "GuiMusicPlaylistBuilder": {
+      "task_id": 32,
+      "task_name": "GuiMusicPlaylistBuilder",
       "task_version": "v1",
-      "env_version": "1.0",
+      "env_version": "1.0.1",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0/windows/GuiMessageToCalendar-task-v1-env-1.0-windows.zip",
-          "path": "artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0/windows/GuiMessageToCalendar-task-v1-env-1.0-windows.zip",
-          "size_bytes": 40434,
-          "sha256": "6a86e0728fa2f986771b28e27085ca8a8372dd59c180f1b370e9ee09ef62b7d6",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0032-GuiMusicPlaylistBuilder/task-v1/env-1.0.1/windows/GuiMusicPlaylistBuilder-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0032-GuiMusicPlaylistBuilder/task-v1/env-1.0.1/windows/GuiMusicPlaylistBuilder-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 39504,
+          "sha256": "c08afe886509bf8d4f3795e3b13a9f687cc6956f132b26b4660c704e4c890def",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0/linux/GuiMessageToCalendar-task-v1-env-1.0-linux.zip",
-          "path": "artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0/linux/GuiMessageToCalendar-task-v1-env-1.0-linux.zip",
-          "size_bytes": 40427,
-          "sha256": "4dcc1ad857a45a9248f6482cfc6a768834f6e315c2b49b1f6def0abe0e6620dc",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0032-GuiMusicPlaylistBuilder/task-v1/env-1.0.1/linux/GuiMusicPlaylistBuilder-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0032-GuiMusicPlaylistBuilder/task-v1/env-1.0.1/linux/GuiMusicPlaylistBuilder-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 39496,
+          "sha256": "b2da94c1dcabd8bfa995ba106c23eeaf23e21ddf5a4271e9498a5090cbbd6897",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiMessageToCalendar": {
+      "task_id": 33,
+      "task_name": "GuiMessageToCalendar",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0.1/windows/GuiMessageToCalendar-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0.1/windows/GuiMessageToCalendar-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 40517,
+          "sha256": "4d017d3d9bdc39fe9855c615171c6d819d2c8dd97f8911163bd5d99f1e6c1163",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0.1/linux/GuiMessageToCalendar-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0033-GuiMessageToCalendar/task-v1/env-1.0.1/linux/GuiMessageToCalendar-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 40515,
+          "sha256": "056eba776c86e55411a89ee9dce93ec1e3d85a3a2eeba20c045eb2931688e90b",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiEmailAttachmentToFiles": {
+      "task_id": 34,
+      "task_name": "GuiEmailAttachmentToFiles",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0034-GuiEmailAttachmentToFiles/task-v1/env-1.0.1/windows/GuiEmailAttachmentToFiles-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0034-GuiEmailAttachmentToFiles/task-v1/env-1.0.1/windows/GuiEmailAttachmentToFiles-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 43190,
+          "sha256": "c37c53245fd26f20f6aa6f9920577b5c5a16a173b6cda661e6fa067d4f5bd39c",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0034-GuiEmailAttachmentToFiles/task-v1/env-1.0.1/linux/GuiEmailAttachmentToFiles-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0034-GuiEmailAttachmentToFiles/task-v1/env-1.0.1/linux/GuiEmailAttachmentToFiles-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 43188,
+          "sha256": "dfa128d319844bb0473dcf9ec0c0d2907020c346f896975225bc3d388475f42f",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiGalleryReceiptToExpense": {
+      "task_id": 35,
+      "task_name": "GuiGalleryReceiptToExpense",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0035-GuiGalleryReceiptToExpense/task-v1/env-1.0.1/windows/GuiGalleryReceiptToExpense-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0035-GuiGalleryReceiptToExpense/task-v1/env-1.0.1/windows/GuiGalleryReceiptToExpense-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 41694,
+          "sha256": "c0b6f819f91a08d04b502a7885c44926469b1ac81dffdde6019eb3cb7e2307dc",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0035-GuiGalleryReceiptToExpense/task-v1/env-1.0.1/linux/GuiGalleryReceiptToExpense-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0035-GuiGalleryReceiptToExpense/task-v1/env-1.0.1/linux/GuiGalleryReceiptToExpense-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 41698,
+          "sha256": "28123fcfdb599418ce59723f1988cd66f0469fac852e2a3c3eb5908fd070d5db",
           "archive_format": "zip"
         }
       }
@@ -762,24 +840,24 @@
       "task_id": 36,
       "task_name": "GuiImageNoteTranscription",
       "task_version": "v1",
-      "env_version": "1.0",
+      "env_version": "1.0.1",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0/windows/GuiImageNoteTranscription-task-v1-env-1.0-windows.zip",
-          "path": "artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0/windows/GuiImageNoteTranscription-task-v1-env-1.0-windows.zip",
-          "size_bytes": 38684,
-          "sha256": "b6974c70e8c7a8ad654425f496ca7fed19ba072632d16995c1c3d412ea1a369c",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0.1/windows/GuiImageNoteTranscription-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0.1/windows/GuiImageNoteTranscription-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 38791,
+          "sha256": "58ac357c0e283eaa5a7aeea287443a15d9082e97c5e9e41d072c52cfe3dd5837",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0/linux/GuiImageNoteTranscription-task-v1-env-1.0-linux.zip",
-          "path": "artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0/linux/GuiImageNoteTranscription-task-v1-env-1.0-linux.zip",
-          "size_bytes": 38673,
-          "sha256": "f8e2a10aae728649984fc6b5ec51aaa998296a2dd5584c672e38f24dba6e872f",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0.1/linux/GuiImageNoteTranscription-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0036-GuiImageNoteTranscription/task-v1/env-1.0.1/linux/GuiImageNoteTranscription-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 38775,
+          "sha256": "0201e3400e913620ce68edb4a6129f2a36851ac542fa01e04bcf3b3669339af1",
           "archive_format": "zip"
         }
       }
@@ -788,24 +866,24 @@
       "task_id": 37,
       "task_name": "GuiMapPlaceToMessage",
       "task_version": "v1",
-      "env_version": "1.0",
+      "env_version": "1.0.1",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0/windows/GuiMapPlaceToMessage-task-v1-env-1.0-windows.zip",
-          "path": "artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0/windows/GuiMapPlaceToMessage-task-v1-env-1.0-windows.zip",
-          "size_bytes": 41417,
-          "sha256": "f1c4f65089f199c51cef3b721943417698dfff23ba74412ce61f9225f16dbc79",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0.1/windows/GuiMapPlaceToMessage-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0.1/windows/GuiMapPlaceToMessage-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 41506,
+          "sha256": "a6ebf5da6b1ba3cdb3c4bb30254cd3bd3a6b741ac5f2b787305f7f8c72c2a375",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0/linux/GuiMapPlaceToMessage-task-v1-env-1.0-linux.zip",
-          "path": "artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0/linux/GuiMapPlaceToMessage-task-v1-env-1.0-linux.zip",
-          "size_bytes": 41404,
-          "sha256": "db9298c6ac22f6cf2f9553eac0bc706941a32347f78f052ab64ecf9947668d14",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0.1/linux/GuiMapPlaceToMessage-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0037-GuiMapPlaceToMessage/task-v1/env-1.0.1/linux/GuiMapPlaceToMessage-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 41503,
+          "sha256": "574e9c9db049cc1ba33d897575bad4f4380a2c34064ba1c4e3f3ea34d667c6d4",
           "archive_format": "zip"
         }
       }
@@ -814,24 +892,1428 @@
       "task_id": 38,
       "task_name": "GuiShoppingCartFromChat",
       "task_version": "v1",
-      "env_version": "1.0",
+      "env_version": "1.0.1",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0/windows/GuiShoppingCartFromChat-task-v1-env-1.0-windows.zip",
-          "path": "artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0/windows/GuiShoppingCartFromChat-task-v1-env-1.0-windows.zip",
-          "size_bytes": 43773,
-          "sha256": "cdb6f02ea037d3ff978d38f32ae84db501d8d2fedf052a267bb45f1f8b64cb25",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0.1/windows/GuiShoppingCartFromChat-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0.1/windows/GuiShoppingCartFromChat-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 43871,
+          "sha256": "360df29acc283759d3319ffac6bb5649bae000b171f0e56ff918e7c4063b3a2a",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0/linux/GuiShoppingCartFromChat-task-v1-env-1.0-linux.zip",
-          "path": "artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0/linux/GuiShoppingCartFromChat-task-v1-env-1.0-linux.zip",
-          "size_bytes": 43773,
-          "sha256": "6f54b266e216d483e028ea9f6fdd6389bba67635a16f9a2835be7985f5def8ec",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0.1/linux/GuiShoppingCartFromChat-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0038-GuiShoppingCartFromChat/task-v1/env-1.0.1/linux/GuiShoppingCartFromChat-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 43869,
+          "sha256": "112f3acf42c62314ca846f9acae00b7d1cf163a1806c977116b5900f83b9823d",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiWeatherReminder": {
+      "task_id": 39,
+      "task_name": "GuiWeatherReminder",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0039-GuiWeatherReminder/task-v1/env-1.0.1/windows/GuiWeatherReminder-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0039-GuiWeatherReminder/task-v1/env-1.0.1/windows/GuiWeatherReminder-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 39483,
+          "sha256": "82a9abe10e3e3f6b068de89b1a9174f192e4e54a63a3168e27c3016a98fad0a7",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0039-GuiWeatherReminder/task-v1/env-1.0.1/linux/GuiWeatherReminder-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0039-GuiWeatherReminder/task-v1/env-1.0.1/linux/GuiWeatherReminder-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 39473,
+          "sha256": "e91ff87bc1a23794fe4c0a6aaa661c9cf7836d1d0c501814d4f1a3799fc0f96d",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiMailToTodoActionItems": {
+      "task_id": 40,
+      "task_name": "GuiMailToTodoActionItems",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0040-GuiMailToTodoActionItems/task-v1/env-1.0.1/windows/GuiMailToTodoActionItems-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0040-GuiMailToTodoActionItems/task-v1/env-1.0.1/windows/GuiMailToTodoActionItems-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 41500,
+          "sha256": "16f80b50a43321553c839ddc5dc551cadd884aafc3f95c3f1b2d4c1ce7efa6a0",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0040-GuiMailToTodoActionItems/task-v1/env-1.0.1/linux/GuiMailToTodoActionItems-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0040-GuiMailToTodoActionItems/task-v1/env-1.0.1/linux/GuiMailToTodoActionItems-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 41492,
+          "sha256": "9e4cbc8705ebb986bb375a791d3b5e589e53b532a1ecaa708222a19dbaad38b6",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Trajectory": {
+      "task_id": 41,
+      "task_name": "Trajectory",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0041-Trajectory/task-v1/env-1.0.1/windows/Trajectory-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0041-Trajectory/task-v1/env-1.0.1/windows/Trajectory-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 30066,
+          "sha256": "5d01c9a7bf5cea151f795c902ad034011e441f754c6393fd843b96a2df55e2ad",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0041-Trajectory/task-v1/env-1.0.1/linux/Trajectory-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0041-Trajectory/task-v1/env-1.0.1/linux/Trajectory-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 30062,
+          "sha256": "82850b2546ca82cc489ce26340484b2544ddb1b0b8bdb0937d17ffd8187b99aa",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiAmbiguousContactClarify": {
+      "task_id": 42,
+      "task_name": "GuiAmbiguousContactClarify",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0042-GuiAmbiguousContactClarify/task-v1/env-1.0.1/windows/GuiAmbiguousContactClarify-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0042-GuiAmbiguousContactClarify/task-v1/env-1.0.1/windows/GuiAmbiguousContactClarify-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 41579,
+          "sha256": "2c8e19722288401b3c5486b9f1754cd3cc53dd8b1aa915de0216a84cf3131c7c",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0042-GuiAmbiguousContactClarify/task-v1/env-1.0.1/linux/GuiAmbiguousContactClarify-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0042-GuiAmbiguousContactClarify/task-v1/env-1.0.1/linux/GuiAmbiguousContactClarify-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 41573,
+          "sha256": "799c8071d93337d4d7545ff9ca1b6bc31dacc73f282fd526f345c51f6cb7d61b",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "DotweenConveyorDiverter2D": {
+      "task_id": 43,
+      "task_name": "DotweenConveyorDiverter2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0043-DotweenConveyorDiverter2D/task-v1/env-1.0.1/windows/DotweenConveyorDiverter2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0043-DotweenConveyorDiverter2D/task-v1/env-1.0.1/windows/DotweenConveyorDiverter2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 69092,
+          "sha256": "40c2d74504df342971af014b4ab6116d28931d7309d93c7abbd414159f680b5f",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0043-DotweenConveyorDiverter2D/task-v1/env-1.0.1/linux/DotweenConveyorDiverter2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0043-DotweenConveyorDiverter2D/task-v1/env-1.0.1/linux/DotweenConveyorDiverter2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 69083,
+          "sha256": "5cd03a8245710e68a1d94312640b7899a5d688db46ebfb55c3052706fed322b7",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "DotweenOrbitLock3D": {
+      "task_id": 44,
+      "task_name": "DotweenOrbitLock3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0044-DotweenOrbitLock3D/task-v1/env-1.0.1/windows/DotweenOrbitLock3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0044-DotweenOrbitLock3D/task-v1/env-1.0.1/windows/DotweenOrbitLock3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 68211,
+          "sha256": "91605920858d5994b8e70bd9ab39c953c574eb0533d6719630b4d280057c0d48",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0044-DotweenOrbitLock3D/task-v1/env-1.0.1/linux/DotweenOrbitLock3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0044-DotweenOrbitLock3D/task-v1/env-1.0.1/linux/DotweenOrbitLock3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 68206,
+          "sha256": "02ccb8085ef4b11cc3f585bde056dab4e1e9c7455b2084c31e6ba61352eeaea8",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiDeleteFilesConfirmSafety": {
+      "task_id": 45,
+      "task_name": "GuiDeleteFilesConfirmSafety",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0045-GuiDeleteFilesConfirmSafety/task-v1/env-1.0.1/windows/GuiDeleteFilesConfirmSafety-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0045-GuiDeleteFilesConfirmSafety/task-v1/env-1.0.1/windows/GuiDeleteFilesConfirmSafety-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 43564,
+          "sha256": "19f942d363c8652f69e8cd8825b3425332ecaec93baa2817430cbc2d1b32f399",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0045-GuiDeleteFilesConfirmSafety/task-v1/env-1.0.1/linux/GuiDeleteFilesConfirmSafety-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0045-GuiDeleteFilesConfirmSafety/task-v1/env-1.0.1/linux/GuiDeleteFilesConfirmSafety-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 43552,
+          "sha256": "1ed7159c3ecf024ec6a1829e1eb1223c4372a13852318375326c3df653520683",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "DotweenPendulumCatch2D": {
+      "task_id": 46,
+      "task_name": "DotweenPendulumCatch2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0046-DotweenPendulumCatch2D/task-v1/env-1.0.1/windows/DotweenPendulumCatch2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0046-DotweenPendulumCatch2D/task-v1/env-1.0.1/windows/DotweenPendulumCatch2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 42864,
+          "sha256": "206480010500252b2a8c7a7c48fda1fdea32f00249492fc122edbca7436fcfea",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0046-DotweenPendulumCatch2D/task-v1/env-1.0.1/linux/DotweenPendulumCatch2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0046-DotweenPendulumCatch2D/task-v1/env-1.0.1/linux/DotweenPendulumCatch2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 42866,
+          "sha256": "1cf3ca16023abada46189a4077cc7610711dad35bf4b56e93e47471f8052a2d4",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiPrivacyRedactAndSend": {
+      "task_id": 47,
+      "task_name": "GuiPrivacyRedactAndSend",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0047-GuiPrivacyRedactAndSend/task-v1/env-1.0.1/windows/GuiPrivacyRedactAndSend-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0047-GuiPrivacyRedactAndSend/task-v1/env-1.0.1/windows/GuiPrivacyRedactAndSend-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 38317,
+          "sha256": "4e2d9877b7df9aa04885b8ff386d03d078cb04c8518d9e5054e8fc7f897b75aa",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0047-GuiPrivacyRedactAndSend/task-v1/env-1.0.1/linux/GuiPrivacyRedactAndSend-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0047-GuiPrivacyRedactAndSend/task-v1/env-1.0.1/linux/GuiPrivacyRedactAndSend-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 38315,
+          "sha256": "891dce3cdea825ab1d7389d5f231e90a8915e3126b5335c645d61e80d69a82c3",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiPersonalizedCoffeeOrder": {
+      "task_id": 48,
+      "task_name": "GuiPersonalizedCoffeeOrder",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0048-GuiPersonalizedCoffeeOrder/task-v1/env-1.0.1/windows/GuiPersonalizedCoffeeOrder-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0048-GuiPersonalizedCoffeeOrder/task-v1/env-1.0.1/windows/GuiPersonalizedCoffeeOrder-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 37968,
+          "sha256": "6d07d13e08e0f26bd18aa504e14b441a798f082686dcb1e6e80f5ea044ad9559",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0048-GuiPersonalizedCoffeeOrder/task-v1/env-1.0.1/linux/GuiPersonalizedCoffeeOrder-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0048-GuiPersonalizedCoffeeOrder/task-v1/env-1.0.1/linux/GuiPersonalizedCoffeeOrder-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 37965,
+          "sha256": "638df02e8b7105246b77087f1bdacde81085f48c51fa447f418e408e75cad052",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiShoppingBudgetOptimizer": {
+      "task_id": 49,
+      "task_name": "GuiShoppingBudgetOptimizer",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0049-GuiShoppingBudgetOptimizer/task-v1/env-1.0.1/windows/GuiShoppingBudgetOptimizer-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0049-GuiShoppingBudgetOptimizer/task-v1/env-1.0.1/windows/GuiShoppingBudgetOptimizer-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 37559,
+          "sha256": "1e0ccf466b30e2f9684377d01ba5994e5fa61933d53dbe2fb4715b0750de1f70",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0049-GuiShoppingBudgetOptimizer/task-v1/env-1.0.1/linux/GuiShoppingBudgetOptimizer-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0049-GuiShoppingBudgetOptimizer/task-v1/env-1.0.1/linux/GuiShoppingBudgetOptimizer-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 37552,
+          "sha256": "abd122bba547db0d5bfd06d6a8f6dc7605c46eb0cca831e9d6982a58acc2099b",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiCalendarConflictReschedule": {
+      "task_id": 50,
+      "task_name": "GuiCalendarConflictReschedule",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0050-GuiCalendarConflictReschedule/task-v1/env-1.0.1/windows/GuiCalendarConflictReschedule-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0050-GuiCalendarConflictReschedule/task-v1/env-1.0.1/windows/GuiCalendarConflictReschedule-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 37548,
+          "sha256": "7632afbd63ca6763cf2dcd5d1367c39de9127e334dedcd3956b309cb0c9350ca",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0050-GuiCalendarConflictReschedule/task-v1/env-1.0.1/linux/GuiCalendarConflictReschedule-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0050-GuiCalendarConflictReschedule/task-v1/env-1.0.1/linux/GuiCalendarConflictReschedule-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 37535,
+          "sha256": "2cc2a54aecf4d2acf3fddce5dc19bce1b6eb7b71ce40e3f020a887a17b2e22b4",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiTeamChatActionSummary": {
+      "task_id": 51,
+      "task_name": "GuiTeamChatActionSummary",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0051-GuiTeamChatActionSummary/task-v1/env-1.0.1/windows/GuiTeamChatActionSummary-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0051-GuiTeamChatActionSummary/task-v1/env-1.0.1/windows/GuiTeamChatActionSummary-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 45601,
+          "sha256": "f57bb3ca08d2de295517ade698f5d4a1e8dc96ab0bc9417a01fc3613f865745e",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0051-GuiTeamChatActionSummary/task-v1/env-1.0.1/linux/GuiTeamChatActionSummary-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0051-GuiTeamChatActionSummary/task-v1/env-1.0.1/linux/GuiTeamChatActionSummary-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 45592,
+          "sha256": "0a00ca7c626935ae2615ca36510559e8b4cdfe6a4e7bbc301a386897a706933b",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiAppStoreReviewTriage": {
+      "task_id": 52,
+      "task_name": "GuiAppStoreReviewTriage",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0052-GuiAppStoreReviewTriage/task-v1/env-1.0.1/windows/GuiAppStoreReviewTriage-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0052-GuiAppStoreReviewTriage/task-v1/env-1.0.1/windows/GuiAppStoreReviewTriage-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 47645,
+          "sha256": "fadb4512ecdd827f691a0a853d90253d417080d73441c9316f84a34726a79a80",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0052-GuiAppStoreReviewTriage/task-v1/env-1.0.1/linux/GuiAppStoreReviewTriage-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0052-GuiAppStoreReviewTriage/task-v1/env-1.0.1/linux/GuiAppStoreReviewTriage-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 47637,
+          "sha256": "a1d0453bcea117577f0f1ed3899f3d0e023aa5322d5779f2d20c5b935c9dafb7",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiCheckoutFailureRecovery": {
+      "task_id": 53,
+      "task_name": "GuiCheckoutFailureRecovery",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0053-GuiCheckoutFailureRecovery/task-v1/env-1.0.1/windows/GuiCheckoutFailureRecovery-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0053-GuiCheckoutFailureRecovery/task-v1/env-1.0.1/windows/GuiCheckoutFailureRecovery-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 41217,
+          "sha256": "8621db7a70e38349f355b8e38966c6d82b84c53b9c94ac60e536d0696b87d698",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0053-GuiCheckoutFailureRecovery/task-v1/env-1.0.1/linux/GuiCheckoutFailureRecovery-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0053-GuiCheckoutFailureRecovery/task-v1/env-1.0.1/linux/GuiCheckoutFailureRecovery-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 41216,
+          "sha256": "d7d4bf53a3aa3ae2f778b2c85a49d3bcd5173e6995570acc1d5e7d6286d71f93",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiLiveCalendarReplan": {
+      "task_id": 54,
+      "task_name": "GuiLiveCalendarReplan",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0054-GuiLiveCalendarReplan/task-v1/env-1.0.1/windows/GuiLiveCalendarReplan-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0054-GuiLiveCalendarReplan/task-v1/env-1.0.1/windows/GuiLiveCalendarReplan-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 38467,
+          "sha256": "0f714492e0a63b0dd56957d9ad0bc3135ed1ef53bc3421d60e246a1abc8f7865",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0054-GuiLiveCalendarReplan/task-v1/env-1.0.1/linux/GuiLiveCalendarReplan-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0054-GuiLiveCalendarReplan/task-v1/env-1.0.1/linux/GuiLiveCalendarReplan-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 38461,
+          "sha256": "c596d6b0dce3f596c902317ccc75b66203e82e3f1fe5cb362b452dd680b75f61",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiOfflineDraftConflictMerge": {
+      "task_id": 55,
+      "task_name": "GuiOfflineDraftConflictMerge",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0055-GuiOfflineDraftConflictMerge/task-v1/env-1.0.1/windows/GuiOfflineDraftConflictMerge-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0055-GuiOfflineDraftConflictMerge/task-v1/env-1.0.1/windows/GuiOfflineDraftConflictMerge-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 44608,
+          "sha256": "bd96499910cc8438a37c5f395239bc13a78ec851253c3564118d044566c431d8",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0055-GuiOfflineDraftConflictMerge/task-v1/env-1.0.1/linux/GuiOfflineDraftConflictMerge-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0055-GuiOfflineDraftConflictMerge/task-v1/env-1.0.1/linux/GuiOfflineDraftConflictMerge-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 44594,
+          "sha256": "8fb897e9d7f130f43d04a58b443c5f285b327b629e52fba7a03f4d916f81602a",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiTravelDisruptionOrchestrator": {
+      "task_id": 56,
+      "task_name": "GuiTravelDisruptionOrchestrator",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0056-GuiTravelDisruptionOrchestrator/task-v1/env-1.0.1/windows/GuiTravelDisruptionOrchestrator-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0056-GuiTravelDisruptionOrchestrator/task-v1/env-1.0.1/windows/GuiTravelDisruptionOrchestrator-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 51085,
+          "sha256": "f4d663d3b854cbfcbafbf9100493f0aeb825c3635496798fffc4fddb49ad2c5e",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0056-GuiTravelDisruptionOrchestrator/task-v1/env-1.0.1/linux/GuiTravelDisruptionOrchestrator-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0056-GuiTravelDisruptionOrchestrator/task-v1/env-1.0.1/linux/GuiTravelDisruptionOrchestrator-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 51069,
+          "sha256": "8c0ecbd55988aa2953698c7caf8f1425b490b2ffd8d9837a449d0c62d94a68b4",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiDependentFormRepair": {
+      "task_id": 57,
+      "task_name": "GuiDependentFormRepair",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0057-GuiDependentFormRepair/task-v1/env-1.0.1/windows/GuiDependentFormRepair-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0057-GuiDependentFormRepair/task-v1/env-1.0.1/windows/GuiDependentFormRepair-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 36295,
+          "sha256": "693b012182d31b3402c43fe3a5f7874cffd1b5a9b5fa87496f55274ab160154f",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0057-GuiDependentFormRepair/task-v1/env-1.0.1/linux/GuiDependentFormRepair-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0057-GuiDependentFormRepair/task-v1/env-1.0.1/linux/GuiDependentFormRepair-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 36291,
+          "sha256": "6470796f3c239f07c4c74bd0de05564c9a20feda1b52f44309b34c9617f028d3",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiLiveInventorySubstitution": {
+      "task_id": 58,
+      "task_name": "GuiLiveInventorySubstitution",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0058-GuiLiveInventorySubstitution/task-v1/env-1.0.1/windows/GuiLiveInventorySubstitution-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0058-GuiLiveInventorySubstitution/task-v1/env-1.0.1/windows/GuiLiveInventorySubstitution-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 42718,
+          "sha256": "b05ff93a6a425ba90fb5a53a97ad7f07339984b95f029002578193711576e5f9",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0058-GuiLiveInventorySubstitution/task-v1/env-1.0.1/linux/GuiLiveInventorySubstitution-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0058-GuiLiveInventorySubstitution/task-v1/env-1.0.1/linux/GuiLiveInventorySubstitution-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 42714,
+          "sha256": "b2558cd4252e72514743fd23340135d1673161929fa05bb59b0e74da0d9904b4",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiCrossSessionParcelRecall": {
+      "task_id": 59,
+      "task_name": "GuiCrossSessionParcelRecall",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0059-GuiCrossSessionParcelRecall/task-v1/env-1.0.1/windows/GuiCrossSessionParcelRecall-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0059-GuiCrossSessionParcelRecall/task-v1/env-1.0.1/windows/GuiCrossSessionParcelRecall-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 41272,
+          "sha256": "7c98faec7b8650710bdd8c0b740fa76b37dba3ac4fbc073c377cd11632e7c41c",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0059-GuiCrossSessionParcelRecall/task-v1/env-1.0.1/linux/GuiCrossSessionParcelRecall-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0059-GuiCrossSessionParcelRecall/task-v1/env-1.0.1/linux/GuiCrossSessionParcelRecall-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 41271,
+          "sha256": "541021db872ccb5687ff0145eeb149c64fb5d506d04313869f6a2987d5fe71d4",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiPreferenceChangePointOrder": {
+      "task_id": 60,
+      "task_name": "GuiPreferenceChangePointOrder",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0060-GuiPreferenceChangePointOrder/task-v1/env-1.0.1/windows/GuiPreferenceChangePointOrder-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0060-GuiPreferenceChangePointOrder/task-v1/env-1.0.1/windows/GuiPreferenceChangePointOrder-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 42615,
+          "sha256": "3d496722a1b3a2bc558660f63c5eda7110ac430895406aa7d7229364a59c30a8",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0060-GuiPreferenceChangePointOrder/task-v1/env-1.0.1/linux/GuiPreferenceChangePointOrder-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0060-GuiPreferenceChangePointOrder/task-v1/env-1.0.1/linux/GuiPreferenceChangePointOrder-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 42608,
+          "sha256": "4109211d22b14df437cd18a3c68bd07527e01f16457186fa46edcf6bbca73fd8",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiMinimalClarificationTravel": {
+      "task_id": 61,
+      "task_name": "GuiMinimalClarificationTravel",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0061-GuiMinimalClarificationTravel/task-v1/env-1.0.1/windows/GuiMinimalClarificationTravel-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0061-GuiMinimalClarificationTravel/task-v1/env-1.0.1/windows/GuiMinimalClarificationTravel-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 39000,
+          "sha256": "8a64333c6865edbba40ac523e29d72c27d9d3ec86c8bbb0f9fe93b571100e469",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0061-GuiMinimalClarificationTravel/task-v1/env-1.0.1/linux/GuiMinimalClarificationTravel-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0061-GuiMinimalClarificationTravel/task-v1/env-1.0.1/linux/GuiMinimalClarificationTravel-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 38990,
+          "sha256": "5581368d56e98da3f9cf53b0a6e975cf8a95711a2b3b93699d25cf8bde087f97",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiProactiveMeetingConsent": {
+      "task_id": 62,
+      "task_name": "GuiProactiveMeetingConsent",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0062-GuiProactiveMeetingConsent/task-v1/env-1.0.1/windows/GuiProactiveMeetingConsent-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0062-GuiProactiveMeetingConsent/task-v1/env-1.0.1/windows/GuiProactiveMeetingConsent-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 37941,
+          "sha256": "5b1616220b1e7cac7a801d4adb3d955581fa631a9e8c546fe04c363bb8bf2cba",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0062-GuiProactiveMeetingConsent/task-v1/env-1.0.1/linux/GuiProactiveMeetingConsent-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0062-GuiProactiveMeetingConsent/task-v1/env-1.0.1/linux/GuiProactiveMeetingConsent-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 37933,
+          "sha256": "42627c004e3983433a56ebfdea3f921e4c8fe46cbbd1b6ab67b672555df14790",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiSharedDeviceProfileIsolation": {
+      "task_id": 63,
+      "task_name": "GuiSharedDeviceProfileIsolation",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0063-GuiSharedDeviceProfileIsolation/task-v1/env-1.0.1/windows/GuiSharedDeviceProfileIsolation-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0063-GuiSharedDeviceProfileIsolation/task-v1/env-1.0.1/windows/GuiSharedDeviceProfileIsolation-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 42665,
+          "sha256": "eba1d3ec4dfa3ceeaa8c86251019659e5175f02b014d770d09996e87c624ee76",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0063-GuiSharedDeviceProfileIsolation/task-v1/env-1.0.1/linux/GuiSharedDeviceProfileIsolation-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0063-GuiSharedDeviceProfileIsolation/task-v1/env-1.0.1/linux/GuiSharedDeviceProfileIsolation-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 42663,
+          "sha256": "08589211b0e8a7dcbe4c5544d01417403e02f583563196f2df9a57ce421ae748",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiProgressiveInstructionRevision": {
+      "task_id": 64,
+      "task_name": "GuiProgressiveInstructionRevision",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0064-GuiProgressiveInstructionRevision/task-v1/env-1.0.1/windows/GuiProgressiveInstructionRevision-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0064-GuiProgressiveInstructionRevision/task-v1/env-1.0.1/windows/GuiProgressiveInstructionRevision-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 38729,
+          "sha256": "369b18640245dd72182790227285308c5ebf58bcaf29fe4c6e2a15a9351deae3",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0064-GuiProgressiveInstructionRevision/task-v1/env-1.0.1/linux/GuiProgressiveInstructionRevision-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0064-GuiProgressiveInstructionRevision/task-v1/env-1.0.1/linux/GuiProgressiveInstructionRevision-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 38733,
+          "sha256": "2c67fe5469a3d46b39269ab6b7cab56ca7d5497773550083b519296037f06e6a",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiPromptInjectionInvoiceApproval": {
+      "task_id": 65,
+      "task_name": "GuiPromptInjectionInvoiceApproval",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0065-GuiPromptInjectionInvoiceApproval/task-v1/env-1.0.1/windows/GuiPromptInjectionInvoiceApproval-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0065-GuiPromptInjectionInvoiceApproval/task-v1/env-1.0.1/windows/GuiPromptInjectionInvoiceApproval-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 39988,
+          "sha256": "e377a2460d5855032f73408f5d8486228f6bbd2827ceff994074b847f0c5da5e",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0065-GuiPromptInjectionInvoiceApproval/task-v1/env-1.0.1/linux/GuiPromptInjectionInvoiceApproval-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0065-GuiPromptInjectionInvoiceApproval/task-v1/env-1.0.1/linux/GuiPromptInjectionInvoiceApproval-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 39980,
+          "sha256": "5df00b49cd922824255c221c310f5d5c7af74e17491310d3cc2f04eb21ce958e",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiLeastPrivilegeDocumentShare": {
+      "task_id": 66,
+      "task_name": "GuiLeastPrivilegeDocumentShare",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0066-GuiLeastPrivilegeDocumentShare/task-v1/env-1.0.1/windows/GuiLeastPrivilegeDocumentShare-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0066-GuiLeastPrivilegeDocumentShare/task-v1/env-1.0.1/windows/GuiLeastPrivilegeDocumentShare-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 39089,
+          "sha256": "cfc10c7105b7eaff793a1045e9f39f7b652ab1d41749bb67cb82ed62f38fa717",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0066-GuiLeastPrivilegeDocumentShare/task-v1/env-1.0.1/linux/GuiLeastPrivilegeDocumentShare-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0066-GuiLeastPrivilegeDocumentShare/task-v1/env-1.0.1/linux/GuiLeastPrivilegeDocumentShare-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 39084,
+          "sha256": "10115514e358050ad1f773543349c51ad4018a0b948ad8e98888d11ee435a887",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiPhishingOverlayTransfer": {
+      "task_id": 67,
+      "task_name": "GuiPhishingOverlayTransfer",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0067-GuiPhishingOverlayTransfer/task-v1/env-1.0.1/windows/GuiPhishingOverlayTransfer-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0067-GuiPhishingOverlayTransfer/task-v1/env-1.0.1/windows/GuiPhishingOverlayTransfer-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 40233,
+          "sha256": "5125968a608eef6b55d434c1afcba74ecce732c3582c5ec369e08b97081c3701",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0067-GuiPhishingOverlayTransfer/task-v1/env-1.0.1/linux/GuiPhishingOverlayTransfer-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0067-GuiPhishingOverlayTransfer/task-v1/env-1.0.1/linux/GuiPhishingOverlayTransfer-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 40226,
+          "sha256": "ac4c0ef47332cf48c5270faee8c0fe0f77758e77a9a7cdf2da8089d3a654bd50",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GuiAuditedExpenseReconciliation": {
+      "task_id": 68,
+      "task_name": "GuiAuditedExpenseReconciliation",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0068-GuiAuditedExpenseReconciliation/task-v1/env-1.0.1/windows/GuiAuditedExpenseReconciliation-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0068-GuiAuditedExpenseReconciliation/task-v1/env-1.0.1/windows/GuiAuditedExpenseReconciliation-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 46517,
+          "sha256": "47aac660e99a26d2146b5d5efb8411e8b4949c5ffd8a71b43be8120990216485",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0068-GuiAuditedExpenseReconciliation/task-v1/env-1.0.1/linux/GuiAuditedExpenseReconciliation-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0068-GuiAuditedExpenseReconciliation/task-v1/env-1.0.1/linux/GuiAuditedExpenseReconciliation-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 46508,
+          "sha256": "121ceb9ceba4f9fcda3842fab8c8e0902801bc60c7d362ba39bfeee9d85e6e8b",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ColorGradientMaterialMatch3D": {
+      "task_id": 69,
+      "task_name": "ColorGradientMaterialMatch3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0069-ColorGradientMaterialMatch3D/task-v1/env-1.0.1/windows/ColorGradientMaterialMatch3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0069-ColorGradientMaterialMatch3D/task-v1/env-1.0.1/windows/ColorGradientMaterialMatch3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 54922,
+          "sha256": "6d0bc238af82057bab80181f73386d2cebfa18dec3780601d55a117526b02dde",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0069-ColorGradientMaterialMatch3D/task-v1/env-1.0.1/linux/ColorGradientMaterialMatch3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0069-ColorGradientMaterialMatch3D/task-v1/env-1.0.1/linux/ColorGradientMaterialMatch3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 70397,
+          "sha256": "1e879363ca8c08fa82956ccbfbdffe3092ae9d905310e46b5550c737662d8613",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ColorConstancyWhiteBalance3D": {
+      "task_id": 70,
+      "task_name": "ColorConstancyWhiteBalance3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0070-ColorConstancyWhiteBalance3D/task-v1/env-1.0.1/windows/ColorConstancyWhiteBalance3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0070-ColorConstancyWhiteBalance3D/task-v1/env-1.0.1/windows/ColorConstancyWhiteBalance3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 220214,
+          "sha256": "4b692daa55be28906b2beb43c1ea6cbe7a1e7c0d540fa5f745bf7cbd1dc87b42",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0070-ColorConstancyWhiteBalance3D/task-v1/env-1.0.1/linux/ColorConstancyWhiteBalance3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0070-ColorConstancyWhiteBalance3D/task-v1/env-1.0.1/linux/ColorConstancyWhiteBalance3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 1001827,
+          "sha256": "daf66ec43686be5fdf3994024eb5f07bf261c6be46254079da537696e7dd61ba",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "AdditiveSpotlightMix3D": {
+      "task_id": 71,
+      "task_name": "AdditiveSpotlightMix3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0071-AdditiveSpotlightMix3D/task-v1/env-1.0.1/windows/AdditiveSpotlightMix3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0071-AdditiveSpotlightMix3D/task-v1/env-1.0.1/windows/AdditiveSpotlightMix3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 55639,
+          "sha256": "23245a4b7c005c5f2f60e04034cac3700e62161a61850c877d0c177aaa37830f",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0071-AdditiveSpotlightMix3D/task-v1/env-1.0.1/linux/AdditiveSpotlightMix3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0071-AdditiveSpotlightMix3D/task-v1/env-1.0.1/linux/AdditiveSpotlightMix3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 75755,
+          "sha256": "bcf5686b7168523a9f1793c9ceb167900a3df38aa1ecf48998e3a578ffb30d89",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "TransparentFilterComposite2D": {
+      "task_id": 72,
+      "task_name": "TransparentFilterComposite2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0072-TransparentFilterComposite2D/task-v1/env-1.0.1/windows/TransparentFilterComposite2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0072-TransparentFilterComposite2D/task-v1/env-1.0.1/windows/TransparentFilterComposite2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 34678,
+          "sha256": "88087efdadd675d9a21d7a157944068092fc11c6b7f4f17a9aca7321dc8d77f8",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0072-TransparentFilterComposite2D/task-v1/env-1.0.1/linux/TransparentFilterComposite2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0072-TransparentFilterComposite2D/task-v1/env-1.0.1/linux/TransparentFilterComposite2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 34675,
+          "sha256": "234240b1d3c7560a61cc9686d7a3f3ab33ea3a6d18d34789e96a46c8eafb7a08",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CamouflageExitTracker2D": {
+      "task_id": 73,
+      "task_name": "CamouflageExitTracker2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0073-CamouflageExitTracker2D/task-v1/env-1.0.1/windows/CamouflageExitTracker2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0073-CamouflageExitTracker2D/task-v1/env-1.0.1/windows/CamouflageExitTracker2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 33281,
+          "sha256": "1985d852b5eb7d8d7e08578a64cf1432073f48100c24662d3c8c1ee8926b56ac",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0073-CamouflageExitTracker2D/task-v1/env-1.0.1/linux/CamouflageExitTracker2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0073-CamouflageExitTracker2D/task-v1/env-1.0.1/linux/CamouflageExitTracker2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 33279,
+          "sha256": "9dc8cb9569da80ca5d5eb1c171589ba875882e6b672814c8dfd882f7bd30c4d3",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ChromaticOddPatchSequence2D": {
+      "task_id": 74,
+      "task_name": "ChromaticOddPatchSequence2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0074-ChromaticOddPatchSequence2D/task-v1/env-1.0.1/windows/ChromaticOddPatchSequence2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0074-ChromaticOddPatchSequence2D/task-v1/env-1.0.1/windows/ChromaticOddPatchSequence2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 32532,
+          "sha256": "8c55eab96941ef75b7255881f1c21edb84bef355e99ca836cd138bd160e051ee",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0074-ChromaticOddPatchSequence2D/task-v1/env-1.0.1/linux/ChromaticOddPatchSequence2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0074-ChromaticOddPatchSequence2D/task-v1/env-1.0.1/linux/ChromaticOddPatchSequence2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 32523,
+          "sha256": "6e8d54b521789024dae5c7e5ac92141b342e991b2014a2fa2ee91594e4c646f6",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ColorBindingCurtainMemory3D": {
+      "task_id": 75,
+      "task_name": "ColorBindingCurtainMemory3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0075-ColorBindingCurtainMemory3D/task-v1/env-1.0.1/windows/ColorBindingCurtainMemory3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0075-ColorBindingCurtainMemory3D/task-v1/env-1.0.1/windows/ColorBindingCurtainMemory3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 25930,
+          "sha256": "20dd1e9da9f7b3e5a9150c09eb7315fb3d68d944505b7741d97f23ea60d7778d",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0075-ColorBindingCurtainMemory3D/task-v1/env-1.0.1/linux/ColorBindingCurtainMemory3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0075-ColorBindingCurtainMemory3D/task-v1/env-1.0.1/linux/ColorBindingCurtainMemory3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 25934,
+          "sha256": "b96ec9a134f4d973378cfe98e071bec9e5a1b49ebbbb21e10532d243dcc44ba8",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ColorIllusionMaskProbe2D": {
+      "task_id": 76,
+      "task_name": "ColorIllusionMaskProbe2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0076-ColorIllusionMaskProbe2D/task-v1/env-1.0.1/windows/ColorIllusionMaskProbe2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0076-ColorIllusionMaskProbe2D/task-v1/env-1.0.1/windows/ColorIllusionMaskProbe2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 31488,
+          "sha256": "c360beb91565b48d529858f4ffcad984309c34a573ba331dbcf6119e823cd18b",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0076-ColorIllusionMaskProbe2D/task-v1/env-1.0.1/linux/ColorIllusionMaskProbe2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0076-ColorIllusionMaskProbe2D/task-v1/env-1.0.1/linux/ColorIllusionMaskProbe2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 31479,
+          "sha256": "b733f28ecdf55e7c09cdf1ad871607975d7377a40d08f35e39b2ff872ae181af",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "HueOrderCaps2D": {
+      "task_id": 77,
+      "task_name": "HueOrderCaps2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0077-HueOrderCaps2D/task-v1/env-1.0.1/windows/HueOrderCaps2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0077-HueOrderCaps2D/task-v1/env-1.0.1/windows/HueOrderCaps2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 37416,
+          "sha256": "ae795480128962099d2b1bee1e86b1b1bff3cddd62dd94c884ea03bf857ab1b9",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0077-HueOrderCaps2D/task-v1/env-1.0.1/linux/HueOrderCaps2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0077-HueOrderCaps2D/task-v1/env-1.0.1/linux/HueOrderCaps2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 37414,
+          "sha256": "59273e569636a0d30d52cd9933150570666acb060495de7a034029234637a55f",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "LightnessChromaLadder2D": {
+      "task_id": 78,
+      "task_name": "LightnessChromaLadder2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0078-LightnessChromaLadder2D/task-v1/env-1.0.1/windows/LightnessChromaLadder2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0078-LightnessChromaLadder2D/task-v1/env-1.0.1/windows/LightnessChromaLadder2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 41379,
+          "sha256": "ee4fa3268d7a45d9dc4f042116e01d233b267438dfb7d7c3a4f1954984863f07",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0078-LightnessChromaLadder2D/task-v1/env-1.0.1/linux/LightnessChromaLadder2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0078-LightnessChromaLadder2D/task-v1/env-1.0.1/linux/LightnessChromaLadder2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 41375,
+          "sha256": "14357d6376cddb8e9f033bbb3d7a3459a34104d875455ba9bb024e490a2932e0",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ChromaticAreaQuotaMosaic2D": {
+      "task_id": 79,
+      "task_name": "ChromaticAreaQuotaMosaic2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0079-ChromaticAreaQuotaMosaic2D/task-v1/env-1.0.1/windows/ChromaticAreaQuotaMosaic2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0079-ChromaticAreaQuotaMosaic2D/task-v1/env-1.0.1/windows/ChromaticAreaQuotaMosaic2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 36438,
+          "sha256": "0f98130583d7081242078059d7740dfef8a28f6cbcc3cb0f274186b72ad59918",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0079-ChromaticAreaQuotaMosaic2D/task-v1/env-1.0.1/linux/ChromaticAreaQuotaMosaic2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0079-ChromaticAreaQuotaMosaic2D/task-v1/env-1.0.1/linux/ChromaticAreaQuotaMosaic2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 36437,
+          "sha256": "33084b13c6573c0ccb2900195969894a7e532c635397747de62f070277b8a120",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "NonPrototypicalColorBoundary2D": {
+      "task_id": 80,
+      "task_name": "NonPrototypicalColorBoundary2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0080-NonPrototypicalColorBoundary2D/task-v1/env-1.0.1/windows/NonPrototypicalColorBoundary2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0080-NonPrototypicalColorBoundary2D/task-v1/env-1.0.1/windows/NonPrototypicalColorBoundary2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 35384,
+          "sha256": "654a1ec36b3923ea12b4cfb2c53b76c5eff09e41a4fe4e4c241236601d9bbf61",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0080-NonPrototypicalColorBoundary2D/task-v1/env-1.0.1/linux/NonPrototypicalColorBoundary2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0080-NonPrototypicalColorBoundary2D/task-v1/env-1.0.1/linux/NonPrototypicalColorBoundary2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 35370,
+          "sha256": "14b0a0e3c486c4c185e8d3e9df2caf02b8adaf92a6d50b23889889394fee7239",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CameraChartProfileTransfer2D": {
+      "task_id": 81,
+      "task_name": "CameraChartProfileTransfer2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0081-CameraChartProfileTransfer2D/task-v1/env-1.0.1/windows/CameraChartProfileTransfer2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0081-CameraChartProfileTransfer2D/task-v1/env-1.0.1/windows/CameraChartProfileTransfer2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 38157,
+          "sha256": "6925678d62eba7530e826404eab468a6888640fcccce080d829b1604836bf943",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0081-CameraChartProfileTransfer2D/task-v1/env-1.0.1/linux/CameraChartProfileTransfer2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0081-CameraChartProfileTransfer2D/task-v1/env-1.0.1/linux/CameraChartProfileTransfer2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 38156,
+          "sha256": "965d741dba66719e311e0cf149ba07b334956a894c13848b008bb5caa729babe",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CmykRegistrationProof2D": {
+      "task_id": 82,
+      "task_name": "CmykRegistrationProof2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0082-CmykRegistrationProof2D/task-v1/env-1.0.1/windows/CmykRegistrationProof2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0082-CmykRegistrationProof2D/task-v1/env-1.0.1/windows/CmykRegistrationProof2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 35808,
+          "sha256": "91319c793a6a270e993a463031953b73caa8de86878a2758742f29c5a05554b3",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0082-CmykRegistrationProof2D/task-v1/env-1.0.1/linux/CmykRegistrationProof2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0082-CmykRegistrationProof2D/task-v1/env-1.0.1/linux/CmykRegistrationProof2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 35807,
+          "sha256": "9b87486e3afc7d433297fc84d00acb03d60f8dab812375dfabc7d2af3f90676f",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ChromaticAberrationLensTune2D": {
+      "task_id": 83,
+      "task_name": "ChromaticAberrationLensTune2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0083-ChromaticAberrationLensTune2D/task-v1/env-1.0.1/windows/ChromaticAberrationLensTune2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0083-ChromaticAberrationLensTune2D/task-v1/env-1.0.1/windows/ChromaticAberrationLensTune2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 36339,
+          "sha256": "0fd019446fb924f3a663ff2a57e1c15c4aefc02283c0c82ed37802e7da46a7a6",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0083-ChromaticAberrationLensTune2D/task-v1/env-1.0.1/linux/ChromaticAberrationLensTune2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0083-ChromaticAberrationLensTune2D/task-v1/env-1.0.1/linux/ChromaticAberrationLensTune2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 36331,
+          "sha256": "85739cd988f5d71b97f2b83166e6223627b9f226793f2998539ade6aa0fec624",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "SurfaceColorDefectInspection3D": {
+      "task_id": 84,
+      "task_name": "SurfaceColorDefectInspection3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0084-SurfaceColorDefectInspection3D/task-v1/env-1.0.1/windows/SurfaceColorDefectInspection3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0084-SurfaceColorDefectInspection3D/task-v1/env-1.0.1/windows/SurfaceColorDefectInspection3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 55108,
+          "sha256": "0886131299a68947cb21f1d3823cb96ecb100c3e87cd0674be02d2c06a07a05d",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0084-SurfaceColorDefectInspection3D/task-v1/env-1.0.1/linux/SurfaceColorDefectInspection3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0084-SurfaceColorDefectInspection3D/task-v1/env-1.0.1/linux/SurfaceColorDefectInspection3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 70654,
+          "sha256": "c15214d7f9eb1851262eb325cbbe1053c3ee6a3fb52511675689339ea2958bee",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ChromaticCauseCounterfactual3D": {
+      "task_id": 85,
+      "task_name": "ChromaticCauseCounterfactual3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0085-ChromaticCauseCounterfactual3D/task-v1/env-1.0.1/windows/ChromaticCauseCounterfactual3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0085-ChromaticCauseCounterfactual3D/task-v1/env-1.0.1/windows/ChromaticCauseCounterfactual3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 54138,
+          "sha256": "97fb457ce6f31a424c6dbc0bdecd62178fa1c6db02627d967d6a25fc768360d6",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0085-ChromaticCauseCounterfactual3D/task-v1/env-1.0.1/linux/ChromaticCauseCounterfactual3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0085-ChromaticCauseCounterfactual3D/task-v1/env-1.0.1/linux/ChromaticCauseCounterfactual3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 69554,
+          "sha256": "f44f345fc68a36329d9069984b90355008e8bfcdd5d4d648aefb5af5855f0404",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "PaintLayerPeelForensics2D": {
+      "task_id": 86,
+      "task_name": "PaintLayerPeelForensics2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0086-PaintLayerPeelForensics2D/task-v1/env-1.0.1/windows/PaintLayerPeelForensics2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0086-PaintLayerPeelForensics2D/task-v1/env-1.0.1/windows/PaintLayerPeelForensics2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 37756,
+          "sha256": "a61f5a3e3180a71810ea25b7603491dd3636c07bb3d14755beaf763ac29b3aa1",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0086-PaintLayerPeelForensics2D/task-v1/env-1.0.1/linux/PaintLayerPeelForensics2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0086-PaintLayerPeelForensics2D/task-v1/env-1.0.1/linux/PaintLayerPeelForensics2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 37754,
+          "sha256": "340e8be4080a15e914dc2af67434dab1708f0f760fc718c3d0d1b6682208d5a9",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "DyeContaminationSourceTrace3D": {
+      "task_id": 87,
+      "task_name": "DyeContaminationSourceTrace3D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0087-DyeContaminationSourceTrace3D/task-v1/env-1.0.1/windows/DyeContaminationSourceTrace3D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0087-DyeContaminationSourceTrace3D/task-v1/env-1.0.1/windows/DyeContaminationSourceTrace3D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 60951,
+          "sha256": "55f4dd0f29b125b631640fa9c0dc2af2e59405c7ca8b2c66dc38d6691273eb6d",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0087-DyeContaminationSourceTrace3D/task-v1/env-1.0.1/linux/DyeContaminationSourceTrace3D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0087-DyeContaminationSourceTrace3D/task-v1/env-1.0.1/linux/DyeContaminationSourceTrace3D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 76334,
+          "sha256": "f4f426a2e486c70def0354fa44569489d250cb49cc7bbea34afa91a305ef8e99",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ColorTransferPipelineRepair2D": {
+      "task_id": 88,
+      "task_name": "ColorTransferPipelineRepair2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0088-ColorTransferPipelineRepair2D/task-v1/env-1.0.1/windows/ColorTransferPipelineRepair2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0088-ColorTransferPipelineRepair2D/task-v1/env-1.0.1/windows/ColorTransferPipelineRepair2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 38353,
+          "sha256": "296441b4f09d4863c96d7885c82425c4f6158c9c44c76be33554d9800fe1b958",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0088-ColorTransferPipelineRepair2D/task-v1/env-1.0.1/linux/ColorTransferPipelineRepair2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0088-ColorTransferPipelineRepair2D/task-v1/env-1.0.1/linux/ColorTransferPipelineRepair2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 38344,
+          "sha256": "1bea07f58b8f7d2ddfb94f3d826da02c31d5c3ac669aca7d95761ba40f20bc43",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "FalseColorHeatmapControl2D": {
+      "task_id": 89,
+      "task_name": "FalseColorHeatmapControl2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0089-FalseColorHeatmapControl2D/task-v1/env-1.0.1/windows/FalseColorHeatmapControl2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0089-FalseColorHeatmapControl2D/task-v1/env-1.0.1/windows/FalseColorHeatmapControl2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 36425,
+          "sha256": "35749205de2e8809882f139565a068acc14de067fae78d30d96cd4fd3bc45dde",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0089-FalseColorHeatmapControl2D/task-v1/env-1.0.1/linux/FalseColorHeatmapControl2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0089-FalseColorHeatmapControl2D/task-v1/env-1.0.1/linux/FalseColorHeatmapControl2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 36416,
+          "sha256": "a02dd1d3e74ffec1ed3e2a5477cf89153dcd87bf72c1c60848b0bde2b6724062",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ChromaticFlashProtocol2D": {
+      "task_id": 90,
+      "task_name": "ChromaticFlashProtocol2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0090-ChromaticFlashProtocol2D/task-v1/env-1.0.1/windows/ChromaticFlashProtocol2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0090-ChromaticFlashProtocol2D/task-v1/env-1.0.1/windows/ChromaticFlashProtocol2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 31610,
+          "sha256": "2c8a51e906672cacb22925df3adf7d3acf7c46ba2c93ca5acd1a291912f497b1",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0090-ChromaticFlashProtocol2D/task-v1/env-1.0.1/linux/ChromaticFlashProtocol2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0090-ChromaticFlashProtocol2D/task-v1/env-1.0.1/linux/ChromaticFlashProtocol2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 31602,
+          "sha256": "ab355d97c32fe11b30f9f1fd50372c9491594633526da26c82edc1c28a9cd74e",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ChromaticChecksumRepair2D": {
+      "task_id": 91,
+      "task_name": "ChromaticChecksumRepair2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0091-ChromaticChecksumRepair2D/task-v1/env-1.0.1/windows/ChromaticChecksumRepair2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0091-ChromaticChecksumRepair2D/task-v1/env-1.0.1/windows/ChromaticChecksumRepair2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 35048,
+          "sha256": "a07f3a61229ff6eee43ab00fe7accee2add8f4d3886ab9057d8e3eec2fb8e949",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0091-ChromaticChecksumRepair2D/task-v1/env-1.0.1/linux/ChromaticChecksumRepair2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0091-ChromaticChecksumRepair2D/task-v1/env-1.0.1/linux/ChromaticChecksumRepair2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 35043,
+          "sha256": "8a67cd83e41c3a276762501012e9d4ae3148e3e6241825cdae1d7f7445479239",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ColorWordConflictDispatch2D": {
+      "task_id": 92,
+      "task_name": "ColorWordConflictDispatch2D",
+      "task_version": "v1",
+      "env_version": "1.0.1",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0092-ColorWordConflictDispatch2D/task-v1/env-1.0.1/windows/ColorWordConflictDispatch2D-task-v1-env-1.0.1-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0092-ColorWordConflictDispatch2D/task-v1/env-1.0.1/windows/ColorWordConflictDispatch2D-task-v1-env-1.0.1-windows.zip",
+          "size_bytes": 33597,
+          "sha256": "87a599deb3f7fd8fd147f0a9bf80297923dab905c0cb6916140b7e10ddbba092",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0092-ColorWordConflictDispatch2D/task-v1/env-1.0.1/linux/ColorWordConflictDispatch2D-task-v1-env-1.0.1-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0092-ColorWordConflictDispatch2D/task-v1/env-1.0.1/linux/ColorWordConflictDispatch2D-task-v1-env-1.0.1-linux.zip",
+          "size_bytes": 33593,
+          "sha256": "0d14087edc91f183fc5ba12eb116f58a5bdd313e3d6c3125e17a21b1a6b3bb14",
           "archive_format": "zip"
         }
       }
