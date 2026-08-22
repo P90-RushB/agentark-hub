@@ -1,7 +1,7 @@
 {
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
-  "registry_created_at": "2026-08-22T11:49:39+00:00",
+  "registry_created_at": "2026-08-22T16:59:46+00:00",
   "current_release": "env-1.0.3",
   "tasks": {
     "MarbleStop": {
@@ -2912,6 +2912,578 @@
           "path": "artifacts/tasks/0100-0199/0135-FeedIntegrityQuarantine3D/task-1.0.0/env-1.0.3/linux/FeedIntegrityQuarantine3D-task-1.0.0-env-1.0.3-linux.zip",
           "size_bytes": 8950551,
           "sha256": "c16dfe4dbed42192e8636f5575e7e6c18f5ef141c27c6d2882e16919702473d0",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "VectorLatchLabyrinth2D": {
+      "task_id": 93,
+      "task_name": "VectorLatchLabyrinth2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0093-VectorLatchLabyrinth2D/task-v1/env-1.0.3/windows/VectorLatchLabyrinth2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0093-VectorLatchLabyrinth2D/task-v1/env-1.0.3/windows/VectorLatchLabyrinth2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 39250,
+          "sha256": "ccbdc55f404059bcd2af1e57f503086626e74d641af0a19d3845563cce0c2047",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0093-VectorLatchLabyrinth2D/task-v1/env-1.0.3/linux/VectorLatchLabyrinth2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0093-VectorLatchLabyrinth2D/task-v1/env-1.0.3/linux/VectorLatchLabyrinth2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 39244,
+          "sha256": "f3755682752d171682c315e6d7e03f6589c8f86fa64a6c4b88db2199ba719e41",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CoupledCompassChambers2D": {
+      "task_id": 94,
+      "task_name": "CoupledCompassChambers2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0094-CoupledCompassChambers2D/task-v1/env-1.0.3/windows/CoupledCompassChambers2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0094-CoupledCompassChambers2D/task-v1/env-1.0.3/windows/CoupledCompassChambers2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 41839,
+          "sha256": "8f9e37511b7db475c45a41fecd8cda0b5dedf65cf52f74ebb144d149d49de6c6",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0094-CoupledCompassChambers2D/task-v1/env-1.0.3/linux/CoupledCompassChambers2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0094-CoupledCompassChambers2D/task-v1/env-1.0.3/linux/CoupledCompassChambers2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 41830,
+          "sha256": "f39e7ba586cf0bb103937ea90f8a053483fa97458e2fdecbb96d93e98d6a68cd",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "RotatingBridgeIslands2D": {
+      "task_id": 95,
+      "task_name": "RotatingBridgeIslands2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0095-RotatingBridgeIslands2D/task-v1/env-1.0.3/windows/RotatingBridgeIslands2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0095-RotatingBridgeIslands2D/task-v1/env-1.0.3/windows/RotatingBridgeIslands2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 49467,
+          "sha256": "cd0bad54981c4cfa26255d61265469ff70a736a259c9a1b5bc07ba5411a5bdb3",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0095-RotatingBridgeIslands2D/task-v1/env-1.0.3/linux/RotatingBridgeIslands2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0095-RotatingBridgeIslands2D/task-v1/env-1.0.3/linux/RotatingBridgeIslands2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 49469,
+          "sha256": "e1487bfc66f41af014b26e79e3832f701373568ab87d6f6b5aa7005225eb7791",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "GravityPocketCourier2D": {
+      "task_id": 96,
+      "task_name": "GravityPocketCourier2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0096-GravityPocketCourier2D/task-v1/env-1.0.3/windows/GravityPocketCourier2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0096-GravityPocketCourier2D/task-v1/env-1.0.3/windows/GravityPocketCourier2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 45601,
+          "sha256": "b263238f873eff40fefee94b0c373f6c4f879b467c683b02df8b1c8a13079a86",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0096-GravityPocketCourier2D/task-v1/env-1.0.3/linux/GravityPocketCourier2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0096-GravityPocketCourier2D/task-v1/env-1.0.3/linux/GravityPocketCourier2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 45591,
+          "sha256": "427f78ca8988cd559aafc89302feb311bb7ba35e67f666a1c2d7384c34b3c20a",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task97_NeighborRuleSwitchboard2D": {
+      "task_id": 97,
+      "task_name": "Task97_NeighborRuleSwitchboard2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0097-Task97_NeighborRuleSwitchboard2D/task-v1/env-1.0.3/windows/Task97_NeighborRuleSwitchboard2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0097-Task97_NeighborRuleSwitchboard2D/task-v1/env-1.0.3/windows/Task97_NeighborRuleSwitchboard2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 41618,
+          "sha256": "2bad9b63fc499b14cc8e6223eb98cf314c0640f48389c77fee36296944f17e38",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0097-Task97_NeighborRuleSwitchboard2D/task-v1/env-1.0.3/linux/Task97_NeighborRuleSwitchboard2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0097-Task97_NeighborRuleSwitchboard2D/task-v1/env-1.0.3/linux/Task97_NeighborRuleSwitchboard2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 41612,
+          "sha256": "bc23e7c62e2fa4ebe203ae2887bb7a03970302833f06c328e0d39a0324a386ea",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task98_StencilOperatorPress2D": {
+      "task_id": 98,
+      "task_name": "Task98_StencilOperatorPress2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0098-Task98_StencilOperatorPress2D/task-v1/env-1.0.3/windows/Task98_StencilOperatorPress2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0098-Task98_StencilOperatorPress2D/task-v1/env-1.0.3/windows/Task98_StencilOperatorPress2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 48653,
+          "sha256": "3720d154ca39f7ca2cfe29658ee157b82c5610f5fc340051b2cf4d19b46772fb",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0098-Task98_StencilOperatorPress2D/task-v1/env-1.0.3/linux/Task98_StencilOperatorPress2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0098-Task98_StencilOperatorPress2D/task-v1/env-1.0.3/linux/Task98_StencilOperatorPress2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 48652,
+          "sha256": "93d325a92e6e46dd77e1f60006fefcff49e98050a3aa468f1abc493cc19a942c",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task99_UnknownMassBalance2D": {
+      "task_id": 99,
+      "task_name": "Task99_UnknownMassBalance2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0099-Task99_UnknownMassBalance2D/task-v1/env-1.0.3/windows/Task99_UnknownMassBalance2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0000-0099/0099-Task99_UnknownMassBalance2D/task-v1/env-1.0.3/windows/Task99_UnknownMassBalance2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 48968,
+          "sha256": "2dcf587b55a11b298371416b903893975d1debcf2cf6f9f4a437968776f00b79",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0000-0099/0099-Task99_UnknownMassBalance2D/task-v1/env-1.0.3/linux/Task99_UnknownMassBalance2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0000-0099/0099-Task99_UnknownMassBalance2D/task-v1/env-1.0.3/linux/Task99_UnknownMassBalance2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 48955,
+          "sha256": "fc2990470a7c77230200b5b23d82b9a55de77067ef1f1426620ae31756c1c27e",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task100_PulseOrderCircuit2D": {
+      "task_id": 100,
+      "task_name": "Task100_PulseOrderCircuit2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0100-Task100_PulseOrderCircuit2D/task-v1/env-1.0.3/windows/Task100_PulseOrderCircuit2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0100-Task100_PulseOrderCircuit2D/task-v1/env-1.0.3/windows/Task100_PulseOrderCircuit2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 60867,
+          "sha256": "dc187693d69a2d500b37795e57d665b0ca1bd6d7b90bc87dd283a7c1ddd659b7",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0100-Task100_PulseOrderCircuit2D/task-v1/env-1.0.3/linux/Task100_PulseOrderCircuit2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0100-Task100_PulseOrderCircuit2D/task-v1/env-1.0.3/linux/Task100_PulseOrderCircuit2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 60853,
+          "sha256": "905b28ea4d4608ca51e11d9398bb277dec2df6c36093113ef3a9ca28d7dfe3dc",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task101_FogBeaconCartography2D": {
+      "task_id": 101,
+      "task_name": "Task101_FogBeaconCartography2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0101-Task101_FogBeaconCartography2D/task-v1/env-1.0.3/windows/Task101_FogBeaconCartography2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0101-Task101_FogBeaconCartography2D/task-v1/env-1.0.3/windows/Task101_FogBeaconCartography2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 43186,
+          "sha256": "60cfaa2af2b7e95efad1c526e0d47d49fd8f347d316c8a67ce72737646c8fc2b",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0101-Task101_FogBeaconCartography2D/task-v1/env-1.0.3/linux/Task101_FogBeaconCartography2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0101-Task101_FogBeaconCartography2D/task-v1/env-1.0.3/linux/Task101_FogBeaconCartography2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 43182,
+          "sha256": "879364fedcfdc6c709aee5f1914cae2ea450b7d01aa454000dcdad080873dc99",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task102_MirroredCrewDocking2D": {
+      "task_id": 102,
+      "task_name": "Task102_MirroredCrewDocking2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0102-Task102_MirroredCrewDocking2D/task-v1/env-1.0.3/windows/Task102_MirroredCrewDocking2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0102-Task102_MirroredCrewDocking2D/task-v1/env-1.0.3/windows/Task102_MirroredCrewDocking2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 44655,
+          "sha256": "887bc2c23836d43cc78439b11a160d169d5dd506571bf16d2bfd25270eca069a",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0102-Task102_MirroredCrewDocking2D/task-v1/env-1.0.3/linux/Task102_MirroredCrewDocking2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0102-Task102_MirroredCrewDocking2D/task-v1/env-1.0.3/linux/Task102_MirroredCrewDocking2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 44650,
+          "sha256": "be8b1ed99101eac3e8df380fb962b564346ecbbb68cbdd573d05cadf29d3e6d6",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task103_PatrolPhaseRescue2D": {
+      "task_id": 103,
+      "task_name": "Task103_PatrolPhaseRescue2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0103-Task103_PatrolPhaseRescue2D/task-v1/env-1.0.3/windows/Task103_PatrolPhaseRescue2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0103-Task103_PatrolPhaseRescue2D/task-v1/env-1.0.3/windows/Task103_PatrolPhaseRescue2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 83340,
+          "sha256": "5656ccbc98684c2b5ea4f96c37e292cc09951aef5f2cedaa50e326147053b83d",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0103-Task103_PatrolPhaseRescue2D/task-v1/env-1.0.3/linux/Task103_PatrolPhaseRescue2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0103-Task103_PatrolPhaseRescue2D/task-v1/env-1.0.3/linux/Task103_PatrolPhaseRescue2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 86967,
+          "sha256": "911af7d4628383b86fa7802798028ee2a793780a8a2f03527e1018d588bdd86e",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ConverterCrateWorkshop2D": {
+      "task_id": 104,
+      "task_name": "ConverterCrateWorkshop2D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0104-ConverterCrateWorkshop2D/task-v1/env-1.0.3/windows/ConverterCrateWorkshop2D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0104-ConverterCrateWorkshop2D/task-v1/env-1.0.3/windows/ConverterCrateWorkshop2D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 98012,
+          "sha256": "2da08973ff52128c35bfca0bc439bfbf201feb7c72bc7e943146f39b3a0a08ac",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0104-ConverterCrateWorkshop2D/task-v1/env-1.0.3/linux/ConverterCrateWorkshop2D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0104-ConverterCrateWorkshop2D/task-v1/env-1.0.3/linux/ConverterCrateWorkshop2D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 101649,
+          "sha256": "7a00de5caff86c6a54c272164e3318da13fa5ab9bb96a6c3fca3c9e5f91b8210",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ObserverFrameRelay3D": {
+      "task_id": 117,
+      "task_name": "ObserverFrameRelay3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0117-ObserverFrameRelay3D/task-v1/env-1.0.3/windows/ObserverFrameRelay3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0117-ObserverFrameRelay3D/task-v1/env-1.0.3/windows/ObserverFrameRelay3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 160396,
+          "sha256": "14d0dfa1295f1537f2f4e6b9209b1dee50042ebe0468aafca58a65a078874ffb",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0117-ObserverFrameRelay3D/task-v1/env-1.0.3/linux/ObserverFrameRelay3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0117-ObserverFrameRelay3D/task-v1/env-1.0.3/linux/ObserverFrameRelay3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 576836,
+          "sha256": "d3d0cb8c311810ae5258ababe322fe211f2c971a476318bae64b961dec6e9862",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CameraPoseOrdering3D": {
+      "task_id": 118,
+      "task_name": "CameraPoseOrdering3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0118-CameraPoseOrdering3D/task-v1/env-1.0.3/windows/CameraPoseOrdering3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0118-CameraPoseOrdering3D/task-v1/env-1.0.3/windows/CameraPoseOrdering3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 164334,
+          "sha256": "ea64b97e4f5da87a9ab6cd7555c05132f14c5dc7b0317a26a549c768fc80dcae",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0118-CameraPoseOrdering3D/task-v1/env-1.0.3/linux/CameraPoseOrdering3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0118-CameraPoseOrdering3D/task-v1/env-1.0.3/linux/CameraPoseOrdering3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 579163,
+          "sha256": "40f52bdd9e9a76d8a9d1fd47716ec11af0c1965c4e31c8db32efa7aac64d3be4",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "NovelViewPoseMatch3D": {
+      "task_id": 120,
+      "task_name": "NovelViewPoseMatch3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0120-NovelViewPoseMatch3D/task-v1/env-1.0.3/windows/NovelViewPoseMatch3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0120-NovelViewPoseMatch3D/task-v1/env-1.0.3/windows/NovelViewPoseMatch3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 55290,
+          "sha256": "68fd18157ff295db7fe0fa96a0ee1cf614e991a86eb75c24ec173bd11ae45b73",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0120-NovelViewPoseMatch3D/task-v1/env-1.0.3/linux/NovelViewPoseMatch3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0120-NovelViewPoseMatch3D/task-v1/env-1.0.3/linux/NovelViewPoseMatch3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 55286,
+          "sha256": "44b47408e1c986ca65d2dfbe2b1ce0c93080f97f7f138eeebc0de2c032ecb3da",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "SparseViewVoxelRebuild3D": {
+      "task_id": 121,
+      "task_name": "SparseViewVoxelRebuild3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0121-SparseViewVoxelRebuild3D/task-v1/env-1.0.3/windows/SparseViewVoxelRebuild3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0121-SparseViewVoxelRebuild3D/task-v1/env-1.0.3/windows/SparseViewVoxelRebuild3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 40088,
+          "sha256": "511dcc8fd2420a89761d8431ba5c6ac364b51f806b52c14ce4dc31128c8130f7",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0121-SparseViewVoxelRebuild3D/task-v1/env-1.0.3/linux/SparseViewVoxelRebuild3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0121-SparseViewVoxelRebuild3D/task-v1/env-1.0.3/linux/SparseViewVoxelRebuild3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 40087,
+          "sha256": "8494494764a523822b28bf2c4723bf1208cb0248a501bd57766a2c5101d4bfe7",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "OcclusionDepthOrder3D": {
+      "task_id": 123,
+      "task_name": "OcclusionDepthOrder3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0123-OcclusionDepthOrder3D/task-v1/env-1.0.3/windows/OcclusionDepthOrder3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0123-OcclusionDepthOrder3D/task-v1/env-1.0.3/windows/OcclusionDepthOrder3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 37736,
+          "sha256": "70de8ebdaab08f43f13d40927702f4fa96c851a6f2594273809ae0528a3cb535",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0123-OcclusionDepthOrder3D/task-v1/env-1.0.3/linux/OcclusionDepthOrder3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0123-OcclusionDepthOrder3D/task-v1/env-1.0.3/linux/OcclusionDepthOrder3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 37731,
+          "sha256": "fb6d935658501e0d87a29657b6c9b43421a90a7020f0ea8b21c1b81fc7850998",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CameraRigCalibration3D": {
+      "task_id": 124,
+      "task_name": "CameraRigCalibration3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0124-CameraRigCalibration3D/task-v1/env-1.0.3/windows/CameraRigCalibration3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0124-CameraRigCalibration3D/task-v1/env-1.0.3/windows/CameraRigCalibration3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 38394,
+          "sha256": "ff329517cf8dec00bb688a0670cf8771df90d880115c4330340879da605e9cdc",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0124-CameraRigCalibration3D/task-v1/env-1.0.3/linux/CameraRigCalibration3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0124-CameraRigCalibration3D/task-v1/env-1.0.3/linux/CameraRigCalibration3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 38384,
+          "sha256": "e918ef5eb81ad6360b10ad8facf18c33d9aa727e2ad033c49d4d2d1561f782ed",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ActiveOcclusionInspection3D": {
+      "task_id": 126,
+      "task_name": "ActiveOcclusionInspection3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0126-ActiveOcclusionInspection3D/task-v1/env-1.0.3/windows/ActiveOcclusionInspection3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0126-ActiveOcclusionInspection3D/task-v1/env-1.0.3/windows/ActiveOcclusionInspection3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 68729,
+          "sha256": "5da5797f450004ae120388a191bade3111490ddb803265e9b524e85335ff6de7",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0126-ActiveOcclusionInspection3D/task-v1/env-1.0.3/linux/ActiveOcclusionInspection3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0126-ActiveOcclusionInspection3D/task-v1/env-1.0.3/linux/ActiveOcclusionInspection3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 69682,
+          "sha256": "787ff9fac7fb20e92de5d19794565a038b6b34fb8af6f22985bc8fd427cd802a",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "DisjointViewRouteRecall3D": {
+      "task_id": 132,
+      "task_name": "DisjointViewRouteRecall3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0132-DisjointViewRouteRecall3D/task-v1/env-1.0.3/windows/DisjointViewRouteRecall3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0132-DisjointViewRouteRecall3D/task-v1/env-1.0.3/windows/DisjointViewRouteRecall3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 688545,
+          "sha256": "c9b53f60d1f9ee63b22a0db3f3d281bad6e7f333c219e601ef2a14f6dffd98a8",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0132-DisjointViewRouteRecall3D/task-v1/env-1.0.3/linux/DisjointViewRouteRecall3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0132-DisjointViewRouteRecall3D/task-v1/env-1.0.3/linux/DisjointViewRouteRecall3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 1102876,
+          "sha256": "6b012576b4cb5a7e1a911ad79dc31655498c33919f8373877c3ce8cc7d7de454",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "MirrorReflectionGrounding3D": {
+      "task_id": 136,
+      "task_name": "MirrorReflectionGrounding3D",
+      "task_version": "1.0.0",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0136-MirrorReflectionGrounding3D/task-1.0.0/env-1.0.3/windows/MirrorReflectionGrounding3D-task-1.0.0-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0136-MirrorReflectionGrounding3D/task-1.0.0/env-1.0.3/windows/MirrorReflectionGrounding3D-task-1.0.0-env-1.0.3-windows.zip",
+          "size_bytes": 636282,
+          "sha256": "340dae26e741c442339f8371e2116ee2bef8ee4e21de50b61df0f6c5f84b1adb",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0136-MirrorReflectionGrounding3D/task-1.0.0/env-1.0.3/linux/MirrorReflectionGrounding3D-task-1.0.0-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0136-MirrorReflectionGrounding3D/task-1.0.0/env-1.0.3/linux/MirrorReflectionGrounding3D-task-1.0.0-env-1.0.3-linux.zip",
+          "size_bytes": 1232211,
+          "sha256": "22d38b73be8b780a759479e832672bea091ab9e1bb890f810fc38e733fefdba4",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ForcedPerspectiveRecovery3D": {
+      "task_id": 137,
+      "task_name": "ForcedPerspectiveRecovery3D",
+      "task_version": "1.0.0",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0137-ForcedPerspectiveRecovery3D/task-1.0.0/env-1.0.3/windows/ForcedPerspectiveRecovery3D-task-1.0.0-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0137-ForcedPerspectiveRecovery3D/task-1.0.0/env-1.0.3/windows/ForcedPerspectiveRecovery3D-task-1.0.0-env-1.0.3-windows.zip",
+          "size_bytes": 24306344,
+          "sha256": "f89f9e306658fef2fc6466a39e5427b49d8c343828fb567ace1a9d9dae61737c",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0137-ForcedPerspectiveRecovery3D/task-1.0.0/env-1.0.3/linux/ForcedPerspectiveRecovery3D-task-1.0.0-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0137-ForcedPerspectiveRecovery3D/task-1.0.0/env-1.0.3/linux/ForcedPerspectiveRecovery3D-task-1.0.0-env-1.0.3-linux.zip",
+          "size_bytes": 25736839,
+          "sha256": "7b8efdfb9749bb2cc225d1bda0459fc141c3e0f30cfab69fbb820058ef8b44da",
           "archive_format": "zip"
         }
       }
