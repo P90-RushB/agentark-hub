@@ -1,0 +1,25 @@
+---
+title: "Multi-View Change Attribution 3D"
+taskId: MultiViewChangeAttribution3D
+order: 1078
+dimension: 3d
+status: live
+tags: [3d, multi-view, change-attribution, camera-reasoning, object-pose, external-assets, function-tool]
+summary: "Compare baseline and current office feeds, attribute camera and object changes, and restore both."
+authorNote: "Camera-anchor drift and world-object pose changes must be disentangled across views."
+modUrl: ""
+videoUrl: ""
+cover: "/media/tasks/multi-view-change-attribution-3d.png"
+---
+
+## Task Brief
+
+Capture the baseline, compare it with the changed state across three labeled feeds, identify the altered camera anchor and the independently moved object, then restore both transformations.
+
+## Why It Matters
+
+It tests causal visual attribution: the agent must distinguish changes caused by the observer from changes in the observed world.
+
+## Author Note
+
+The cover is a real reset frame captured while replaying a released evaluation record against AgentArk env 1.0.3.

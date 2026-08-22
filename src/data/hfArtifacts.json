@@ -1,8 +1,8 @@
 {
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
-  "registry_created_at": "2026-07-19T16:48:12+00:00",
-  "current_release": "tasks-26-31-109-116-20260720",
+  "registry_created_at": "2026-08-22T11:49:39+00:00",
+  "current_release": "env-1.0.3",
   "tasks": {
     "MarbleStop": {
       "task_id": 0,
@@ -2425,25 +2425,25 @@
     "SubtractivePigmentRecipe2D": {
       "task_id": 109,
       "task_name": "SubtractivePigmentRecipe2D",
-      "task_version": "v1",
-      "env_version": "1.0.1",
+      "task_version": "v2",
+      "env_version": "1.0.3",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v1/env-1.0.1/windows/SubtractivePigmentRecipe2D-task-v1-env-1.0.1-windows.zip",
-          "path": "artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v1/env-1.0.1/windows/SubtractivePigmentRecipe2D-task-v1-env-1.0.1-windows.zip",
-          "size_bytes": 33919,
-          "sha256": "d9904d3c4a158b1868ff61bc09beaea2df25485a6b6932392e457ba560c21a69",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v2/env-1.0.3/windows/SubtractivePigmentRecipe2D-task-v2-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v2/env-1.0.3/windows/SubtractivePigmentRecipe2D-task-v2-env-1.0.3-windows.zip",
+          "size_bytes": 34103,
+          "sha256": "847b999866b890d5a8aede593ee7a33d1d5198fe008c3725b42621cbb78b3a60",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v1/env-1.0.1/linux/SubtractivePigmentRecipe2D-task-v1-env-1.0.1-linux.zip",
-          "path": "artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v1/env-1.0.1/linux/SubtractivePigmentRecipe2D-task-v1-env-1.0.1-linux.zip",
-          "size_bytes": 33918,
-          "sha256": "3efee6b1087154e98ca253fd801adb7c81d129b72d402c9f47f10bcc6f5436ee",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v2/env-1.0.3/linux/SubtractivePigmentRecipe2D-task-v2-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0109-SubtractivePigmentRecipe2D/task-v2/env-1.0.3/linux/SubtractivePigmentRecipe2D-task-v2-env-1.0.3-linux.zip",
+          "size_bytes": 34102,
+          "sha256": "987d9780a4b99b0feaedd9197450188e6a7d10cdd217e7943049f4ebcd7e8049",
           "archive_format": "zip"
         }
       }
@@ -2451,25 +2451,25 @@
     "SpectralMetamerLampLab2D": {
       "task_id": 110,
       "task_name": "SpectralMetamerLampLab2D",
-      "task_version": "v1",
-      "env_version": "1.0.1",
+      "task_version": "v2",
+      "env_version": "1.0.3",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v1/env-1.0.1/windows/SpectralMetamerLampLab2D-task-v1-env-1.0.1-windows.zip",
-          "path": "artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v1/env-1.0.1/windows/SpectralMetamerLampLab2D-task-v1-env-1.0.1-windows.zip",
-          "size_bytes": 32130,
-          "sha256": "2f5555a4a4c58e279c6da1264109ce98202378997c372e8b276620207c98f274",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v2/env-1.0.3/windows/SpectralMetamerLampLab2D-task-v2-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v2/env-1.0.3/windows/SpectralMetamerLampLab2D-task-v2-env-1.0.3-windows.zip",
+          "size_bytes": 32202,
+          "sha256": "5b7ac2599525e585190619929abc9bbb510cce17aa34b6e35fd96181f8b2bc46",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v1/env-1.0.1/linux/SpectralMetamerLampLab2D-task-v1-env-1.0.1-linux.zip",
-          "path": "artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v1/env-1.0.1/linux/SpectralMetamerLampLab2D-task-v1-env-1.0.1-linux.zip",
-          "size_bytes": 32124,
-          "sha256": "d44b551e67c04ea217ee86e6a8d17d1e3df05c4e94741c53cb6addec42942ddd",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v2/env-1.0.3/linux/SpectralMetamerLampLab2D-task-v2-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0110-SpectralMetamerLampLab2D/task-v2/env-1.0.3/linux/SpectralMetamerLampLab2D-task-v2-env-1.0.3-linux.zip",
+          "size_bytes": 32197,
+          "sha256": "3f7833e7815f4898b7b9550cef0f54361812d263e00f2dc0f58cf693c8c7c57b",
           "archive_format": "zip"
         }
       }
@@ -2477,25 +2477,25 @@
     "AccessiblePaletteRepair2D": {
       "task_id": 111,
       "task_name": "AccessiblePaletteRepair2D",
-      "task_version": "v1",
-      "env_version": "1.0.1",
+      "task_version": "v2",
+      "env_version": "1.0.3",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v1/env-1.0.1/windows/AccessiblePaletteRepair2D-task-v1-env-1.0.1-windows.zip",
-          "path": "artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v1/env-1.0.1/windows/AccessiblePaletteRepair2D-task-v1-env-1.0.1-windows.zip",
-          "size_bytes": 36096,
-          "sha256": "7750ab5f9b4793f606b682c42a7bff471765703d967138b11f06b9356d27b75b",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v2/env-1.0.3/windows/AccessiblePaletteRepair2D-task-v2-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v2/env-1.0.3/windows/AccessiblePaletteRepair2D-task-v2-env-1.0.3-windows.zip",
+          "size_bytes": 36208,
+          "sha256": "e372d28e02c8eeb62246048e5eea9df264938aebe2ee69ab40f0984a8a41f986",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v1/env-1.0.1/linux/AccessiblePaletteRepair2D-task-v1-env-1.0.1-linux.zip",
-          "path": "artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v1/env-1.0.1/linux/AccessiblePaletteRepair2D-task-v1-env-1.0.1-linux.zip",
-          "size_bytes": 36093,
-          "sha256": "e7f172d5077bc66e806eb9a80467c175d194206ec6904d651cf4ad35201b2af4",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v2/env-1.0.3/linux/AccessiblePaletteRepair2D-task-v2-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0111-AccessiblePaletteRepair2D/task-v2/env-1.0.3/linux/AccessiblePaletteRepair2D-task-v2-env-1.0.3-linux.zip",
+          "size_bytes": 36204,
+          "sha256": "7a4221ab1d5652726ff5931bf492ea1a30b2ea51d304bb2b7403c2adbe0f6cad",
           "archive_format": "zip"
         }
       }
@@ -2503,25 +2503,25 @@
     "StainedGlassProjection3D": {
       "task_id": 112,
       "task_name": "StainedGlassProjection3D",
-      "task_version": "v1",
-      "env_version": "1.0.1",
+      "task_version": "v2",
+      "env_version": "1.0.3",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v1/env-1.0.1/windows/StainedGlassProjection3D-task-v1-env-1.0.1-windows.zip",
-          "path": "artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v1/env-1.0.1/windows/StainedGlassProjection3D-task-v1-env-1.0.1-windows.zip",
-          "size_bytes": 37631,
-          "sha256": "3e95b2c1853dffe75d2bd5fb2f063a45dd24c19d7d7930d980d9fbfd63e93471",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v2/env-1.0.3/windows/StainedGlassProjection3D-task-v2-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v2/env-1.0.3/windows/StainedGlassProjection3D-task-v2-env-1.0.3-windows.zip",
+          "size_bytes": 37696,
+          "sha256": "9f7f9605b688be8ebb6988d230f44c6c074d2ee55e6b4ec2090306fd372bd41f",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v1/env-1.0.1/linux/StainedGlassProjection3D-task-v1-env-1.0.1-linux.zip",
-          "path": "artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v1/env-1.0.1/linux/StainedGlassProjection3D-task-v1-env-1.0.1-linux.zip",
-          "size_bytes": 37632,
-          "sha256": "fd3f8a4fe934646a34f30e5dd646c75881a88534319a1a638e2e5ed001b95c83",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v2/env-1.0.3/linux/StainedGlassProjection3D-task-v2-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0112-StainedGlassProjection3D/task-v2/env-1.0.3/linux/StainedGlassProjection3D-task-v2-env-1.0.3-linux.zip",
+          "size_bytes": 37700,
+          "sha256": "5f9427735d52582e91afc9e01d7d82e5df0c0ad8a6e2b83d612166dace351390",
           "archive_format": "zip"
         }
       }
@@ -2529,25 +2529,25 @@
     "ColoredFaceAssemblyCopy3D": {
       "task_id": 113,
       "task_name": "ColoredFaceAssemblyCopy3D",
-      "task_version": "v1",
-      "env_version": "1.0.1",
+      "task_version": "v2",
+      "env_version": "1.0.3",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v1/env-1.0.1/windows/ColoredFaceAssemblyCopy3D-task-v1-env-1.0.1-windows.zip",
-          "path": "artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v1/env-1.0.1/windows/ColoredFaceAssemblyCopy3D-task-v1-env-1.0.1-windows.zip",
-          "size_bytes": 41438,
-          "sha256": "0148c3adf6d675320a2a64a43d266858738fceeb00ac81b57422a1350528dab8",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v2/env-1.0.3/windows/ColoredFaceAssemblyCopy3D-task-v2-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v2/env-1.0.3/windows/ColoredFaceAssemblyCopy3D-task-v2-env-1.0.3-windows.zip",
+          "size_bytes": 43747,
+          "sha256": "cdce677716920c89e902cc2da09e42863c5d8092d8c0ed992fc23c189f4455f4",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v1/env-1.0.1/linux/ColoredFaceAssemblyCopy3D-task-v1-env-1.0.1-linux.zip",
-          "path": "artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v1/env-1.0.1/linux/ColoredFaceAssemblyCopy3D-task-v1-env-1.0.1-linux.zip",
-          "size_bytes": 41440,
-          "sha256": "5559338a57827ebf118e2bfa5dce23f7baba19cd6d7bfb5622e8f367176d68e6",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v2/env-1.0.3/linux/ColoredFaceAssemblyCopy3D-task-v2-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0113-ColoredFaceAssemblyCopy3D/task-v2/env-1.0.3/linux/ColoredFaceAssemblyCopy3D-task-v2-env-1.0.3-linux.zip",
+          "size_bytes": 43734,
+          "sha256": "3ef7eac98fb2a6f662c441a68476301f8e8e250858d7ac73ae874400f8c09621",
           "archive_format": "zip"
         }
       }
@@ -2555,25 +2555,25 @@
     "PaletteTransformationInduction2D": {
       "task_id": 114,
       "task_name": "PaletteTransformationInduction2D",
-      "task_version": "v1",
-      "env_version": "1.0.1",
+      "task_version": "v2",
+      "env_version": "1.0.3",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v1/env-1.0.1/windows/PaletteTransformationInduction2D-task-v1-env-1.0.1-windows.zip",
-          "path": "artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v1/env-1.0.1/windows/PaletteTransformationInduction2D-task-v1-env-1.0.1-windows.zip",
-          "size_bytes": 37164,
-          "sha256": "d4791960f2840293f74f87b674e605ecacc7b284b79e7b33ef9355c365a8e456",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v2/env-1.0.3/windows/PaletteTransformationInduction2D-task-v2-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v2/env-1.0.3/windows/PaletteTransformationInduction2D-task-v2-env-1.0.3-windows.zip",
+          "size_bytes": 37260,
+          "sha256": "397538723e3d014ae944514038eaaeed1582042139af50a6f59988e8c0089fe1",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v1/env-1.0.1/linux/PaletteTransformationInduction2D-task-v1-env-1.0.1-linux.zip",
-          "path": "artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v1/env-1.0.1/linux/PaletteTransformationInduction2D-task-v1-env-1.0.1-linux.zip",
-          "size_bytes": 37166,
-          "sha256": "95a79bef2ebb11c96d89a9779594f8f34af3fadeddfcda8afdbb8305cdbb7c2d",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v2/env-1.0.3/linux/PaletteTransformationInduction2D-task-v2-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0114-PaletteTransformationInduction2D/task-v2/env-1.0.3/linux/PaletteTransformationInduction2D-task-v2-env-1.0.3-linux.zip",
+          "size_bytes": 37264,
+          "sha256": "df7132b08665bbdc0a528a3619eebc962622a15b6aa74127634626819ca2dff4",
           "archive_format": "zip"
         }
       }
@@ -2581,25 +2581,25 @@
     "ChromaticConveyorRouting3D": {
       "task_id": 115,
       "task_name": "ChromaticConveyorRouting3D",
-      "task_version": "v1",
-      "env_version": "1.0.1",
+      "task_version": "v2",
+      "env_version": "1.0.3",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v1/env-1.0.1/windows/ChromaticConveyorRouting3D-task-v1-env-1.0.1-windows.zip",
-          "path": "artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v1/env-1.0.1/windows/ChromaticConveyorRouting3D-task-v1-env-1.0.1-windows.zip",
-          "size_bytes": 34310,
-          "sha256": "e9f42a8ff8ff8c19e7a7d1bff28284e200ea1ca167e52f7cea8bdbdc9c997aad",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v2/env-1.0.3/windows/ChromaticConveyorRouting3D-task-v2-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v2/env-1.0.3/windows/ChromaticConveyorRouting3D-task-v2-env-1.0.3-windows.zip",
+          "size_bytes": 34413,
+          "sha256": "69afb1395dd4279bc077bcb98c066463394b7b104355aa037ec200125f4171cd",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v1/env-1.0.1/linux/ChromaticConveyorRouting3D-task-v1-env-1.0.1-linux.zip",
-          "path": "artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v1/env-1.0.1/linux/ChromaticConveyorRouting3D-task-v1-env-1.0.1-linux.zip",
-          "size_bytes": 34303,
-          "sha256": "e4a0b92a9c19863870523bb76e2da2a4cb601e9443ef5d542a6c4ef160df67b9",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v2/env-1.0.3/linux/ChromaticConveyorRouting3D-task-v2-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0115-ChromaticConveyorRouting3D/task-v2/env-1.0.3/linux/ChromaticConveyorRouting3D-task-v2-env-1.0.3-linux.zip",
+          "size_bytes": 34402,
+          "sha256": "77534f4d67d506f06e78ef2fefe7650dddfb6066d661c576140ff521a357afb3",
           "archive_format": "zip"
         }
       }
@@ -2607,25 +2607,311 @@
     "ReactionColorQuenchLab3D": {
       "task_id": 116,
       "task_name": "ReactionColorQuenchLab3D",
-      "task_version": "v1",
-      "env_version": "1.0.1",
+      "task_version": "v2",
+      "env_version": "1.0.3",
       "platforms": {
         "windows": {
           "label": "Windows",
           "platform": "windows",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v1/env-1.0.1/windows/ReactionColorQuenchLab3D-task-v1-env-1.0.1-windows.zip",
-          "path": "artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v1/env-1.0.1/windows/ReactionColorQuenchLab3D-task-v1-env-1.0.1-windows.zip",
-          "size_bytes": 30863,
-          "sha256": "4e2f437fa14503c8657a29d0f969849bd79cd18d9bb300bacd2472684193ad7e",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v2/env-1.0.3/windows/ReactionColorQuenchLab3D-task-v2-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v2/env-1.0.3/windows/ReactionColorQuenchLab3D-task-v2-env-1.0.3-windows.zip",
+          "size_bytes": 31016,
+          "sha256": "89d4587053fb5abe1277b8d5995d16b7e0119695282a7dd82474d1e704668914",
           "archive_format": "zip"
         },
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v1/env-1.0.1/linux/ReactionColorQuenchLab3D-task-v1-env-1.0.1-linux.zip",
-          "path": "artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v1/env-1.0.1/linux/ReactionColorQuenchLab3D-task-v1-env-1.0.1-linux.zip",
-          "size_bytes": 30857,
-          "sha256": "b4945a43b846bc93e8e39523f862ae640b6d869f3ad3fce000df586ffade6eca",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v2/env-1.0.3/linux/ReactionColorQuenchLab3D-task-v2-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0116-ReactionColorQuenchLab3D/task-v2/env-1.0.3/linux/ReactionColorQuenchLab3D-task-v2-env-1.0.3-linux.zip",
+          "size_bytes": 31009,
+          "sha256": "fcf2eca6c0f7d4f450324ed0d7649daed5c02e4e77cfeb127c22b7c51c8de803",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CrossViewCorrespondence3D": {
+      "task_id": 119,
+      "task_name": "CrossViewCorrespondence3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0119-CrossViewCorrespondence3D/task-v1/env-1.0.3/windows/CrossViewCorrespondence3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0119-CrossViewCorrespondence3D/task-v1/env-1.0.3/windows/CrossViewCorrespondence3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 115196,
+          "sha256": "544b579e6d12cf72f43b569f06004cbc8720215345dc429be67ca6c68b1764b6",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0119-CrossViewCorrespondence3D/task-v1/env-1.0.3/linux/CrossViewCorrespondence3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0119-CrossViewCorrespondence3D/task-v1/env-1.0.3/linux/CrossViewCorrespondence3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 115185,
+          "sha256": "5b8f72414012281545904bdf5143890508552b7ad55cd70d1af234c2cc58954b",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "StereoMarkerLocalization3D": {
+      "task_id": 122,
+      "task_name": "StereoMarkerLocalization3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0122-StereoMarkerLocalization3D/task-v1/env-1.0.3/windows/StereoMarkerLocalization3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0122-StereoMarkerLocalization3D/task-v1/env-1.0.3/windows/StereoMarkerLocalization3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 39048,
+          "sha256": "1a16f2abf2858d0edec2004dc8aac8545afe2a0a68cf535454434e9865c37f30",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0122-StereoMarkerLocalization3D/task-v1/env-1.0.3/linux/StereoMarkerLocalization3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0122-StereoMarkerLocalization3D/task-v1/env-1.0.3/linux/StereoMarkerLocalization3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 39044,
+          "sha256": "52174f6758beb445163ced21509430d9c6cb23b21cf920ba42f72eb0d65c162f",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ForestCampCraft": {
+      "task_id": 125,
+      "task_name": "ForestCampCraft",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0125-ForestCampCraft/task-v1/env-1.0.3/windows/ForestCampCraft-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0125-ForestCampCraft/task-v1/env-1.0.3/windows/ForestCampCraft-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 1083721,
+          "sha256": "8920ed5271513818ff94812833e5a288f66741f29f6843cbdbea450ed6626265",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0125-ForestCampCraft/task-v1/env-1.0.3/linux/ForestCampCraft-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0125-ForestCampCraft/task-v1/env-1.0.3/linux/ForestCampCraft-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 2239515,
+          "sha256": "962361d7fc3e0831f9012775eac29c13dc39f3245ce534cb71dcff87eda808d8",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "BudgetedNextBestView3D": {
+      "task_id": 127,
+      "task_name": "BudgetedNextBestView3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0127-BudgetedNextBestView3D/task-v1/env-1.0.3/windows/BudgetedNextBestView3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0127-BudgetedNextBestView3D/task-v1/env-1.0.3/windows/BudgetedNextBestView3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 1822120,
+          "sha256": "cc2125f01b664ad49a4b3529bf229cb1be06626ed39dfb2879f26d19c0d4ce24",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0127-BudgetedNextBestView3D/task-v1/env-1.0.3/linux/BudgetedNextBestView3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0127-BudgetedNextBestView3D/task-v1/env-1.0.3/linux/BudgetedNextBestView3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 1942946,
+          "sha256": "4f032d6d9ebe4b4154cbb55c9324ae1e497662f9aa94c4329c3c368b28ab81fb",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CoverageCameraPlacement3D": {
+      "task_id": 128,
+      "task_name": "CoverageCameraPlacement3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0128-CoverageCameraPlacement3D/task-v1/env-1.0.3/windows/CoverageCameraPlacement3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0128-CoverageCameraPlacement3D/task-v1/env-1.0.3/windows/CoverageCameraPlacement3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 1828799,
+          "sha256": "47cbd3eb5fae2e8987f0499587e459fb9648a8d1bcc83e13b37b6d4fa33a9048",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0128-CoverageCameraPlacement3D/task-v1/env-1.0.3/linux/CoverageCameraPlacement3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0128-CoverageCameraPlacement3D/task-v1/env-1.0.3/linux/CoverageCameraPlacement3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 1949456,
+          "sha256": "59db51bdcd7d9ee1668c00a939640c55eea0b49049dcf9bf57b7e114b3de98ad",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "PtzEvidenceSearch3D": {
+      "task_id": 129,
+      "task_name": "PtzEvidenceSearch3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0129-PtzEvidenceSearch3D/task-v1/env-1.0.3/windows/PtzEvidenceSearch3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0129-PtzEvidenceSearch3D/task-v1/env-1.0.3/windows/PtzEvidenceSearch3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 1830400,
+          "sha256": "740f534f19f27784e6f64dc9d61f3306ea53f232aabc98c46308858e78aa49ce",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0129-PtzEvidenceSearch3D/task-v1/env-1.0.3/linux/PtzEvidenceSearch3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0129-PtzEvidenceSearch3D/task-v1/env-1.0.3/linux/PtzEvidenceSearch3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 1951062,
+          "sha256": "c9c1e15a826075bcda9299a56550f4f4bed24fd023241a37059d4643b38ce2ca",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "EgomotionParallaxCalibration3D": {
+      "task_id": 130,
+      "task_name": "EgomotionParallaxCalibration3D",
+      "task_version": "v2",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0130-EgomotionParallaxCalibration3D/task-v2/env-1.0.3/windows/EgomotionParallaxCalibration3D-task-v2-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0130-EgomotionParallaxCalibration3D/task-v2/env-1.0.3/windows/EgomotionParallaxCalibration3D-task-v2-env-1.0.3-windows.zip",
+          "size_bytes": 19357735,
+          "sha256": "10f2ede62eb04f928740b103b97e1940b5a50796c09b7c9f9192510aa858f453",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0130-EgomotionParallaxCalibration3D/task-v2/env-1.0.3/linux/EgomotionParallaxCalibration3D-task-v2-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0130-EgomotionParallaxCalibration3D/task-v2/env-1.0.3/linux/EgomotionParallaxCalibration3D-task-v2-env-1.0.3-linux.zip",
+          "size_bytes": 21622710,
+          "sha256": "4a2e0f391513ce9edf5989a400f3a83a4699049328683320a8f3e849bbb440ea",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "MultiCameraHandoffTracking3D": {
+      "task_id": 131,
+      "task_name": "MultiCameraHandoffTracking3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0131-MultiCameraHandoffTracking3D/task-v1/env-1.0.3/windows/MultiCameraHandoffTracking3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0131-MultiCameraHandoffTracking3D/task-v1/env-1.0.3/windows/MultiCameraHandoffTracking3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 687690,
+          "sha256": "c2c59b888980a4826a566b07783ed33ca741d6e64bb86000c58765d82b43ecfa",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0131-MultiCameraHandoffTracking3D/task-v1/env-1.0.3/linux/MultiCameraHandoffTracking3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0131-MultiCameraHandoffTracking3D/task-v1/env-1.0.3/linux/MultiCameraHandoffTracking3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 1100798,
+          "sha256": "8e04ba880222acc4c92acf690e2546b36043b1e86d8ac4d7d63182422db3fa29",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "MultiViewTrajectoryExecution3D": {
+      "task_id": 133,
+      "task_name": "MultiViewTrajectoryExecution3D",
+      "task_version": "v1",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0133-MultiViewTrajectoryExecution3D/task-v1/env-1.0.3/windows/MultiViewTrajectoryExecution3D-task-v1-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0133-MultiViewTrajectoryExecution3D/task-v1/env-1.0.3/windows/MultiViewTrajectoryExecution3D-task-v1-env-1.0.3-windows.zip",
+          "size_bytes": 682852,
+          "sha256": "f033d8afb024ab135b11a6b36cc26179b20aac6794acb24d104ce404bce96d53",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0133-MultiViewTrajectoryExecution3D/task-v1/env-1.0.3/linux/MultiViewTrajectoryExecution3D-task-v1-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0133-MultiViewTrajectoryExecution3D/task-v1/env-1.0.3/linux/MultiViewTrajectoryExecution3D-task-v1-env-1.0.3-linux.zip",
+          "size_bytes": 1101256,
+          "sha256": "c7dd29322b6bd5443dfb9f5718f944422413ad56e5f14937ab3110447322e4d2",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "MultiViewChangeAttribution3D": {
+      "task_id": 134,
+      "task_name": "MultiViewChangeAttribution3D",
+      "task_version": "1.0.0",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0134-MultiViewChangeAttribution3D/task-1.0.0/env-1.0.3/windows/MultiViewChangeAttribution3D-task-1.0.0-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0134-MultiViewChangeAttribution3D/task-1.0.0/env-1.0.3/windows/MultiViewChangeAttribution3D-task-1.0.0-env-1.0.3-windows.zip",
+          "size_bytes": 2770080,
+          "sha256": "2ee16d368d1631c0ca67d04c0b78db57828c21a70ac409d1f269ae6590dec1e5",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0134-MultiViewChangeAttribution3D/task-1.0.0/env-1.0.3/linux/MultiViewChangeAttribution3D-task-1.0.0-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0134-MultiViewChangeAttribution3D/task-1.0.0/env-1.0.3/linux/MultiViewChangeAttribution3D-task-1.0.0-env-1.0.3-linux.zip",
+          "size_bytes": 3196274,
+          "sha256": "cea959b561a33fa56057690b7ddf5a70db1979de09fea1359137acfb614bfb74",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "FeedIntegrityQuarantine3D": {
+      "task_id": 135,
+      "task_name": "FeedIntegrityQuarantine3D",
+      "task_version": "1.0.0",
+      "env_version": "1.0.3",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0135-FeedIntegrityQuarantine3D/task-1.0.0/env-1.0.3/windows/FeedIntegrityQuarantine3D-task-1.0.0-env-1.0.3-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0135-FeedIntegrityQuarantine3D/task-1.0.0/env-1.0.3/windows/FeedIntegrityQuarantine3D-task-1.0.0-env-1.0.3-windows.zip",
+          "size_bytes": 7815156,
+          "sha256": "1ed1e8885cba10b233232ba02bb12a494644e026df04a23684290a9244a99b18",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0135-FeedIntegrityQuarantine3D/task-1.0.0/env-1.0.3/linux/FeedIntegrityQuarantine3D-task-1.0.0-env-1.0.3-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0135-FeedIntegrityQuarantine3D/task-1.0.0/env-1.0.3/linux/FeedIntegrityQuarantine3D-task-1.0.0-env-1.0.3-linux.zip",
+          "size_bytes": 8950551,
+          "sha256": "c16dfe4dbed42192e8636f5575e7e6c18f5ef141c27c6d2882e16919702473d0",
           "archive_format": "zip"
         }
       }
