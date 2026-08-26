@@ -307,6 +307,68 @@ h3 {
   margin: 8px 0 0;
 }
 
+.featured-videos {
+  padding-top: 30px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.video-card {
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #101816;
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-card-copy {
+  padding: 18px;
+}
+
+.video-card-copy p {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.video-card-copy h3 {
+  margin-bottom: 14px;
+}
+
+.video-card-copy a {
+  color: var(--accent-strong);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.video-card-copy a:hover {
+  text-decoration: underline;
+}
+
 .task-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -671,6 +733,7 @@ tr:last-child td {
   }
 
   .stats-panel,
+  .video-grid,
   .task-grid,
   .filter-controls {
     grid-template-columns: 1fr;

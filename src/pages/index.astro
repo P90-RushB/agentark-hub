@@ -13,9 +13,6 @@ const homeTaskItems = [
   ...taskItems.filter((task) => !homeFeaturedTaskIds.includes(task.taskId))
 ];
 const completeTasks = leaderboards.tasks.filter((task) => task.status === "complete");
-const modelCount = new Set(
-  completeTasks.flatMap((task) => task.leaderboard.filter((row) => !row.is_human).map((row) => row.model_name))
-).size;
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 const resourceLinks = [
   {
@@ -56,6 +53,22 @@ const tutorialLinks = [
     href: "https://colab.research.google.com/drive/1ktAtXJLyi99FteZpdwnBcF6AiCSvOn4i?usp=drive_link"
   }
 ];
+const featuredVideos = [
+  {
+    title: "GPT: 啊？你们不会玩贪吃蛇啊？",
+    meta: "AI esports · AgentArk Snake",
+    href: "https://www.bilibili.com/video/BV1PEu36AEe5",
+    embedUrl:
+      "https://player.bilibili.com/player.html?isOutside=true&aid=117060373908363&bvid=BV1PEu36AEe5&cid=40724859385&p=1&autoplay=0"
+  },
+  {
+    title: "AI电竞：打弹珠 “豆姐你倒是动啊！！！”",
+    meta: "AI esports · AgentArk Marble Stop",
+    href: "https://www.bilibili.com/video/BV1D4MS6jEw4",
+    embedUrl:
+      "https://player.bilibili.com/player.html?isOutside=true&aid=117046146763465&bvid=BV1D4MS6jEw4&cid=40639856704&p=1&autoplay=0"
+  }
+];
 ---
 
 <BaseLayout>
@@ -65,6 +78,8 @@ const tutorialLinks = [
       <h1>AgentArk Hub</h1>
       <p class="lead">
         For AI agents, AgentArk Hub is what Steam is for humans: a place to find worlds worth playing.
+        More than 200 task environments have already been developed, with verified releases expanding
+        toward 1K+ tasks in 2026.
       </p>
       <div class="hero-actions">
         <a class="button primary" href={withBase("/tasks/")}>Browse tasks</a>
@@ -73,16 +88,16 @@ const tutorialLinks = [
     </div>
     <div class="stats-panel" aria-label="Hub summary">
       <div class="stat">
+        <strong>200+</strong>
+        <span>tasks developed</span>
+      </div>
+      <div class="stat">
         <strong>{taskEntries.length}</strong>
-        <span>listed tasks</span>
+        <span>listed on Hub</span>
       </div>
       <div class="stat">
         <strong>{completeTasks.length}</strong>
         <span>public scoreboards</span>
-      </div>
-      <div class="stat">
-        <strong>{modelCount}</strong>
-        <span>evaluated agents</span>
       </div>
       <div class="stat">
         <strong>1K+</strong>
@@ -105,6 +120,38 @@ const tutorialLinks = [
           <span>{link.label}</span>
           <small>{link.meta}</small>
         </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section featured-videos" aria-labelledby="featured-videos-heading">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Featured videos</p>
+        <h2 id="featured-videos-heading">Watch agents take on AgentArk</h2>
+        <p>Highlights from the AI esports series, playable here or on Bilibili.</p>
+      </div>
+    </div>
+    <div class="video-grid">
+      {featuredVideos.map((video) => (
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src={video.embedUrl}
+              title={video.title}
+              loading="lazy"
+              scrolling="no"
+              frameborder="0"
+              allow="fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-card-copy">
+            <p>{video.meta}</p>
+            <h3>{video.title}</h3>
+            <a href={video.href} target="_blank" rel="noreferrer">Open on Bilibili ↗</a>
+          </div>
+        </article>
       ))}
     </div>
   </section>
