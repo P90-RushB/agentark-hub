@@ -124,6 +124,36 @@ const featuredVideos = [
     </div>
   </section>
 
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Kaggle benchmark</p>
+        <h2>AgentArk Bench</h2>
+        <p>
+          A growing selection of AgentArk tasks is also available on Kaggle Benchmarks for hosted
+          model evaluation. Kaggle leaderboard runs use temperature 1.0 when accepted, or omit it
+          for models that do not allow the parameter. The original Hub scoreboards use temperature
+          0.0, so the two sets of results reflect different evaluation settings.
+        </p>
+      </div>
+      <a class="button" href="https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench">
+        Open AgentArk Bench
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Task library</p>
+        <h2>Playable evaluation worlds</h2>
+        <p>Each card links to a task page with scoring context and downloadable task archives.</p>
+      </div>
+      <a class="button" href={withBase("/tasks/")}>Open task index</a>
+    </div>
+    <TaskBrowser client:load tasks={homeTaskItems} basePath={basePath} pageSize={9} />
+  </section>
+
   <section class="section featured-videos" aria-labelledby="featured-videos-heading">
     <div class="section-head">
       <div>
@@ -154,36 +184,6 @@ const featuredVideos = [
         </article>
       ))}
     </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Kaggle benchmark</p>
-        <h2>AgentArk Bench</h2>
-        <p>
-          A growing selection of AgentArk tasks is also available on Kaggle Benchmarks for hosted
-          model evaluation. Kaggle leaderboard runs use temperature 1.0 when accepted, or omit it
-          for models that do not allow the parameter. The original Hub scoreboards use temperature
-          0.0, so the two sets of results reflect different evaluation settings.
-        </p>
-      </div>
-      <a class="button" href="https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench">
-        Open AgentArk Bench
-      </a>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Task library</p>
-        <h2>Playable evaluation worlds</h2>
-        <p>Each card links to a task page with scoring context and downloadable task archives.</p>
-      </div>
-      <a class="button" href={withBase("/tasks/")}>Open task index</a>
-    </div>
-    <TaskBrowser client:load tasks={homeTaskItems} basePath={basePath} pageSize={9} />
   </section>
 
   <section class="section">
