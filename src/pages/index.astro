@@ -24,6 +24,7 @@ const tutorialLinks = [
   { label: "04 RL training tutorial", meta: "Playable online in Colab", href: "https://colab.research.google.com/drive/1ktAtXJLyi99FteZpdwnBcF6AiCSvOn4i?usp=drive_link" }
 ];
 const featuredVideos = [
+  { title: "我承认了，GPT 6，你是最会开火车的，像本up一样", meta: "AI esports · AgentArk Train", href: "https://www.bilibili.com/video/BV1z5b46UEF8", embedUrl: "https://player.bilibili.com/player.html?isOutside=true&aid=117224840890550&bvid=BV1z5b46UEF8&cid=41644396285&p=1&autoplay=0" },
   { title: "GPT: 啊？你们不会玩贪吃蛇啊？", meta: "AI esports · AgentArk Snake", href: "https://www.bilibili.com/video/BV1PEu36AEe5", embedUrl: "https://player.bilibili.com/player.html?isOutside=true&aid=117060373908363&bvid=BV1PEu36AEe5&cid=40724859385&p=1&autoplay=0" },
   { title: "AI电竞：打弹珠 “豆姐你倒是动啊！！！”", meta: "AI esports · AgentArk Marble Stop", href: "https://www.bilibili.com/video/BV1D4MS6jEw4", embedUrl: "https://player.bilibili.com/player.html?isOutside=true&aid=117046146763465&bvid=BV1D4MS6jEw4&cid=40639856704&p=1&autoplay=0" }
 ];
@@ -46,3 +47,9 @@ const featuredVideos = [
   <section class="section featured-videos" aria-labelledby="featured-videos-heading"><div class="section-head"><div><p class="eyebrow">Featured videos</p><h2 id="featured-videos-heading">Watch agents take on AgentArk</h2><p>Highlights from the AI esports series, playable here or on Bilibili.</p></div></div><div class="video-grid">{featuredVideos.map((video) => <article class="video-card"><div class="video-frame"><iframe src={video.embedUrl} title={video.title} loading="lazy" scrolling="no" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div><div class="video-card-copy"><p>{video.meta}</p><h3>{video.title}</h3><a href={video.href} target="_blank" rel="noreferrer">Open on Bilibili ↗</a></div></article>)}</div></section>
   <section class="section benchmark-section"><div class="section-head"><div><p class="eyebrow">Kaggle benchmark</p><h2>AgentArk Bench</h2><p>Kaggle is the public source of truth for benchmark results. This snapshot is refreshed when the Hub is built.</p></div><a class="button" href={kaggleBenchUrl}>View full leaderboard</a></div><div class="benchmark-panel"><div class="benchmark-list">{kaggleBench.leaderboard.slice(0, 5).map((row, index) => <div class="benchmark-row"><span>#{index + 1}</span><strong>{row.model}</strong><b>{formatPercent(row.score)}</b></div>)}</div><p class="muted">Kaggle snapshot: {new Date(kaggleBench.fetched_at).toLocaleDateString("en", { year: "numeric", month: "short", day: "numeric" })}. Scores are overall benchmark results, not Hub-local rankings.</p></div></section>
 </BaseLayout>
+
+<style is:global>
+  @media (min-width: 921px) {
+    .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>
