@@ -1,17 +1,19 @@
 # AgentArk Hub
 
-A GitHub Pages site for browsing AgentArk tasks and public aggregate leaderboards.
+A GitHub Pages storefront for all published AgentArk task Mods, with the
+canonical AgentArk Bench results surfaced from Kaggle.
 
 ## Local Development
 
 ```bash
 npm install
-npm run import:results
 npm run dev
 ```
 
-The import command reads local AgentArk JSONL files from `../agent-ark/tmp/task_name_migrated` and writes
-aggregate-only public data to `src/data/leaderboards.json`.
+`npm run build` refreshes two committed public snapshots before Astro builds:
+
+- published task Mods from the [AgentArk Hugging Face dataset](https://huggingface.co/datasets/P90-RushB/AgentArk);
+- the [AgentArk Bench leaderboard on Kaggle](https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench).
 
 ## Build
 
@@ -21,13 +23,6 @@ npm run preview
 ```
 
 The site is configured as a GitHub Pages project site with `base: "/agentark-hub"`.
-
-## Published Data Policy
-
-- Published leaderboard data is aggregate-only.
-- Published leaderboard data does not include local import paths or import warnings.
-- Raw JSONL trajectories, prompts, model responses, API config, usage, and image payloads are not committed.
-- Task3 is intentionally skipped in the first import until model seed coverage is complete.
 
 ## Manual Media
 

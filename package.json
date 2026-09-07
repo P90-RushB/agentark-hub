@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "import:results": "python scripts/import_results.py --results-dir ../agent-ark/tmp/task_name_migrated"
+    "sync:catalog": "node scripts/sync-catalog.mjs",
+    "build": "npm run sync:catalog && astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/mdx": "3.1.9",

@@ -1,45 +1,19 @@
 ---
-import LeaderboardTable from "../components/LeaderboardTable.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import leaderboards from "../data/leaderboards.json";
+import kaggleBench from "../data/kaggleBench.json";
+import { kaggleBenchUrl } from "../lib/tasks.js";
+import { formatPercent } from "../lib/site.js";
 ---
 
-<BaseLayout title="Leaderboard">
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Cross-task results</p>
-        <h1>Global leaderboard</h1>
-        <p>
-          Global rank uses champion count divided by participated games, excluding human
-          runs so tasks with different reward scales can still be compared fairly.
-        </p>
+<BaseLayout title="AgentArk Bench">
+  <section class="section benchmark-page">
+    <div class="section-head"><div><p class="eyebrow">Public benchmark</p><h1>AgentArk Bench on Kaggle</h1><p>AgentArk Hub no longer maintains a separate leaderboard. Kaggle Bench is the canonical public result surface.</p></div><a class="button primary" href={kaggleBenchUrl}>Open Kaggle Bench</a></div>
+    <div class="benchmark-panel large">
+      <div class="benchmark-summary"><strong>{kaggleBench.task_count}</strong><span>benchmark tasks</span><strong>{kaggleBench.model_count}</strong><span>evaluated models</span></div>
+      <div class="benchmark-list">
+        {kaggleBench.leaderboard.map((row, index) => <div class="benchmark-row"><span>#{index + 1}</span><strong>{row.model}</strong><b>{formatPercent(row.score)}</b></div>)}
       </div>
-    </div>
-    <LeaderboardTable rows={leaderboards.global_leaderboard} showTaskCount />
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Import notes</p>
-        <h2>Skipped or pending tasks</h2>
-      </div>
-    </div>
-    <div class="detail-panel">
-      {
-        leaderboards.skipped_tasks.length === 0 ? (
-          <p class="muted">No skipped tasks in the latest import.</p>
-        ) : (
-          <ul>
-            {leaderboards.skipped_tasks.map((task) => (
-              <li>
-                <strong>{task.task_id}</strong>: {task.reason}
-              </li>
-            ))}
-          </ul>
-        )
-      }
+      <p class="muted">Snapshot refreshed {new Date(kaggleBench.fetched_at).toLocaleString("en", { dateStyle: "medium", timeStyle: "short" })}. Follow the Kaggle link for live task-level results and benchmark details.</p>
     </div>
   </section>
 </BaseLayout>

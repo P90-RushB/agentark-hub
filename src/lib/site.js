@@ -2,6 +2,20 @@ export const SITE_TITLE = "AgentArk Hub";
 export const SITE_DESCRIPTION =
   "A task hub for evaluating multimodal agents that act by writing code into Unity environments.";
 
+export function stableSlug(value) {
+  return String(value)
+    .replace("2D", "2d")
+    .replace("3D", "3d")
+    .replace(/([A-Za-z])([0-9])/g, "$1-$2")
+    .replace(/([0-9])([A-Z])/g, "$1-$2")
+    .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
+    .replace(/_/g, "-")
+    .replace(/[^A-Za-z0-9-]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+    .toLowerCase();
+}
+
 export function withBase(path = "/") {
   const base = import.meta.env.BASE_URL || "/";
   const cleanBase = base.endsWith("/") ? base.slice(0, -1) : base;

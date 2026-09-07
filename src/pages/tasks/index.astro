@@ -1,24 +1,14 @@
 ---
 import TaskBrowser from "../../components/TaskBrowser.jsx";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { taskEntries } from "../../lib/tasks.js";
+import { publishedTaskCount, taskEntries } from "../../lib/tasks.js";
 
-const taskItems = taskEntries.map((entry) => entry.listItem);
-const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+const taskItems = taskEntries.map((entry) => entry.listItem).reverse();
 ---
 
-<BaseLayout title="Tasks">
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Task index</p>
-        <h1>AgentArk tasks</h1>
-        <p>
-          Browse the public AgentArk task catalog with aggregate scoreboards, task notes,
-          and visual covers generated from local environment runs.
-        </p>
-      </div>
-    </div>
-    <TaskBrowser client:load tasks={taskItems} basePath={basePath} pageSize={12} />
+<BaseLayout title="Store">
+  <section class="section store-index">
+    <div class="section-head"><div><p class="eyebrow">Published catalog</p><h1>{publishedTaskCount} AgentArk task mods</h1><p>Filter by format and task family, then open a listing for platform-specific downloads and task context.</p></div></div>
+    <TaskBrowser client:load tasks={taskItems} basePath={import.meta.env.BASE_URL.replace(/\/$/, "")} pageSize={18} />
   </section>
 </BaseLayout>

@@ -1,0 +1,69 @@
+{
+  "source_url": "https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench",
+  "fetched_at": "2026-09-07T09:22:05.933Z",
+  "task_count": 14,
+  "model_count": 9,
+  "task_ids": [
+    "agentark-marble-stop",
+    "agentark-pushbox",
+    "agentark-snake",
+    "agentark-starter-route-jump3d",
+    "agentark-color-fov-count",
+    "agentark-object-rotation-match",
+    "agentark-delay-train",
+    "agentark-gold-miner2d",
+    "agentark-gui-shopping-cart-from-chat",
+    "agentark-fishing-joy2d",
+    "agentark-zigzag-pillar-jump3d",
+    "agentark-stick-bridge-estimate2d",
+    "agentark-tetris-hard",
+    "agentark-tetris"
+  ],
+  "leaderboard": [
+    {
+      "model": "GPT-5.5",
+      "score": 0.7940282836210245,
+      "evaluated_at": "2026-08-17T08:24:37.067069Z"
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "score": 0.7922481487953553,
+      "evaluated_at": "2026-08-18T09:35:53.790495Z"
+    },
+    {
+      "model": "Gemini 3.8 Flash",
+      "score": 0.721671430477429,
+      "evaluated_at": "2026-09-05T13:58:49.685203Z"
+    },
+    {
+      "model": "Claude Opus 5",
+      "score": 0.6779253985481485,
+      "evaluated_at": "2026-09-04T15:53:53.08539Z"
+    },
+    {
+      "model": "Gemini 3.5 Flash",
+      "score": 0.4995796297776892,
+      "evaluated_at": "2026-08-20T03:48:55.893189Z"
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "score": 0.4865129637652663,
+      "evaluated_at": "2026-07-31T06:28:24.521873Z"
+    },
+    {
+      "model": "Gemini 3 Flash Preview",
+      "score": 0.3951158731117372,
+      "evaluated_at": "2026-09-02T12:01:07.35706Z"
+    },
+    {
+      "model": "Grok 4.20 Reasoning",
+      "score": 0.3164018527859891,
+      "evaluated_at": "2026-07-31T06:48:43.442326Z"
+    },
+    {
+      "model": "Grok 4.6",
+      "score": 0,
+      "evaluated_at": "2026-08-31T14:40:21.279447Z"
+    }
+  ]
+}

@@ -1,108 +1,35 @@
 ---
-import LeaderboardTable from "../../components/LeaderboardTable.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import leaderboards from "../../data/leaderboards.json";
-import { downloadsForTask, getTaskBySlug, hfDatasetUrl, taskEntries } from "../../lib/tasks.js";
+import { downloadsForTask, getTaskBySlug, hfDatasetUrl, kaggleBenchUrl, taskEntries } from "../../lib/tasks.js";
 import { formatBytes, withBase } from "../../lib/site.js";
 
 export function getStaticPaths() {
-  return taskEntries.map((entry) => ({
-    params: { slug: entry.slug }
-  }));
+  return taskEntries.map((entry) => ({ params: { slug: entry.slug } }));
 }
 
 const task = getTaskBySlug(Astro.params.slug);
 const Content = task.Content;
-const taskBoard = leaderboards.tasks.find((item) => item.task_id === task.data.taskId);
-const rows = taskBoard?.leaderboard ?? [];
 const downloads = downloadsForTask(task.data.taskId);
 ---
 
 <BaseLayout title={task.data.title} description={task.data.summary}>
   <section class="task-hero">
     <div class="task-hero-media">
-      {task.data.cover ? <img alt="" src={withBase(task.data.cover)} /> : <div class="fallback-cover"><strong>{task.data.title}</strong></div>}
+      {task.data.cover ? <img alt="" src={withBase(task.data.cover)} /> : <div class="fallback-cover"><span>Task {task.artifact.task_id}</span><strong>{task.data.title}</strong></div>}
     </div>
     <div class="task-hero-copy">
-      <div class="pill-row">
-        <span class="pill">{task.data.taskId}</span>
-        <span class="pill">{task.data.dimension.toUpperCase()}</span>
-        <span class={`pill ${task.data.status}`}>{task.data.status}</span>
-      </div>
-      <h1>{task.data.title}</h1>
-      <p class="lead">{task.data.summary}</p>
-      <div class="button-row">
-        {
-          downloads.length > 0 ? (
-            downloads.map((download, index) => (
-              <a class={`button ${index === 0 ? "primary" : ""}`} href={download.url}>
-                Download {download.label} zip
-              </a>
-            ))
-          ) : task.data.modUrl ? (
-            <a class="button primary" href={task.data.modUrl}>Download task zip</a>
-          ) : (
-            <span class="button primary disabled">Task archive pending</span>
-          )
-        }
-        {
-          task.data.videoUrl ? (
-            <a class="button" href={task.data.videoUrl}>Watch video</a>
-          ) : null
-        }
-      </div>
+      <div class="pill-row"><span class="pill">Task {task.artifact.task_id}</span><span class="pill">{task.data.dimension.toUpperCase()}</span>{task.data.tags.slice(0, 3).map((tag) => <span class="pill">{tag}</span>)}</div>
+      <h1>{task.data.title}</h1><p class="lead">{task.data.summary}</p>
+      <div class="button-row">{downloads.map((download, index) => <a class={`button ${index === 0 ? "primary" : ""}`} href={download.url}>Download {download.label}</a>)}</div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="detail-grid">
-      <article class="detail-panel content-body">
-        <Content />
-      </article>
-      <aside>
-        <div class="detail-panel">
-          <h2>Evaluation</h2>
-          <p class="muted">Score source: aggregate JSONL import from local AgentArk runs.</p>
-          <dl>
-            <dt>Leaderboard status</dt>
-            <dd>{taskBoard?.status ?? "pending"}</dd>
-            <dt>Seed set</dt>
-            <dd>{taskBoard?.seeds?.join(", ") || "pending"}</dd>
-            <dt>Models</dt>
-            <dd>{rows.length}</dd>
-          </dl>
-        </div>
-        <div class="detail-panel">
-          <h2>HF Downloads</h2>
-          <p class="muted">
-            Public dataset: <a href={hfDatasetUrl}>P90-RushB/AgentArk</a>
-          </p>
-          <div class="download-list">
-            {
-              downloads.length > 0 ? (
-                downloads.map((download) => (
-                  <a class="download-link" href={download.url}>
-                    <strong>{download.label} task zip</strong>
-                    <span>{formatBytes(download.size_bytes)}</span>
-                  </a>
-                ))
-              ) : (
-                <p class="muted">No public archive found for this task.</p>
-              )
-            }
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Scoreboard</p>
-        <h2>Task leaderboard</h2>
-      </div>
-    </div>
-    <LeaderboardTable rows={rows} />
-  </section>
+  <section class="section"><div class="detail-grid">
+    <article class="detail-panel content-body">{Content ? <Content /> : <><h2>Published task mod</h2><p>This task is available as a public AgentArk Mod. Download a platform archive to run it with a compatible AgentArk environment.</p></>}</article>
+    <aside>
+      <div class="detail-panel"><h2>Task profile</h2><dl><dt>Format</dt><dd>{task.data.dimension.toUpperCase()}</dd><dt>Tags</dt><dd>{task.data.tags.join(", ")}</dd><dt>Version</dt><dd>{task.artifact.task_version} · {task.artifact.env_version}</dd></dl></div>
+      <div class="detail-panel"><h2>Public artifacts</h2><p class="muted">Available from <a href={hfDatasetUrl}>P90-RushB/AgentArk</a>.</p><div class="download-list">{downloads.map((download) => <a class="download-link" href={download.url}><strong>{download.label} zip</strong><span>{formatBytes(download.size_bytes)}</span></a>)}</div></div>
+      <div class="detail-panel"><h2>Benchmark</h2><p class="muted">Public evaluation results live on Kaggle AgentArk Bench.</p><a class="button" href={kaggleBenchUrl}>Open AgentArk Bench</a></div>
+    </aside>
+  </div></section>
 </BaseLayout>

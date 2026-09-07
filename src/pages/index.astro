@@ -1,218 +1,57 @@
 ---
 import TaskBrowser from "../components/TaskBrowser.jsx";
-import LeaderboardTable from "../components/LeaderboardTable.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import leaderboards from "../data/leaderboards.json";
-import { taskEntries } from "../lib/tasks.js";
-import { withBase } from "../lib/site.js";
+import kaggleBench from "../data/kaggleBench.json";
+import { kaggleBenchUrl, publishedTaskCount, taskEntries } from "../lib/tasks.js";
+import { formatPercent, withBase } from "../lib/site.js";
 
 const taskItems = taskEntries.map((entry) => entry.listItem);
 const homeFeaturedTaskIds = ["StarterRouteJump3D", "DelayTrain", "FishingJoy2D"];
 const homeTaskItems = [
   ...homeFeaturedTaskIds.map((taskId) => taskItems.find((task) => task.taskId === taskId)).filter(Boolean),
-  ...taskItems.filter((task) => !homeFeaturedTaskIds.includes(task.taskId))
+  ...taskItems.filter((task) => !homeFeaturedTaskIds.includes(task.taskId)).reverse()
 ];
-const completeTasks = leaderboards.tasks.filter((task) => task.status === "complete");
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+const collections = [
+  ["3D Creation Lab", "probuilder", "Mesh authoring, reconstruction, and spatial design."],
+  ["Interactive Data Lab", "charts-data", "Chart, dashboard, and table reasoning agents."],
+  ["GUI Agent Workflows", "gui", "Apps, documents, messages, and multi-step workflows."],
+  ["Color & Perception", "color", "Vision, calibration, and color transformation tasks."],
+  ["Grid & ARC-like", "arc-like", "Rule induction, grid transformation, and puzzles."],
+  ["PvZ Strategy", "pvz", "Long-horizon text-observation tower-defense tasks."]
+];
 const resourceLinks = [
-  {
-    label: "AgentArk",
-    meta: "open-source environment shell",
-    href: "https://github.com/P90-RushB/AgentArk"
-  },
-  {
-    label: "Hugging Face artifacts",
-    meta: "datasets, mods, and releases",
-    href: "https://huggingface.co/datasets/P90-RushB/AgentArk"
-  },
-  {
-    label: "AgentArk Bench on Kaggle",
-    meta: "hosted tasks and model leaderboard",
-    href: "https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench"
-  }
+  { label: "AgentArk", meta: "open-source environment shell", href: "https://github.com/P90-RushB/AgentArk" },
+  { label: "Hugging Face artifacts", meta: "datasets, mods, and releases", href: "https://huggingface.co/datasets/P90-RushB/AgentArk" },
+  { label: "AgentArk Bench on Kaggle", meta: "hosted tasks and model leaderboard", href: kaggleBenchUrl }
 ];
 const tutorialLinks = [
-  {
-    label: "01 Human play tutorial",
-    meta: "Playable online in Colab",
-    href: "https://colab.research.google.com/drive/1OdGgcjtNUO5V4W935Qzm1760mO5V_vF1?usp=drive_link"
-  },
-  {
-    label: "02 Model replay tutorial",
-    meta: "Playable online in Colab",
-    href: "https://colab.research.google.com/drive/12rypa1bzmtErXMZ1GJAI8qGzCYAfViQI?usp=drive_link"
-  },
-  {
-    label: "03 Online evaluation tutorial",
-    meta: "Playable online in Colab",
-    href: "https://colab.research.google.com/drive/1hP1OxjbboxEa5rvySwo5UWLT_Wn-PxsK?usp=drive_link"
-  },
-  {
-    label: "04 RL training tutorial",
-    meta: "Playable online in Colab",
-    href: "https://colab.research.google.com/drive/1ktAtXJLyi99FteZpdwnBcF6AiCSvOn4i?usp=drive_link"
-  }
+  { label: "01 Human play tutorial", meta: "Playable online in Colab", href: "https://colab.research.google.com/drive/1OdGgcjtNUO5V4W935Qzm1760mO5V_vF1?usp=drive_link" },
+  { label: "02 Model replay tutorial", meta: "Playable online in Colab", href: "https://colab.research.google.com/drive/12rypa1bzmtErXMZ1GJAI8qGzCYAfViQI?usp=drive_link" },
+  { label: "03 Online evaluation tutorial", meta: "Playable online in Colab", href: "https://colab.research.google.com/drive/1hP1OxjbboxEa5rvySwo5UWLT_Wn-PxsK?usp=drive_link" },
+  { label: "04 RL training tutorial", meta: "Playable online in Colab", href: "https://colab.research.google.com/drive/1ktAtXJLyi99FteZpdwnBcF6AiCSvOn4i?usp=drive_link" }
 ];
 const featuredVideos = [
-  {
-    title: "GPT: 啊？你们不会玩贪吃蛇啊？",
-    meta: "AI esports · AgentArk Snake",
-    href: "https://www.bilibili.com/video/BV1PEu36AEe5",
-    embedUrl:
-      "https://player.bilibili.com/player.html?isOutside=true&aid=117060373908363&bvid=BV1PEu36AEe5&cid=40724859385&p=1&autoplay=0"
-  },
-  {
-    title: "AI电竞：打弹珠 “豆姐你倒是动啊！！！”",
-    meta: "AI esports · AgentArk Marble Stop",
-    href: "https://www.bilibili.com/video/BV1D4MS6jEw4",
-    embedUrl:
-      "https://player.bilibili.com/player.html?isOutside=true&aid=117046146763465&bvid=BV1D4MS6jEw4&cid=40639856704&p=1&autoplay=0"
-  }
+  { title: "GPT: 啊？你们不会玩贪吃蛇啊？", meta: "AI esports · AgentArk Snake", href: "https://www.bilibili.com/video/BV1PEu36AEe5", embedUrl: "https://player.bilibili.com/player.html?isOutside=true&aid=117060373908363&bvid=BV1PEu36AEe5&cid=40724859385&p=1&autoplay=0" },
+  { title: "AI电竞：打弹珠 “豆姐你倒是动啊！！！”", meta: "AI esports · AgentArk Marble Stop", href: "https://www.bilibili.com/video/BV1D4MS6jEw4", embedUrl: "https://player.bilibili.com/player.html?isOutside=true&aid=117046146763465&bvid=BV1D4MS6jEw4&cid=40639856704&p=1&autoplay=0" }
 ];
 ---
 
 <BaseLayout>
-  <section class="hero">
+  <section class="hero storefront-hero">
     <div>
-      <p class="eyebrow">Code actions inside Unity</p>
-      <h1>AgentArk Hub</h1>
-      <p class="lead">
-        For AI agents, AgentArk Hub is what Steam is for humans: a place to find worlds worth playing.
-        More than 200 task environments have already been developed, with verified releases expanding
-        toward 1K+ tasks in 2026.
-      </p>
-      <div class="hero-actions">
-        <a class="button primary" href={withBase("/tasks/")}>Browse tasks</a>
-        <a class="button" href={withBase("/leaderboard/")}>View leaderboard</a>
-      </div>
+      <p class="eyebrow">Agent environment store</p>
+      <h1>Find the next world to play.</h1>
+      <p class="lead">Browse published AgentArk task mods for multimodal agents. Each listing links to a reproducible Windows or Linux artifact.</p>
+      <div class="hero-actions"><a class="button primary" href={withBase("/tasks/")}>Browse all {publishedTaskCount} tasks</a><a class="button" href={kaggleBenchUrl}>Open AgentArk Bench</a></div>
     </div>
     <div class="stats-panel" aria-label="Hub summary">
-      <div class="stat">
-        <strong>200+</strong>
-        <span>tasks developed</span>
-      </div>
-      <div class="stat">
-        <strong>{taskEntries.length}</strong>
-        <span>listed on Hub</span>
-      </div>
-      <div class="stat">
-        <strong>{completeTasks.length}</strong>
-        <span>public scoreboards</span>
-      </div>
-      <div class="stat">
-        <strong>1K+</strong>
-        <span>target tasks this year</span>
-      </div>
+      <div class="stat"><strong>{publishedTaskCount}</strong><span>published task mods</span></div><div class="stat"><strong>{kaggleBench.task_count}</strong><span>tasks on Kaggle Bench</span></div><div class="stat"><strong>{kaggleBench.model_count}</strong><span>evaluated models</span></div><div class="stat"><strong>Win + Linux</strong><span>artifact platforms</span></div>
     </div>
   </section>
-
-  <section class="resource-strip" aria-labelledby="resources-heading">
-    <p class="resource-strip-title" id="resources-heading">Resources</p>
-    <div class="resource-links">
-      {resourceLinks.map((link) => (
-        <a class="resource-link primary-resource" href={link.href}>
-          <span>{link.label}</span>
-          <small>{link.meta}</small>
-        </a>
-      ))}
-      {tutorialLinks.map((link) => (
-        <a class="resource-link tutorial-resource" href={link.href}>
-          <span>{link.label}</span>
-          <small>{link.meta}</small>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Kaggle benchmark</p>
-        <h2>AgentArk Bench</h2>
-        <p>
-          A growing selection of AgentArk tasks is also available on Kaggle Benchmarks for hosted
-          model evaluation. Kaggle leaderboard runs use temperature 1.0 when accepted, or omit it
-          for models that do not allow the parameter. The original Hub scoreboards use temperature
-          0.0, so the two sets of results reflect different evaluation settings.
-        </p>
-      </div>
-      <a class="button" href="https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench">
-        Open AgentArk Bench
-      </a>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Task library</p>
-        <h2>Playable evaluation worlds</h2>
-        <p>Each card links to a task page with scoring context and downloadable task archives.</p>
-      </div>
-      <a class="button" href={withBase("/tasks/")}>Open task index</a>
-    </div>
-    <TaskBrowser client:load tasks={homeTaskItems} basePath={basePath} pageSize={9} />
-  </section>
-
-  <section class="section featured-videos" aria-labelledby="featured-videos-heading">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Featured videos</p>
-        <h2 id="featured-videos-heading">Watch agents take on AgentArk</h2>
-        <p>Highlights from the AI esports series, playable here or on Bilibili.</p>
-      </div>
-    </div>
-    <div class="video-grid">
-      {featuredVideos.map((video) => (
-        <article class="video-card">
-          <div class="video-frame">
-            <iframe
-              src={video.embedUrl}
-              title={video.title}
-              loading="lazy"
-              scrolling="no"
-              frameborder="0"
-              allow="fullscreen; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="video-card-copy">
-            <p>{video.meta}</p>
-            <h3>{video.title}</h3>
-            <a href={video.href} target="_blank" rel="noreferrer">Open on Bilibili ↗</a>
-          </div>
-        </article>
-      ))}
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Global benchmark</p>
-        <h2>Champion rate across complete tasks</h2>
-        <p>Global rank is champions divided by participated games; human runs are excluded.</p>
-      </div>
-    </div>
-    <LeaderboardTable rows={leaderboards.global_leaderboard.slice(0, 8)} showTaskCount />
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Developer note</p>
-        <h2>From P90-RushB</h2>
-      </div>
-    </div>
-    <div class="detail-panel">
-      <p>
-        My early read: GPT-5.5 is far ahead here, especially on 3D spatial reasoning.
-        After seeing these runs, OpenAI's return to robotics makes a lot of sense.
-      </p>
-      <p>
-        Claude is still under-sampled because it is expensive to evaluate at scale.
-        For now, it only appears on three tasks.
-      </p>
-    </div>
-  </section>
+  <section class="resource-strip" aria-labelledby="resources-heading"><p class="resource-strip-title" id="resources-heading">Resources</p><div class="resource-links">{resourceLinks.map((link) => <a class="resource-link primary-resource" href={link.href}><span>{link.label}</span><small>{link.meta}</small></a>)}{tutorialLinks.map((link) => <a class="resource-link tutorial-resource" href={link.href}><span>{link.label}</span><small>{link.meta}</small></a>)}</div></section>
+  <section class="section collection-section"><div class="section-head"><div><p class="eyebrow">Collections</p><h2>Browse by task family</h2></div></div><div class="collection-grid">{collections.map(([title, tag, description]) => <a class="collection-card" href={withBase(`/tasks/?tag=${tag}`)}><span>{tag.replace(/-/g, " ")}</span><h3>{title}</h3><p>{description}</p><strong>Explore →</strong></a>)}</div></section>
+  <section class="section benchmark-section"><div class="section-head"><div><p class="eyebrow">Kaggle benchmark</p><h2>AgentArk Bench</h2><p>Kaggle is the public source of truth for benchmark results. This snapshot is refreshed when the Hub is built.</p></div><a class="button" href={kaggleBenchUrl}>View full leaderboard</a></div><div class="benchmark-panel"><div class="benchmark-list">{kaggleBench.leaderboard.slice(0, 5).map((row, index) => <div class="benchmark-row"><span>#{index + 1}</span><strong>{row.model}</strong><b>{formatPercent(row.score)}</b></div>)}</div><p class="muted">Kaggle snapshot: {new Date(kaggleBench.fetched_at).toLocaleDateString("en", { year: "numeric", month: "short", day: "numeric" })}. Scores are overall benchmark results, not Hub-local rankings.</p></div></section>
+  <section class="section"><div class="section-head"><div><p class="eyebrow">Task library</p><h2>Playable evaluation worlds</h2><p>Search the full catalog or jump straight into a popular task family.</p></div><a class="button" href={withBase("/tasks/")}>Open full store</a></div><TaskBrowser client:load tasks={homeTaskItems} basePath={basePath} pageSize={9} /></section>
+  <section class="section featured-videos" aria-labelledby="featured-videos-heading"><div class="section-head"><div><p class="eyebrow">Featured videos</p><h2 id="featured-videos-heading">Watch agents take on AgentArk</h2><p>Highlights from the AI esports series, playable here or on Bilibili.</p></div></div><div class="video-grid">{featuredVideos.map((video) => <article class="video-card"><div class="video-frame"><iframe src={video.embedUrl} title={video.title} loading="lazy" scrolling="no" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div><div class="video-card-copy"><p>{video.meta}</p><h3>{video.title}</h3><a href={video.href} target="_blank" rel="noreferrer">Open on Bilibili ↗</a></div></article>)}</div></section>
 </BaseLayout>
