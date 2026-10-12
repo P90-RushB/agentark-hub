@@ -10,6 +10,10 @@ export function getStaticPaths() {
 const task = getTaskBySlug(Astro.params.slug);
 const Content = task.Content;
 const downloads = downloadsForTask(task.data.taskId);
+const videoId = task.data.videoUrl.match(/\/video\/(BV[0-9A-Za-z]{10})(?:\/|$)/)?.[1];
+const videoEmbedUrl = videoId
+  ? `https://player.bilibili.com/player.html?isOutside=true&bvid=${videoId}&p=1&autoplay=0`
+  : "";
 ---
 
 <BaseLayout title={task.data.title} description={task.data.summary}>
@@ -25,7 +29,13 @@ const downloads = downloadsForTask(task.data.taskId);
   </section>
 
   <section class="section"><div class="detail-grid">
-    <article class="detail-panel content-body">{Content ? <Content /> : <><h2>Published task mod</h2><p>This task is available as a public AgentArk Mod. Download a platform archive to run it with a compatible AgentArk environment.</p></>}</article>
+    <div class="task-content">
+      {task.data.videoUrl && <section class="video-card task-introduction" aria-labelledby="task-introduction-heading">
+        {videoEmbedUrl && <div class="video-frame"><iframe src={videoEmbedUrl} title={`${task.data.title} task introduction`} loading="lazy" scrolling="no" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>}
+        <div class="video-card-copy"><p>Task {task.artifact.task_id} · Video guide</p><h2 id="task-introduction-heading">Task introduction</h2><a href={task.data.videoUrl} target="_blank" rel="noopener noreferrer">Open on Bilibili ↗</a></div>
+      </section>}
+      <article class="detail-panel content-body">{Content ? <Content /> : <><h2>Published task mod</h2><p>This task is available as a public AgentArk Mod. Download a platform archive to run it with a compatible AgentArk environment.</p></>}</article>
+    </div>
     <aside>
       <div class="detail-panel"><h2>Task profile</h2><dl><dt>Format</dt><dd>{task.data.dimension.toUpperCase()}</dd><dt>Tags</dt><dd>{task.data.tags.join(", ")}</dd><dt>Version</dt><dd>{task.artifact.task_version} · {task.artifact.env_version}</dd></dl></div>
       <div class="detail-panel"><h2>Public artifacts</h2><p class="muted">Available from <a href={hfDatasetUrl}>P90-RushB/AgentArk</a>.</p><div class="download-list">{downloads.map((download) => <a class="download-link" href={download.url}><strong>{download.label} zip</strong><span>{formatBytes(download.size_bytes)}</span></a>)}</div></div>
@@ -33,3 +43,8 @@ const downloads = downloadsForTask(task.data.taskId);
     </aside>
   </div></section>
 </BaseLayout>
+
+<style>
+  .task-content { display: grid; align-content: start; gap: 18px; min-width: 0; }
+  .task-introduction h2 { font-size: 1.35rem; margin-bottom: 14px; }
+</style>

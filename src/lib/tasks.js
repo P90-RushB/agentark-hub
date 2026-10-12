@@ -1,5 +1,6 @@
 import hfArtifacts from "../data/hfArtifacts.json";
 import kaggleBench from "../data/kaggleBench.json";
+import taskVideos from "../data/taskVideos.json";
 import { stableSlug, withBase } from "./site.js";
 
 const taskModules = import.meta.glob("../content/tasks/*.mdx", { eager: true });
@@ -77,6 +78,7 @@ export const taskEntries = Object.values(hfArtifacts.tasks)
         dimension,
         tags,
         cover: data.cover ?? "",
+        videoUrl: data.videoUrl || taskVideos[artifact.task_name] || "",
         status: "published"
       },
       listItem: {
