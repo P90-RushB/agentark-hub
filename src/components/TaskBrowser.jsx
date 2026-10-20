@@ -50,7 +50,7 @@ export default function TaskBrowser({ tasks, basePath, pageSize = 12 }) {
     <div>
       <div className="filter-shell">
         <div className="filter-controls">
-          <input aria-label="Search tasks" placeholder="Search 216 published tasks" value={query} onChange={(event) => setQuery(event.target.value)} />
+          <input aria-label="Search tasks" placeholder={`Search ${tasks.length} published tasks`} value={query} onChange={(event) => setQuery(event.target.value)} />
           <select aria-label="Filter by dimension" value={dimension} onChange={(event) => setDimension(event.target.value)}>
             <option value="all">All formats</option><option value="2d">2D</option><option value="3d">3D</option>
           </select>

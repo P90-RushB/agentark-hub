@@ -6,7 +6,7 @@ import { kaggleBenchUrl, publishedTaskCount, taskEntries } from "../lib/tasks.js
 import { formatPercent, withBase } from "../lib/site.js";
 
 const taskItems = taskEntries.map((entry) => entry.listItem);
-const homeFeaturedTaskIds = ["StarterRouteJump3D", "DelayTrain", "FishingJoy2D"];
+const homeFeaturedTaskIds = ["RobotPainting", "StarterRouteJump3D", "DelayTrain", "FishingJoy2D"];
 const homeTaskItems = [
   ...homeFeaturedTaskIds.map((taskId) => taskItems.find((task) => task.taskId === taskId)).filter(Boolean),
   ...taskItems.filter((task) => !homeFeaturedTaskIds.includes(task.taskId))

@@ -1,0 +1,51 @@
+---
+title: "Robot Painting"
+taskId: RobotPainting
+order: 107
+dimension: 3d
+status: live
+tags: ["3d", "multimodal", "robotics", "painting", "spatial-reasoning", "in-context-learning"]
+summary: "Turn a reference image or a text idea into brushstrokes with a simulated robot arm. The task behind RoboPaintBench."
+cover: "/media/tasks/robot-painting.png"
+coverAlt: "Three simulator camera views of Astra's completed Golden Gate Bridge painting and the robot arm."
+coverFit: "contain"
+benchmarkName: "RoboPaintBench"
+benchmarkUrl: "https://github.com/P90-RushB/robopaint-bench"
+replayUrl: "https://colab.research.google.com/drive/1szVNzToQ0VadlPTB2BymM-sgYNbnAHD_?usp=sharing"
+setupUrl: "https://github.com/P90-RushB/robopaint-bench/blob/main/docs/local-setup.md"
+---
+
+## Give the robot a target
+
+A model observes camera images, plans a painting, and controls a simulated robot arm to move the brush across the canvas. Each stroke requires spatial reasoning, tool orientation and visual feedback.
+
+**Robot Painting is Task 107 in AgentArk.** Its dedicated benchmark, [RoboPaintBench](https://github.com/P90-RushB/robopaint-bench), provides published model records, paintings, videos and reproducible configurations.
+
+## Three ways to paint
+
+- **Paint from a reference.** The Golden Gate Bridge track asks the model to interpret and recreate a supplied image.
+- **Paint from words.** The Pelican track supplies only the instruction, “Paint a pelican riding a bicycle.” The model still observes the robot and canvas through camera images.
+- **Bring your own target.** Supply a reference image, a text prompt, or both for a new model painting session. See the [custom painting guide](https://github.com/P90-RushB/robopaint-bench/blob/main/docs/custom-painting.md).
+
+## Watch a recorded run
+
+Replay a published model's actions in the simulator without a model API key:
+
+- [Golden Gate Bridge — open in Colab](https://colab.research.google.com/drive/1szVNzToQ0VadlPTB2BymM-sgYNbnAHD_?usp=sharing)
+- [A pelican riding a bicycle — open in Colab](https://colab.research.google.com/github/P90-RushB/robopaint-bench/blob/main/notebooks/Pelican_Record_Colab.ipynb)
+
+Select a **T4 GPU**, choose a model record, then **Runtime → Run all**. Open the **viewer URL printed in Step 7** to follow camera views, actions and results as the replay runs.
+
+Prefer your own machine? The [Windows and Linux setup guide](https://github.com/P90-RushB/robopaint-bench/blob/main/docs/local-setup.md) covers the compatible Player, task installation, replay and viewing the environment. A Unity Editor installation is not required.
+
+## One environment, one harness
+
+The published benchmark uses AgentArk's built-in **SimpleAgent** for every model. OpenRouter, Volcengine and the Codex SDK are provider interfaces to the same harness.
+
+Each session has **three connected in-context learning rounds**, with up to **96 actions per round**. A new canvas starts each round while experience carries forward in the session. These are sequential learning rounds rather than three independent trials.
+
+The benchmark freezes one configuration; the environment also supports other brush, pigment and canvas settings. The [configuration guide](https://github.com/P90-RushB/robopaint-bench/blob/main/docs/environment.md) explains how to change them for custom experiments.
+
+## About the cover
+
+The cover is an unaltered three-camera frame after Astra's third Golden Gate round submission, from a RoboPaintBench recording. [Original frame and provenance](https://github.com/P90-RushB/robopaint-bench/blob/main/benchmarks/results/editorial-media.json) · [Media attribution and usage](https://github.com/P90-RushB/robopaint-bench/blob/main/docs/attribution.md). The source-code license does not grant an additional license to the recording or its separately licensed assets.

@@ -2428,6 +2428,30 @@
         }
       }
     },
+    "RobotPainting": {
+      "task_id": 107,
+      "task_name": "RobotPainting",
+      "task_version": "v1",
+      "env_version": "1.0.5",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0107-RobotPainting/task-v1/env-1.0.5/linux/RobotPainting-task-v1-env-1.0.5-linux.zip",
+          "path": "artifacts/tasks/0100-0199/0107-RobotPainting/task-v1/env-1.0.5/linux/RobotPainting-task-v1-env-1.0.5-linux.zip",
+          "size_bytes": 6712518,
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/main/artifacts/tasks/0100-0199/0107-RobotPainting/task-v1/env-1.0.5/windows/RobotPainting-task-v1-env-1.0.5-windows.zip",
+          "path": "artifacts/tasks/0100-0199/0107-RobotPainting/task-v1/env-1.0.5/windows/RobotPainting-task-v1-env-1.0.5-windows.zip",
+          "size_bytes": 6297162,
+          "archive_format": "zip"
+        }
+      }
+    },
     "SubtractivePigmentRecipe2D": {
       "task_id": 109,
       "task_name": "SubtractivePigmentRecipe2D",
