@@ -28,3 +28,9 @@ The site is configured as a GitHub Pages project site with `base: "/agentark-hub
 
 Task cover images can be added under `public/media/tasks/` and referenced from the
 corresponding `src/content/tasks/*.mdx` frontmatter.
+
+Task introduction links are maintained in `src/data/taskVideos.json`, keyed by
+the canonical task name from the published artifact registry. Task pages show an
+introduction video card with a Bilibili player and an "Open on Bilibili" link above
+the task brief, including pages without an MDX entry. Players use a 16:9 frame and
+do not autoplay. A nonempty `videoUrl` in task frontmatter overrides the shared mapping.
