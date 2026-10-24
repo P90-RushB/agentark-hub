@@ -22,7 +22,9 @@ npm run build
 npm run preview
 ```
 
-The site is configured as a GitHub Pages project site with `base: "/agentark-hub"`.
+The site is configured for GitHub Pages at `https://agentark.net/`, served from the
+domain root. Configure `agentark.net` as the Pages custom domain and point its DNS
+to GitHub Pages before deploying.
 
 ## Manual Media
 
