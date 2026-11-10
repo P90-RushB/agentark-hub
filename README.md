@@ -10,10 +10,25 @@ npm install
 npm run dev
 ```
 
-`npm run build` refreshes two committed public snapshots before Astro builds:
+`npm run build` and GitHub Pages build from two committed public snapshots:
 
 - published task Mods from the [AgentArk Hugging Face dataset](https://huggingface.co/datasets/P90-RushB/AgentArk);
 - the [AgentArk Bench leaderboard on Kaggle](https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench).
+
+The catalog reads `manifest.json` and its canonical task registry at one immutable
+Hugging Face commit. Download links retain that commit and the registry's archive
+hashes. The latest registered environment/task version pair is selected for each task;
+unregistered files are not treated as published tasks.
+
+Run `npm run sync:catalog` to refresh both snapshots before reviewing and committing
+them. To refresh only task metadata at a particular published commit, keeping the
+existing leaderboard snapshot, run:
+
+```bash
+npm run sync:catalog -- --catalog-only --revision <full-hf-commit-sha>
+```
+
+Add `--catalog-output <path>` to write a catalog candidate separately for review.
 
 ## Build
 

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "sync:catalog": "node scripts/sync-catalog.mjs",
-    "build": "npm run sync:catalog && astro build",
+    "build": "astro build",
     "preview": "astro preview"
   },
   "dependencies": {

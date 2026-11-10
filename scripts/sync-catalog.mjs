@@ -1,11 +1,28 @@
+import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
 const HF_DATASET = "P90-RushB/AgentArk";
-const HF_TREE_URL = `https://huggingface.co/api/datasets/${HF_DATASET}/tree/main?recursive=true&expand=false&limit=1000`;
+const HF_DATASET_URL = `https://huggingface.co/datasets/${HF_DATASET}`;
+const HF_DATASET_API = `https://huggingface.co/api/datasets/${HF_DATASET}`;
 const KAGGLE_URL = "https://www.kaggle.com/benchmarks/xunyiljg/agentark-bench";
 const KAGGLE_API_URL = "https://www.kaggle.com/api/v1/benchmarks/xunyiljg/agentark-bench/leaderboard";
 const root = resolve(import.meta.dirname, "..");
+const args = process.argv.slice(2);
+const revisionIndex = args.indexOf("--revision");
+const requestedRevision = revisionIndex >= 0 ? args[revisionIndex + 1] : process.env.AGENTARK_HF_REVISION;
+const catalogOnly = args.includes("--catalog-only");
+const outputIndex = args.indexOf("--catalog-output");
+const catalogOutput = outputIndex >= 0 ? args[outputIndex + 1] : "src/data/hfArtifacts.json";
+if (revisionIndex >= 0 && (!requestedRevision || requestedRevision.startsWith("--"))) {
+  throw new Error("--revision requires an immutable Hugging Face commit SHA.");
+}
+if (requestedRevision && !/^[0-9a-f]{40}$/i.test(requestedRevision)) {
+  throw new Error("The Hugging Face revision must be a full immutable commit SHA.");
+}
+if (outputIndex >= 0 && (!catalogOnly || !catalogOutput || catalogOutput.startsWith("--"))) {
+  throw new Error("--catalog-output requires --catalog-only and an output file path.");
+}
 
 function versionParts(value) {
   return String(value)
@@ -26,55 +43,93 @@ function compareVersions(left, right) {
   return String(left).localeCompare(String(right));
 }
 
-async function fetchJson(url) {
+async function fetchResponse(url) {
   const response = await fetch(url, {
     headers: { "user-agent": "agentark-hub-catalog-sync" }
   });
   if (!response.ok) throw new Error(`Request failed (${response.status}): ${url}`);
+  return response;
+}
+
+async function fetchJson(url) {
+  const response = await fetchResponse(url);
   return { body: await response.json(), headers: response.headers };
 }
 
-async function listDatasetFiles() {
-  const entries = [];
-  let url = HF_TREE_URL;
-  while (url) {
-    const { body, headers } = await fetchJson(url);
-    entries.push(...body);
-    const link = headers.get("link") || "";
-    const next = link.match(/<([^>]+)>; rel="next"/);
-    url = next?.[1] || "";
-  }
-  return entries.filter((entry) => entry.type === "file" && entry.path.endsWith(".zip"));
+async function fetchPinnedFile(revision, path) {
+  const url = artifactUrl(revision, path);
+  const response = await fetchResponse(url);
+  const bytes = Buffer.from(await response.arrayBuffer());
+  return { url, text: bytes.toString("utf8"), sha256: createHash("sha256").update(bytes).digest("hex") };
 }
 
-function makeDownload(path, sizeBytes, platform) {
+function artifactUrl(revision, path) {
+  return `${HF_DATASET_URL}/resolve/${revision}/${path.split("/").map(encodeURIComponent).join("/")}`;
+}
+
+function isArtifactPath(path) {
+  return typeof path === "string" && path.startsWith("artifacts/tasks/") && path.endsWith(".zip") &&
+    !path.split("/").some((part) => !part || part === "." || part === ".." || part.includes("\\"));
+}
+
+async function readTaskRegistry() {
+  const dataset = requestedRevision ? { sha: requestedRevision } : (await fetchJson(HF_DATASET_API)).body;
+  const revision = requestedRevision || dataset.sha;
+  if (!/^[0-9a-f]{40}$/i.test(revision || "")) throw new Error("Dataset API returned no immutable commit SHA.");
+  const manifestFile = await fetchPinnedFile(revision, "manifest.json");
+  const manifest = JSON.parse(manifestFile.text);
+  const registryPath = manifest.registry?.tasks;
+  if (typeof registryPath !== "string" || !registryPath.startsWith("registry/") ||
+      registryPath.split("/").some((part) => !part || part === "." || part === ".." || part.includes("\\"))) {
+    throw new Error("Manifest has no safe canonical task registry path.");
+  }
+  const registryFile = await fetchPinnedFile(revision, registryPath);
+  const rows = registryFile.text.split(/\r?\n/).filter((line) => line.trim()).map((line, index) => {
+    try { return JSON.parse(line); }
+    catch { throw new Error(`Invalid task registry JSON on line ${index + 1}.`); }
+  });
+  if (!rows.length) throw new Error("Canonical task registry is empty; refusing to replace the catalog.");
+  return { manifest, manifestSha256: manifestFile.sha256, revision, registryPath, registryFile, rows, lastModified: dataset.lastModified };
+}
+
+function makeDownload(row, revision) {
   return {
-    label: platform === "windows" ? "Windows" : "Linux",
-    platform,
-    url: `https://huggingface.co/datasets/${HF_DATASET}/resolve/main/${path}`,
-    path,
-    size_bytes: sizeBytes ?? null,
-    archive_format: "zip"
+    label: row.platform === "windows" ? "Windows" : "Linux",
+    platform: row.platform,
+    url: artifactUrl(revision, row.path),
+    path: row.path,
+    size_bytes: row.size_bytes,
+    sha256: row.sha256,
+    archive_format: row.archive_format || "zip"
   };
 }
 
-function buildArtifacts(entries) {
+function buildArtifacts(registry) {
   const byTask = new Map();
-  const pattern = /^artifacts\/tasks\/\d{4}-\d{4}\/(\d{4})-(.+?)\/task-([^/]+)\/env-([^/]+)\/(windows|linux)\/[^/]+\.zip$/;
-
-  for (const entry of entries) {
-    const match = entry.path.match(pattern);
-    if (!match) continue;
-    const [, rawId, taskName, taskVersion, envVersion, platform] = match;
-    const key = `${rawId}:${taskName}:${taskVersion}:${envVersion}`;
+  for (const row of registry.rows) {
+    if (row.kind !== "task" || !["windows", "linux"].includes(row.platform)) continue;
+    if (row.repo_id !== HF_DATASET || !Number.isInteger(row.task_id) || row.task_id < 0 ||
+        typeof row.task_name !== "string" || !row.task_name.trim() ||
+        typeof row.task_version !== "string" || !row.task_version ||
+        typeof row.env_version !== "string" || !row.env_version || !isArtifactPath(row.path) ||
+        !Number.isSafeInteger(row.size_bytes) || row.size_bytes <= 0 ||
+        !/^[0-9a-f]{64}$/i.test(row.sha256 || "") ||
+        (row.archive_format && row.archive_format !== "zip")) {
+      throw new Error(`Invalid canonical task artifact metadata: ${row.path || row.task_name || "unknown"}`);
+    }
+    const key = JSON.stringify([row.task_id, row.task_name, row.task_version, row.env_version]);
     const current = byTask.get(key) ?? {
-      task_id: Number(rawId),
-      task_name: taskName,
-      task_version: taskVersion,
-      env_version: envVersion,
+      task_id: row.task_id,
+      task_name: row.task_name,
+      task_version: row.task_version,
+      env_version: row.env_version,
       platforms: {}
     };
-    current.platforms[platform] = makeDownload(entry.path, entry.size, platform);
+    const existing = current.platforms[row.platform];
+    if (existing && (existing.path !== row.path || existing.sha256 !== row.sha256)) {
+      throw new Error(`Conflicting task registry artifacts for task ${row.task_id} on ${row.platform}.`);
+    }
+    current.platforms[row.platform] = makeDownload(row, registry.revision);
     byTask.set(key, current);
   }
 
@@ -92,16 +147,25 @@ function buildArtifacts(entries) {
     }
   }
 
-  const tasks = Object.fromEntries(
-    [...selected.values()]
-      .sort((a, b) => a.task_id - b.task_id)
-      .map((item) => [item.task_name, item])
-  );
+  const items = [...selected.values()].sort((a, b) => a.task_id - b.task_id);
+  if (!items.length) throw new Error("No published task artifacts found in the canonical registry.");
+  if (new Set(items.map((item) => item.task_name)).size !== items.length) {
+    throw new Error("Selected task names are not unique; refusing to replace the catalog.");
+  }
+  for (const item of items) {
+    item.platforms = Object.fromEntries(Object.entries(item.platforms).sort(([a], [b]) => a.localeCompare(b)));
+  }
+  const tasks = Object.fromEntries(items.map((item) => [item.task_name, item]));
   return {
     repo_id: HF_DATASET,
-    dataset_url: `https://huggingface.co/datasets/${HF_DATASET}`,
-    registry_created_at: new Date().toISOString(),
-    current_release: "dynamic",
+    dataset_url: HF_DATASET_URL,
+    registry_created_at: registry.manifest.created_at || registry.manifest.created_utc || registry.lastModified || null,
+    registry_revision: registry.revision,
+    manifest_sha256: registry.manifestSha256,
+    registry_path: registry.registryPath,
+    registry_url: registry.registryFile.url,
+    registry_sha256: registry.registryFile.sha256,
+    current_release: registry.manifest.current_release,
     tasks
   };
 }
@@ -146,11 +210,12 @@ async function writeJson(relativePath, value) {
   await writeFile(path, `${JSON.stringify(value, null, 2)}\n`, "utf8");
 }
 
-const [datasetEntries, kaggleResponse] = await Promise.all([listDatasetFiles(), fetchJson(KAGGLE_API_URL)]);
-const artifacts = buildArtifacts(datasetEntries);
-const kaggle = buildKaggleSnapshot(kaggleResponse.body);
-await Promise.all([
-  writeJson("src/data/hfArtifacts.json", artifacts),
-  writeJson("src/data/kaggleBench.json", kaggle)
+const [registry, kaggleResponse] = await Promise.all([
+  readTaskRegistry(),
+  catalogOnly ? null : fetchJson(KAGGLE_API_URL)
 ]);
-console.log(`Synced ${Object.keys(artifacts.tasks).length} published AgentArk task mods and ${kaggle.model_count} Kaggle models.`);
+const artifacts = buildArtifacts(registry);
+const writes = [writeJson(catalogOutput, artifacts)];
+if (kaggleResponse) writes.push(writeJson("src/data/kaggleBench.json", buildKaggleSnapshot(kaggleResponse.body)));
+await Promise.all(writes);
+console.log(`Synced ${Object.keys(artifacts.tasks).length} published AgentArk task mods from ${registry.registryPath} at ${registry.revision}${catalogOnly ? "." : " and the Kaggle leaderboard."}`);
