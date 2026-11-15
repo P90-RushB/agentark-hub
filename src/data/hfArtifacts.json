@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "25077f5fc7336049197b89786fb64dcde920cf8c",
-  "manifest_sha256": "1343cb0c166ea6734894ed0f98927b8d84003cb7566cec677f26d257b949fd37",
+  "registry_revision": "9e0d8461b2e6d4789a383fa1448298c236a77326",
+  "manifest_sha256": "f0f12a1aac61e5a3c4a52acd830c9065b7f6919cb0bd7efd7f59f4c80d587568",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/25077f5fc7336049197b89786fb64dcde920cf8c/registry/tasks.jsonl",
-  "registry_sha256": "58282563630483d2d2d71742ef29e9d86abd916ad26f5fdd75938190d7b98e02",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/9e0d8461b2e6d4789a383fa1448298c236a77326/registry/tasks.jsonl",
+  "registry_sha256": "4481f037ac69fdde5d3fc379c21d40c549da6ebf116da0c672fd94b19a14376e",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9994,6 +9994,23 @@
           "path": "artifacts/tasks/0300-0399/0361-TimedCameraPosePhotography3D/task-v1/env-1.0.6/windows/TimedCameraPosePhotography3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 3534712,
           "sha256": "c9b5fb8cc91fd23968264a94d9dde384fc8c5c95f316e3868a574a5e6480c9b1",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ExcitableShellQuiescence3D": {
+      "task_id": 395,
+      "task_name": "ExcitableShellQuiescence3D",
+      "task_version": "1.0",
+      "env_version": "1.0.6",
+      "platforms": {
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/9e0d8461b2e6d4789a383fa1448298c236a77326/artifacts/tasks/0300-0399/0395-ExcitableShellQuiescence3D/task-1.0/env-1.0.6/windows/ExcitableShellQuiescence3D-task-1.0-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0395-ExcitableShellQuiescence3D/task-1.0/env-1.0.6/windows/ExcitableShellQuiescence3D-task-1.0-env-1.0.6-windows.zip",
+          "size_bytes": 342357944,
+          "sha256": "e728a4839327965fd976c74cb7a855b1e978054e08979a6715c1e499e5a7a449",
           "archive_format": "zip"
         }
       }
