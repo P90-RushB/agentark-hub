@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "54381f8c6ae975e62e212199bdee2553b077fafd",
-  "manifest_sha256": "15172b3ddc5c77b86ddca6f98baf834b3184ba0cc6c59d19cf75aa9fb369f808",
+  "registry_revision": "25077f5fc7336049197b89786fb64dcde920cf8c",
+  "manifest_sha256": "1343cb0c166ea6734894ed0f98927b8d84003cb7566cec677f26d257b949fd37",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/54381f8c6ae975e62e212199bdee2553b077fafd/registry/tasks.jsonl",
-  "registry_sha256": "b809ac1e238d53b97d4d38ecbef4063e29b3ec8b557e09bfca36301f72f0bde9",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/25077f5fc7336049197b89786fb64dcde920cf8c/registry/tasks.jsonl",
+  "registry_sha256": "58282563630483d2d2d71742ef29e9d86abd916ad26f5fdd75938190d7b98e02",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9968,6 +9968,32 @@
           "path": "artifacts/tasks/0300-0399/0363-Task363_TwoLampGuaranteedTrackSearch3D/task-v1/env-1.0.6/windows/Task363_TwoLampGuaranteedTrackSearch3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 14076328,
           "sha256": "f176dae1ef8c53fe61dfeefc8039398d5cb7f966dea67fa363702c6d8746e1c7",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "TimedCameraPosePhotography3D": {
+      "task_id": 361,
+      "task_name": "TimedCameraPosePhotography3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/25077f5fc7336049197b89786fb64dcde920cf8c/artifacts/tasks/0300-0399/0361-TimedCameraPosePhotography3D/task-v1/env-1.0.6/linux/TimedCameraPosePhotography3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0361-TimedCameraPosePhotography3D/task-v1/env-1.0.6/linux/TimedCameraPosePhotography3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 5830200,
+          "sha256": "9b7fc9d01a87b0627f83810ca92d4bee23ce8783b2696f1a52fb573045f98537",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/25077f5fc7336049197b89786fb64dcde920cf8c/artifacts/tasks/0300-0399/0361-TimedCameraPosePhotography3D/task-v1/env-1.0.6/windows/TimedCameraPosePhotography3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0361-TimedCameraPosePhotography3D/task-v1/env-1.0.6/windows/TimedCameraPosePhotography3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 3534712,
+          "sha256": "c9b5fb8cc91fd23968264a94d9dde384fc8c5c95f316e3868a574a5e6480c9b1",
           "archive_format": "zip"
         }
       }
