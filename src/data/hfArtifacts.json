@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "0094159dcc1202e1c5fb42a2d80b460318db6797",
-  "manifest_sha256": "463abbe787a061ea3a3f65efef772e03e11e8d89879332df36f3db96868f5368",
+  "registry_revision": "589f1a15bebf0a7d44a4cc030693662f07d6c89d",
+  "manifest_sha256": "d4388b01b1a4e061140e80f82646911cae140e168d9d50149e7c29f0ed30be7d",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/0094159dcc1202e1c5fb42a2d80b460318db6797/registry/tasks.jsonl",
-  "registry_sha256": "b53ddbcfd2cc992430f60062aa6a0a81616111ba45435969762a4f4656b1620d",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/589f1a15bebf0a7d44a4cc030693662f07d6c89d/registry/tasks.jsonl",
+  "registry_sha256": "d54793f5273f2e8dfcb72db39c62f19a68865d8ab6d97e59512ba06770b2e83c",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9734,6 +9734,32 @@
           "path": "artifacts/tasks/0300-0399/0362-Task362_LayeredHillsideFireControl3D/task-v1/env-1.0.6/windows/Task362_LayeredHillsideFireControl3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 5587593,
           "sha256": "f391748090bb999d0886ba1cba0eadefbaf31aa037b4013f550554f484766199",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ArticulatedSwimmer3D": {
+      "task_id": 398,
+      "task_name": "ArticulatedSwimmer3D",
+      "task_version": "1.0",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/589f1a15bebf0a7d44a4cc030693662f07d6c89d/artifacts/tasks/0300-0399/0398-ArticulatedSwimmer3D/task-1.0/env-1.0.6/linux/ArticulatedSwimmer3D-task-1.0-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0398-ArticulatedSwimmer3D/task-1.0/env-1.0.6/linux/ArticulatedSwimmer3D-task-1.0-env-1.0.6-linux.zip",
+          "size_bytes": 24290051,
+          "sha256": "42d46ff11eb816e0ce2bbac9f151a506c42bd487c7aa77be2f3980de06875227",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/589f1a15bebf0a7d44a4cc030693662f07d6c89d/artifacts/tasks/0300-0399/0398-ArticulatedSwimmer3D/task-1.0/env-1.0.6/windows/ArticulatedSwimmer3D-task-1.0-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0398-ArticulatedSwimmer3D/task-1.0/env-1.0.6/windows/ArticulatedSwimmer3D-task-1.0-env-1.0.6-windows.zip",
+          "size_bytes": 23759127,
+          "sha256": "3c7e6ea5f57bb7ffaff510f9cf822fd741a2eeca5a67d6e61a8ae02d86ad45c7",
           "archive_format": "zip"
         }
       }
