@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "363422a53875e6721bdb86dcde36b654dd763499",
-  "manifest_sha256": "e7a8312901933d6f59e41806ad67d5a0e343aa151e461c3ff90318c97bfdacae",
+  "registry_revision": "383e6bb17a0539416f0ae7d271e40de87a014b13",
+  "manifest_sha256": "cc7cb5d38c94a76933e50c8b56e5a630563be01d571363ecdb145af0acb0d491",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/363422a53875e6721bdb86dcde36b654dd763499/registry/tasks.jsonl",
-  "registry_sha256": "82f7c6611108108b14c7137f5364163ca41edd17895b091c8a0efbe3a053dd3f",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/383e6bb17a0539416f0ae7d271e40de87a014b13/registry/tasks.jsonl",
+  "registry_sha256": "5fff2bfb4b082da9ca27a6fe94320dfc65922b47d421524af732409d4724ee15",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9864,6 +9864,32 @@
           "path": "artifacts/tasks/0300-0399/0368-Task368_StateDependentQuantifiedLanternProgram3D/task-v1/env-1.0.6/windows/Task368_StateDependentQuantifiedLanternProgram3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 1487435,
           "sha256": "a0b55018f882804a5c3a560d1c5993b7cbb52bcc7d45e12fd47cdf3db714a0cc",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task367_ConnectedSphereChargeTransfer3D": {
+      "task_id": 367,
+      "task_name": "Task367_ConnectedSphereChargeTransfer3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/383e6bb17a0539416f0ae7d271e40de87a014b13/artifacts/tasks/0300-0399/0367-Task367_ConnectedSphereChargeTransfer3D/task-v1/env-1.0.6/linux/Task367_ConnectedSphereChargeTransfer3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0367-Task367_ConnectedSphereChargeTransfer3D/task-v1/env-1.0.6/linux/Task367_ConnectedSphereChargeTransfer3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 6452644,
+          "sha256": "b7a11741f9f90862f945aa3b7414da8d68c0ff04585092309deb1147850fa9f1",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/383e6bb17a0539416f0ae7d271e40de87a014b13/artifacts/tasks/0300-0399/0367-Task367_ConnectedSphereChargeTransfer3D/task-v1/env-1.0.6/windows/Task367_ConnectedSphereChargeTransfer3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0367-Task367_ConnectedSphereChargeTransfer3D/task-v1/env-1.0.6/windows/Task367_ConnectedSphereChargeTransfer3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 5491405,
+          "sha256": "c996f59ab47ee6ed6f7e550c8ae0a42c3998e3ef542d478ec8c7fe0bbb8622c2",
           "archive_format": "zip"
         }
       }
