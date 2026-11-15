@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "589f1a15bebf0a7d44a4cc030693662f07d6c89d",
-  "manifest_sha256": "d4388b01b1a4e061140e80f82646911cae140e168d9d50149e7c29f0ed30be7d",
+  "registry_revision": "e463f11c025f0b2f18af271f96d7c7bdeccd8698",
+  "manifest_sha256": "3afd2f5ea8373b86e309272cbabb22ab1dfc90f06d2b771ae0c76c064f902896",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/589f1a15bebf0a7d44a4cc030693662f07d6c89d/registry/tasks.jsonl",
-  "registry_sha256": "d54793f5273f2e8dfcb72db39c62f19a68865d8ab6d97e59512ba06770b2e83c",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e463f11c025f0b2f18af271f96d7c7bdeccd8698/registry/tasks.jsonl",
+  "registry_sha256": "ef1931b3c6b53c5473d9879273228eec774b9a13a91175fc2951b04c5573b0f4",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9760,6 +9760,84 @@
           "path": "artifacts/tasks/0300-0399/0398-ArticulatedSwimmer3D/task-1.0/env-1.0.6/windows/ArticulatedSwimmer3D-task-1.0-env-1.0.6-windows.zip",
           "size_bytes": 23759127,
           "sha256": "3c7e6ea5f57bb7ffaff510f9cf822fd741a2eeca5a67d6e61a8ae02d86ad45c7",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task349_PowerCellQuotaDesign3D": {
+      "task_id": 349,
+      "task_name": "Task349_PowerCellQuotaDesign3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e463f11c025f0b2f18af271f96d7c7bdeccd8698/artifacts/tasks/0300-0399/0349-Task349_PowerCellQuotaDesign3D/task-v1/env-1.0.6/linux/Task349_PowerCellQuotaDesign3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0349-Task349_PowerCellQuotaDesign3D/task-v1/env-1.0.6/linux/Task349_PowerCellQuotaDesign3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 4834676,
+          "sha256": "319b03ca2c073f2909136461b1460a14abf0d9161048cfe2d090fb783f652c22",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e463f11c025f0b2f18af271f96d7c7bdeccd8698/artifacts/tasks/0300-0399/0349-Task349_PowerCellQuotaDesign3D/task-v1/env-1.0.6/windows/Task349_PowerCellQuotaDesign3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0349-Task349_PowerCellQuotaDesign3D/task-v1/env-1.0.6/windows/Task349_PowerCellQuotaDesign3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 3903521,
+          "sha256": "b6b54976ade9a8429dff876e9070684a59fcef6fb509d358381030a915fec418",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "PuppetTeamHandball3D": {
+      "task_id": 360,
+      "task_name": "PuppetTeamHandball3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e463f11c025f0b2f18af271f96d7c7bdeccd8698/artifacts/tasks/0300-0399/0360-PuppetTeamHandball3D/task-v1/env-1.0.6/linux/PuppetTeamHandball3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0360-PuppetTeamHandball3D/task-v1/env-1.0.6/linux/PuppetTeamHandball3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 20965415,
+          "sha256": "b867d3000f3e9a88e7c55d862e20a891be678aa49dd9706cde047cff251a1519",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e463f11c025f0b2f18af271f96d7c7bdeccd8698/artifacts/tasks/0300-0399/0360-PuppetTeamHandball3D/task-v1/env-1.0.6/windows/PuppetTeamHandball3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0360-PuppetTeamHandball3D/task-v1/env-1.0.6/windows/PuppetTeamHandball3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 20073773,
+          "sha256": "51e3e4dec0404af3eee161cd36cc22bc21e4357d0f24c9540563012cd10919c6",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task372_SpinEnsembleEchoProgram3D": {
+      "task_id": 372,
+      "task_name": "Task372_SpinEnsembleEchoProgram3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e463f11c025f0b2f18af271f96d7c7bdeccd8698/artifacts/tasks/0300-0399/0372-Task372_SpinEnsembleEchoProgram3D/task-v1/env-1.0.6/linux/Task372_SpinEnsembleEchoProgram3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0372-Task372_SpinEnsembleEchoProgram3D/task-v1/env-1.0.6/linux/Task372_SpinEnsembleEchoProgram3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 3172706,
+          "sha256": "2a63476cf69afdb6a538a99cfafed4ef4cb5343f5f6d1521621c02073de62446",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e463f11c025f0b2f18af271f96d7c7bdeccd8698/artifacts/tasks/0300-0399/0372-Task372_SpinEnsembleEchoProgram3D/task-v1/env-1.0.6/windows/Task372_SpinEnsembleEchoProgram3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0372-Task372_SpinEnsembleEchoProgram3D/task-v1/env-1.0.6/windows/Task372_SpinEnsembleEchoProgram3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 2236486,
+          "sha256": "a53d235ae7af62deee3d98fd64c94516cc939290a25036cc61d676c54fc16825",
           "archive_format": "zip"
         }
       }
