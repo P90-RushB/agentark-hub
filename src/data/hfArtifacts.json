@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "4b158b12b20a397ee4f06ff0f27250468074f69f",
-  "manifest_sha256": "8ae43944343ce2adaa5bd2e9dbfdc957142848279751cae2821020c73c91e037",
+  "registry_revision": "54381f8c6ae975e62e212199bdee2553b077fafd",
+  "manifest_sha256": "15172b3ddc5c77b86ddca6f98baf834b3184ba0cc6c59d19cf75aa9fb369f808",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4b158b12b20a397ee4f06ff0f27250468074f69f/registry/tasks.jsonl",
-  "registry_sha256": "1e899c35b1cdc622fe762ddecbc803e67ee1800ea9c9a92e2fbd179b7e7aa712",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/54381f8c6ae975e62e212199bdee2553b077fafd/registry/tasks.jsonl",
+  "registry_sha256": "b809ac1e238d53b97d4d38ecbef4063e29b3ec8b557e09bfca36301f72f0bde9",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9942,6 +9942,32 @@
           "path": "artifacts/tasks/0300-0399/0371-PhaseSoluteRegionalControl3D/task-v1/env-1.0.6/windows/PhaseSoluteRegionalControl3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 3000686,
           "sha256": "1558a2bbfae0f938efeded17d5e44701ec7d9748c81130aec20e9b89b25269e4",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task363_TwoLampGuaranteedTrackSearch3D": {
+      "task_id": 363,
+      "task_name": "Task363_TwoLampGuaranteedTrackSearch3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/54381f8c6ae975e62e212199bdee2553b077fafd/artifacts/tasks/0300-0399/0363-Task363_TwoLampGuaranteedTrackSearch3D/task-v1/env-1.0.6/linux/Task363_TwoLampGuaranteedTrackSearch3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0363-Task363_TwoLampGuaranteedTrackSearch3D/task-v1/env-1.0.6/linux/Task363_TwoLampGuaranteedTrackSearch3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 15486818,
+          "sha256": "84cdedd5c1f2dda26a4807efea492e8bcc89071b9d172b6250ceae1ad53b5ce5",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/54381f8c6ae975e62e212199bdee2553b077fafd/artifacts/tasks/0300-0399/0363-Task363_TwoLampGuaranteedTrackSearch3D/task-v1/env-1.0.6/windows/Task363_TwoLampGuaranteedTrackSearch3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0363-Task363_TwoLampGuaranteedTrackSearch3D/task-v1/env-1.0.6/windows/Task363_TwoLampGuaranteedTrackSearch3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 14076328,
+          "sha256": "f176dae1ef8c53fe61dfeefc8039398d5cb7f966dea67fa363702c6d8746e1c7",
           "archive_format": "zip"
         }
       }
