@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "e463f11c025f0b2f18af271f96d7c7bdeccd8698",
-  "manifest_sha256": "3afd2f5ea8373b86e309272cbabb22ab1dfc90f06d2b771ae0c76c064f902896",
+  "registry_revision": "363422a53875e6721bdb86dcde36b654dd763499",
+  "manifest_sha256": "e7a8312901933d6f59e41806ad67d5a0e343aa151e461c3ff90318c97bfdacae",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e463f11c025f0b2f18af271f96d7c7bdeccd8698/registry/tasks.jsonl",
-  "registry_sha256": "ef1931b3c6b53c5473d9879273228eec774b9a13a91175fc2951b04c5573b0f4",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/363422a53875e6721bdb86dcde36b654dd763499/registry/tasks.jsonl",
+  "registry_sha256": "82f7c6611108108b14c7137f5364163ca41edd17895b091c8a0efbe3a053dd3f",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9838,6 +9838,32 @@
           "path": "artifacts/tasks/0300-0399/0372-Task372_SpinEnsembleEchoProgram3D/task-v1/env-1.0.6/windows/Task372_SpinEnsembleEchoProgram3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 2236486,
           "sha256": "a53d235ae7af62deee3d98fd64c94516cc939290a25036cc61d676c54fc16825",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task368_StateDependentQuantifiedLanternProgram3D": {
+      "task_id": 368,
+      "task_name": "Task368_StateDependentQuantifiedLanternProgram3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/363422a53875e6721bdb86dcde36b654dd763499/artifacts/tasks/0300-0399/0368-Task368_StateDependentQuantifiedLanternProgram3D/task-v1/env-1.0.6/linux/Task368_StateDependentQuantifiedLanternProgram3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0368-Task368_StateDependentQuantifiedLanternProgram3D/task-v1/env-1.0.6/linux/Task368_StateDependentQuantifiedLanternProgram3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 2458542,
+          "sha256": "b735f8c0744c8324af578fd615a56e7a9265c1cb4810f26f4921b412768f908c",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/363422a53875e6721bdb86dcde36b654dd763499/artifacts/tasks/0300-0399/0368-Task368_StateDependentQuantifiedLanternProgram3D/task-v1/env-1.0.6/windows/Task368_StateDependentQuantifiedLanternProgram3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0368-Task368_StateDependentQuantifiedLanternProgram3D/task-v1/env-1.0.6/windows/Task368_StateDependentQuantifiedLanternProgram3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 1487435,
+          "sha256": "a0b55018f882804a5c3a560d1c5993b7cbb52bcc7d45e12fd47cdf3db714a0cc",
           "archive_format": "zip"
         }
       }
