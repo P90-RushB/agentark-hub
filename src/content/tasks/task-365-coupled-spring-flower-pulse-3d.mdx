@@ -1,0 +1,29 @@
+---
+title: "Coupled Spring Flower Pulse"
+taskId: "Task365_CoupledSpringFlowerPulse3D"
+order: 365
+dimension: "3d"
+status: "live"
+tags: ["3d", "decision-frames", "function-tool", "image-obs", "motion-control", "multimodal", "oscillation"]
+summary: "Drive spring-mounted flowers through four requested height patterns, then settle the array."
+cover: "/media/tasks/task-365-coupled-spring-flower-pulse-3d.webp"
+coverAlt: "Coupled Spring Flower Pulse task screenshot"
+---
+
+## Task Brief
+
+Drive spring-mounted flowers through four requested height patterns, then settle the array.
+
+## Cover
+
+The cover shows the view after a gameplay action from the published Windows mod on AgentArk 1.0.6.
+
+## Start a session
+
+This mod includes a task launcher. After extracting the platform ZIP, read `launch/LAUNCH.md` for the toolchain and startup command. Use `launch/launch_task.py` to prepare the requested instance and open AgentArk. The launcher preserves this task's original seeds, observations, and scoring.
+
+Starting a scored session also requires the authorized, hash-pinned ModelScope operator archive listed in `launch/LAUNCH.md`. The public download does not include that archive.
+
+The Linux verification used `--qualification-wall-timeout-s 1800`. The default is 240 seconds for each of two checks. This option changes how long startup waits for qualification, without changing in-game timing or scoring.
+
+On a slow Linux host, the verified `--unity-ipc-timeout-s 1200` option gives Unity time to finish the original settling calculation after the last pulse. It changes only the communication wait, whose default is 180 seconds.

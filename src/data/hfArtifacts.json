@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "d5636f352100f301212e2bbc15236c96f6b0d361",
-  "manifest_sha256": "1d995f45b8c27e21437c9b31ef7b91a4ac60afe068b5f12d649316d43f6e1c51",
+  "registry_revision": "b8f1d5ffeaaecdca7f6f6767f2c7e3bdee864f56",
+  "manifest_sha256": "6712cad7e50a53a911c8be85835ee9da29ead2290b6cad881209a99be2742238",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/d5636f352100f301212e2bbc15236c96f6b0d361/registry/tasks.jsonl",
-  "registry_sha256": "b39b453b5f038126ee28dd0d430cafcfee2c5ca87c09113ce31687118ff80b29",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/b8f1d5ffeaaecdca7f6f6767f2c7e3bdee864f56/registry/tasks.jsonl",
+  "registry_sha256": "775b1ad1c0ba0095f6fc216bf54063ea7e7ee467cffa0159ef0775409671eb3c",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -10063,6 +10063,32 @@
           "path": "artifacts/tasks/0300-0399/0364-Task364_PrescribedSteppingBalance3D/task-v1/env-1.0.6/windows/Task364_PrescribedSteppingBalance3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 2490943,
           "sha256": "1d4c559ad6ce4624a9dd620ec4c26ccdb860da7f1fb005d777f75edfab53a00b",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task365_CoupledSpringFlowerPulse3D": {
+      "task_id": 365,
+      "task_name": "Task365_CoupledSpringFlowerPulse3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/b8f1d5ffeaaecdca7f6f6767f2c7e3bdee864f56/artifacts/tasks/0300-0399/0365-Task365_CoupledSpringFlowerPulse3D/task-v1/env-1.0.6/linux/Task365_CoupledSpringFlowerPulse3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0365-Task365_CoupledSpringFlowerPulse3D/task-v1/env-1.0.6/linux/Task365_CoupledSpringFlowerPulse3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 18091674,
+          "sha256": "075d92dd3932b7e01bcb237f76001d7b3ce6186218e2451c12eccec92051985e",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/b8f1d5ffeaaecdca7f6f6767f2c7e3bdee864f56/artifacts/tasks/0300-0399/0365-Task365_CoupledSpringFlowerPulse3D/task-v1/env-1.0.6/windows/Task365_CoupledSpringFlowerPulse3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0365-Task365_CoupledSpringFlowerPulse3D/task-v1/env-1.0.6/windows/Task365_CoupledSpringFlowerPulse3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 16696681,
+          "sha256": "19084965b02a9167dce721a71097ae431612e0d3c60d9629b5bba2b7319f810c",
           "archive_format": "zip"
         }
       }
