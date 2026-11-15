@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "4343a9e23da8122a6d1e1ccb56c13e01584132d9",
-  "manifest_sha256": "f6b9d579f9f21c118cde0dd20a9c39f508cdd6100a045ebcaf1c55f8e531ba59",
+  "registry_revision": "0094159dcc1202e1c5fb42a2d80b460318db6797",
+  "manifest_sha256": "463abbe787a061ea3a3f65efef772e03e11e8d89879332df36f3db96868f5368",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4343a9e23da8122a6d1e1ccb56c13e01584132d9/registry/tasks.jsonl",
-  "registry_sha256": "e4b731c6cec7ec7393467d496f66c9ad3b6ee9ae63b07cf0e1dbc2f62b02658f",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/0094159dcc1202e1c5fb42a2d80b460318db6797/registry/tasks.jsonl",
+  "registry_sha256": "b53ddbcfd2cc992430f60062aa6a0a81616111ba45435969762a4f4656b1620d",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9682,6 +9682,58 @@
           "path": "artifacts/tasks/0300-0399/0370-DualBeadAcousticCapture3D/task-v1/env-1.0.6/windows/DualBeadAcousticCapture3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 2012276,
           "sha256": "ebd6cd72f03f308d2721e3d81056a7948101d2367d70d775e047d127f43b00f0",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "TrophicHabitatConnectivity3D": {
+      "task_id": 359,
+      "task_name": "TrophicHabitatConnectivity3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/0094159dcc1202e1c5fb42a2d80b460318db6797/artifacts/tasks/0300-0399/0359-TrophicHabitatConnectivity3D/task-v1/env-1.0.6/linux/TrophicHabitatConnectivity3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0359-TrophicHabitatConnectivity3D/task-v1/env-1.0.6/linux/TrophicHabitatConnectivity3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 9318903,
+          "sha256": "cd36dc447d9664f24f2d068f2299accf7ba47daf507d9f73390278bc16ba24b8",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/0094159dcc1202e1c5fb42a2d80b460318db6797/artifacts/tasks/0300-0399/0359-TrophicHabitatConnectivity3D/task-v1/env-1.0.6/windows/TrophicHabitatConnectivity3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0359-TrophicHabitatConnectivity3D/task-v1/env-1.0.6/windows/TrophicHabitatConnectivity3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 9318905,
+          "sha256": "968261d1fb01b5e1df193a7cdc114ac766d98f3f5500dd01bd6b6e2bc8ad4fa8",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task362_LayeredHillsideFireControl3D": {
+      "task_id": 362,
+      "task_name": "Task362_LayeredHillsideFireControl3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/0094159dcc1202e1c5fb42a2d80b460318db6797/artifacts/tasks/0300-0399/0362-Task362_LayeredHillsideFireControl3D/task-v1/env-1.0.6/linux/Task362_LayeredHillsideFireControl3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0362-Task362_LayeredHillsideFireControl3D/task-v1/env-1.0.6/linux/Task362_LayeredHillsideFireControl3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 6541340,
+          "sha256": "f61812883c252a55e4f1c4d8ae3a9fa1bcb2b4e155559efb268d50e2860f303c",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/0094159dcc1202e1c5fb42a2d80b460318db6797/artifacts/tasks/0300-0399/0362-Task362_LayeredHillsideFireControl3D/task-v1/env-1.0.6/windows/Task362_LayeredHillsideFireControl3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0362-Task362_LayeredHillsideFireControl3D/task-v1/env-1.0.6/windows/Task362_LayeredHillsideFireControl3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 5587593,
+          "sha256": "f391748090bb999d0886ba1cba0eadefbaf31aa037b4013f550554f484766199",
           "archive_format": "zip"
         }
       }
