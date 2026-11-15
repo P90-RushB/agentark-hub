@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "5e8e3ff991e94e603b4760179220038242c82c9b",
-  "manifest_sha256": "fa09f89023f8c919d0eeebea590f4188e257617635651f22cde3f5940b2b097f",
+  "registry_revision": "4343a9e23da8122a6d1e1ccb56c13e01584132d9",
+  "manifest_sha256": "f6b9d579f9f21c118cde0dd20a9c39f508cdd6100a045ebcaf1c55f8e531ba59",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/5e8e3ff991e94e603b4760179220038242c82c9b/registry/tasks.jsonl",
-  "registry_sha256": "bbbd9f1a8482c628b8dabe530b9e58c1644332656150671b98aa60b577335b2d",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4343a9e23da8122a6d1e1ccb56c13e01584132d9/registry/tasks.jsonl",
+  "registry_sha256": "e4b731c6cec7ec7393467d496f66c9ad3b6ee9ae63b07cf0e1dbc2f62b02658f",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9656,6 +9656,32 @@
           "path": "artifacts/tasks/0300-0399/0358-CoupledWingAeroelasticDesign3D/task-v1/env-1.0.6/windows/CoupledWingAeroelasticDesign3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 4231793,
           "sha256": "7c492f00fe5aec8564862e8b121b5c446d6568e03df997224eedeb1541f07584",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "DualBeadAcousticCapture3D": {
+      "task_id": 370,
+      "task_name": "DualBeadAcousticCapture3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4343a9e23da8122a6d1e1ccb56c13e01584132d9/artifacts/tasks/0300-0399/0370-DualBeadAcousticCapture3D/task-v1/env-1.0.6/linux/DualBeadAcousticCapture3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0370-DualBeadAcousticCapture3D/task-v1/env-1.0.6/linux/DualBeadAcousticCapture3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 2932496,
+          "sha256": "5372e882653b41791fb3200ad942dfe4feb253a386a47fd3282f9d68d1930ec3",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4343a9e23da8122a6d1e1ccb56c13e01584132d9/artifacts/tasks/0300-0399/0370-DualBeadAcousticCapture3D/task-v1/env-1.0.6/windows/DualBeadAcousticCapture3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0370-DualBeadAcousticCapture3D/task-v1/env-1.0.6/windows/DualBeadAcousticCapture3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 2012276,
+          "sha256": "ebd6cd72f03f308d2721e3d81056a7948101d2367d70d775e047d127f43b00f0",
           "archive_format": "zip"
         }
       }
