@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "383e6bb17a0539416f0ae7d271e40de87a014b13",
-  "manifest_sha256": "cc7cb5d38c94a76933e50c8b56e5a630563be01d571363ecdb145af0acb0d491",
+  "registry_revision": "4b158b12b20a397ee4f06ff0f27250468074f69f",
+  "manifest_sha256": "8ae43944343ce2adaa5bd2e9dbfdc957142848279751cae2821020c73c91e037",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/383e6bb17a0539416f0ae7d271e40de87a014b13/registry/tasks.jsonl",
-  "registry_sha256": "5fff2bfb4b082da9ca27a6fe94320dfc65922b47d421524af732409d4724ee15",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4b158b12b20a397ee4f06ff0f27250468074f69f/registry/tasks.jsonl",
+  "registry_sha256": "1e899c35b1cdc622fe762ddecbc803e67ee1800ea9c9a92e2fbd179b7e7aa712",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9890,6 +9890,58 @@
           "path": "artifacts/tasks/0300-0399/0367-Task367_ConnectedSphereChargeTransfer3D/task-v1/env-1.0.6/windows/Task367_ConnectedSphereChargeTransfer3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 5491405,
           "sha256": "c996f59ab47ee6ed6f7e550c8ae0a42c3998e3ef542d478ec8c7fe0bbb8622c2",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task369_HeterogeneousViscoelasticRecovery3D": {
+      "task_id": 369,
+      "task_name": "Task369_HeterogeneousViscoelasticRecovery3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4b158b12b20a397ee4f06ff0f27250468074f69f/artifacts/tasks/0300-0399/0369-Task369_HeterogeneousViscoelasticRecovery3D/task-v1/env-1.0.6/linux/Task369_HeterogeneousViscoelasticRecovery3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0369-Task369_HeterogeneousViscoelasticRecovery3D/task-v1/env-1.0.6/linux/Task369_HeterogeneousViscoelasticRecovery3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 2307942,
+          "sha256": "5db6c62f720077a80123970df676bdc2389f239de09cb437bd3c02609daae8d1",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4b158b12b20a397ee4f06ff0f27250468074f69f/artifacts/tasks/0300-0399/0369-Task369_HeterogeneousViscoelasticRecovery3D/task-v1/env-1.0.6/windows/Task369_HeterogeneousViscoelasticRecovery3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0369-Task369_HeterogeneousViscoelasticRecovery3D/task-v1/env-1.0.6/windows/Task369_HeterogeneousViscoelasticRecovery3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 1410790,
+          "sha256": "6f7295f89199b11d3f4d8142666dc3546f57a311e32c3deb29515be4740b7e2e",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "PhaseSoluteRegionalControl3D": {
+      "task_id": 371,
+      "task_name": "PhaseSoluteRegionalControl3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4b158b12b20a397ee4f06ff0f27250468074f69f/artifacts/tasks/0300-0399/0371-PhaseSoluteRegionalControl3D/task-v1/env-1.0.6/linux/PhaseSoluteRegionalControl3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0371-PhaseSoluteRegionalControl3D/task-v1/env-1.0.6/linux/PhaseSoluteRegionalControl3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 3947127,
+          "sha256": "9f49a9263455e9539776c31fe85e591530fc169646a989e8cccf0ba6551b86aa",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4b158b12b20a397ee4f06ff0f27250468074f69f/artifacts/tasks/0300-0399/0371-PhaseSoluteRegionalControl3D/task-v1/env-1.0.6/windows/PhaseSoluteRegionalControl3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0371-PhaseSoluteRegionalControl3D/task-v1/env-1.0.6/windows/PhaseSoluteRegionalControl3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 3000686,
+          "sha256": "1558a2bbfae0f938efeded17d5e44701ec7d9748c81130aec20e9b89b25269e4",
           "archive_format": "zip"
         }
       }
