@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "26da82ad4fc619094e796f5d8455ff21da2d988f",
-  "manifest_sha256": "c18edb58edbd5cc5783d3262999ed7198c28a4a2705c8f93027ab6803256904a",
+  "registry_revision": "5e8e3ff991e94e603b4760179220038242c82c9b",
+  "manifest_sha256": "fa09f89023f8c919d0eeebea590f4188e257617635651f22cde3f5940b2b097f",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/26da82ad4fc619094e796f5d8455ff21da2d988f/registry/tasks.jsonl",
-  "registry_sha256": "cecfbb713eda8e00e5e7b30ef75f0e6d18302ecb31af6b2dac7d36d7ac1368ce",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/5e8e3ff991e94e603b4760179220038242c82c9b/registry/tasks.jsonl",
+  "registry_sha256": "bbbd9f1a8482c628b8dabe530b9e58c1644332656150671b98aa60b577335b2d",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9604,6 +9604,58 @@
           "path": "artifacts/tasks/0300-0399/0397-PeriodicVolumeMixing3D/task-v1/env-1.0.6/windows/PeriodicVolumeMixing3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 1540932,
           "sha256": "e21e37855f8716a3c1ae11e5a201a7a12fb7134d71d6577ab4a4ccfa41b92ca7",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task353_PatternedTrayDropletShaping3D": {
+      "task_id": 353,
+      "task_name": "Task353_PatternedTrayDropletShaping3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/5e8e3ff991e94e603b4760179220038242c82c9b/artifacts/tasks/0300-0399/0353-Task353_PatternedTrayDropletShaping3D/task-v1/env-1.0.6/linux/Task353_PatternedTrayDropletShaping3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0353-Task353_PatternedTrayDropletShaping3D/task-v1/env-1.0.6/linux/Task353_PatternedTrayDropletShaping3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 2363697,
+          "sha256": "b6b0d4c25a15a236dfad32e1584915d2ea8d7a845a4b92df76225f38f83bdb58",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/5e8e3ff991e94e603b4760179220038242c82c9b/artifacts/tasks/0300-0399/0353-Task353_PatternedTrayDropletShaping3D/task-v1/env-1.0.6/windows/Task353_PatternedTrayDropletShaping3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0353-Task353_PatternedTrayDropletShaping3D/task-v1/env-1.0.6/windows/Task353_PatternedTrayDropletShaping3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 1471623,
+          "sha256": "d2e916cfdaca1dd6f4c97f9599bddfb55edc4b186f71e2e0e6e00cc74697eda9",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CoupledWingAeroelasticDesign3D": {
+      "task_id": 358,
+      "task_name": "CoupledWingAeroelasticDesign3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/5e8e3ff991e94e603b4760179220038242c82c9b/artifacts/tasks/0300-0399/0358-CoupledWingAeroelasticDesign3D/task-v1/env-1.0.6/linux/CoupledWingAeroelasticDesign3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0358-CoupledWingAeroelasticDesign3D/task-v1/env-1.0.6/linux/CoupledWingAeroelasticDesign3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 5122577,
+          "sha256": "50e101ed9f3423bb0e10a8c7be31fdbf2d1dbe3bdf4dedb4e3b1c56e0ad42b37",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/5e8e3ff991e94e603b4760179220038242c82c9b/artifacts/tasks/0300-0399/0358-CoupledWingAeroelasticDesign3D/task-v1/env-1.0.6/windows/CoupledWingAeroelasticDesign3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0358-CoupledWingAeroelasticDesign3D/task-v1/env-1.0.6/windows/CoupledWingAeroelasticDesign3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 4231793,
+          "sha256": "7c492f00fe5aec8564862e8b121b5c446d6568e03df997224eedeb1541f07584",
           "archive_format": "zip"
         }
       }
