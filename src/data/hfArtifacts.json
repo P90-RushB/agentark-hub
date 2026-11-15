@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "9e0d8461b2e6d4789a383fa1448298c236a77326",
-  "manifest_sha256": "f0f12a1aac61e5a3c4a52acd830c9065b7f6919cb0bd7efd7f59f4c80d587568",
+  "registry_revision": "3a6feeb0f79c3c305fa6f0228f4d6564c8a96a3d",
+  "manifest_sha256": "4a2d1959ae014d9535474f7a8d163a5a9a6ab336f0e80896b51c7842c262cd45",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/9e0d8461b2e6d4789a383fa1448298c236a77326/registry/tasks.jsonl",
-  "registry_sha256": "4481f037ac69fdde5d3fc379c21d40c549da6ebf116da0c672fd94b19a14376e",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/3a6feeb0f79c3c305fa6f0228f4d6564c8a96a3d/registry/tasks.jsonl",
+  "registry_sha256": "151dafbb7ab8b905288e19463e969b81eb46b62d50f00532b04899c09096406a",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -10011,6 +10011,32 @@
           "path": "artifacts/tasks/0300-0399/0395-ExcitableShellQuiescence3D/task-1.0/env-1.0.6/windows/ExcitableShellQuiescence3D-task-1.0-env-1.0.6-windows.zip",
           "size_bytes": 342357944,
           "sha256": "e728a4839327965fd976c74cb7a855b1e978054e08979a6715c1e499e5a7a449",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task366_OrdinalSharedShelfArrangement3D": {
+      "task_id": 366,
+      "task_name": "Task366_OrdinalSharedShelfArrangement3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/3a6feeb0f79c3c305fa6f0228f4d6564c8a96a3d/artifacts/tasks/0300-0399/0366-Task366_OrdinalSharedShelfArrangement3D/task-v1/env-1.0.6/linux/Task366_OrdinalSharedShelfArrangement3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0366-Task366_OrdinalSharedShelfArrangement3D/task-v1/env-1.0.6/linux/Task366_OrdinalSharedShelfArrangement3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 2359993,
+          "sha256": "8d1552de4dc4cd4f14d2718b4aa1795ad262c8ab6ed1305ada217078315e8a45",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/3a6feeb0f79c3c305fa6f0228f4d6564c8a96a3d/artifacts/tasks/0300-0399/0366-Task366_OrdinalSharedShelfArrangement3D/task-v1/env-1.0.6/windows/Task366_OrdinalSharedShelfArrangement3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0366-Task366_OrdinalSharedShelfArrangement3D/task-v1/env-1.0.6/windows/Task366_OrdinalSharedShelfArrangement3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 1392580,
+          "sha256": "423a0a0f1b26ca06523112e9a63e963dc23fe16759bd5acd5ecc3faac9e0bc9b",
           "archive_format": "zip"
         }
       }
