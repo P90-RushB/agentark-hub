@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "3a6feeb0f79c3c305fa6f0228f4d6564c8a96a3d",
-  "manifest_sha256": "4a2d1959ae014d9535474f7a8d163a5a9a6ab336f0e80896b51c7842c262cd45",
+  "registry_revision": "d5636f352100f301212e2bbc15236c96f6b0d361",
+  "manifest_sha256": "1d995f45b8c27e21437c9b31ef7b91a4ac60afe068b5f12d649316d43f6e1c51",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/3a6feeb0f79c3c305fa6f0228f4d6564c8a96a3d/registry/tasks.jsonl",
-  "registry_sha256": "151dafbb7ab8b905288e19463e969b81eb46b62d50f00532b04899c09096406a",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/d5636f352100f301212e2bbc15236c96f6b0d361/registry/tasks.jsonl",
+  "registry_sha256": "b39b453b5f038126ee28dd0d430cafcfee2c5ca87c09113ce31687118ff80b29",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -10037,6 +10037,32 @@
           "path": "artifacts/tasks/0300-0399/0366-Task366_OrdinalSharedShelfArrangement3D/task-v1/env-1.0.6/windows/Task366_OrdinalSharedShelfArrangement3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 1392580,
           "sha256": "423a0a0f1b26ca06523112e9a63e963dc23fe16759bd5acd5ecc3faac9e0bc9b",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "Task364_PrescribedSteppingBalance3D": {
+      "task_id": 364,
+      "task_name": "Task364_PrescribedSteppingBalance3D",
+      "task_version": "v1",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/d5636f352100f301212e2bbc15236c96f6b0d361/artifacts/tasks/0300-0399/0364-Task364_PrescribedSteppingBalance3D/task-v1/env-1.0.6/linux/Task364_PrescribedSteppingBalance3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0364-Task364_PrescribedSteppingBalance3D/task-v1/env-1.0.6/linux/Task364_PrescribedSteppingBalance3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 3864137,
+          "sha256": "88449393bd63b48b3471b1eb33f0934b529c9e598a7b114a41ac769ad034c43c",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/d5636f352100f301212e2bbc15236c96f6b0d361/artifacts/tasks/0300-0399/0364-Task364_PrescribedSteppingBalance3D/task-v1/env-1.0.6/windows/Task364_PrescribedSteppingBalance3D-task-v1-env-1.0.6-windows.zip",
+          "path": "artifacts/tasks/0300-0399/0364-Task364_PrescribedSteppingBalance3D/task-v1/env-1.0.6/windows/Task364_PrescribedSteppingBalance3D-task-v1-env-1.0.6-windows.zip",
+          "size_bytes": 2490943,
+          "sha256": "1d4c559ad6ce4624a9dd620ec4c26ccdb860da7f1fb005d777f75edfab53a00b",
           "archive_format": "zip"
         }
       }
