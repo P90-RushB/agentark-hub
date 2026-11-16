@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "f322a595d4cb59011e40d706cf3142a3bff1aac8",
-  "manifest_sha256": "5b7bbbb2395a57666d0d3b41ad4f1bdee339f8451aaf71ce146d8a11f695133b",
+  "registry_revision": "e3c657e8d0c13c33ad25de3fd5217c5cf8166adb",
+  "manifest_sha256": "8667b1104acec8ee26bd079f49744e5889308f78c24768863bcd9dbdd55bd567",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/f322a595d4cb59011e40d706cf3142a3bff1aac8/registry/tasks.jsonl",
-  "registry_sha256": "58bebf8f6839087c0b0dbcfd6d0fa4f65c5d36f836203e417e9bdc556d7aa1f4",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e3c657e8d0c13c33ad25de3fd5217c5cf8166adb/registry/tasks.jsonl",
+  "registry_sha256": "71e34ac9d15561c94aa1dd20ca28a4634b14ad2b8481749e30ab2d068dd13159",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -10141,6 +10141,15 @@
           "path": "artifacts/tasks/0400-0499/0401-SegmentedMirrorCophasing3D/task-v1/env-1.0.6/windows/SegmentedMirrorCophasing3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 5064209,
           "sha256": "b2b7b5efbdde3bb5f35d8834fd757fe080c726d44ce22b61fb1128f0da1547bf",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e3c657e8d0c13c33ad25de3fd5217c5cf8166adb/artifacts/tasks/0400-0499/0401-SegmentedMirrorCophasing3D/task-v1/env-1.0.6/linux/SegmentedMirrorCophasing3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0400-0499/0401-SegmentedMirrorCophasing3D/task-v1/env-1.0.6/linux/SegmentedMirrorCophasing3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 6021081,
+          "sha256": "c86b5816525107cbcf52817a88cfd42f5e79315010bd76e1a3f4041c0ab9d7bb",
           "archive_format": "zip"
         }
       }
