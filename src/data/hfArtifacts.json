@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "50f512bcf3f662b4303964c99e7bfa93d54e91da",
-  "manifest_sha256": "7e53fa1c2080afd071aa7dc3ed7ac7713495f6ece9e34058540feb1858c9e79b",
+  "registry_revision": "f47bd43dece9ebd7c2658fc9022664391510585a",
+  "manifest_sha256": "e17bd9b6c8811e2b03db2868dd6149b3dac016f1b675d3a34b910cb242084afb",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/50f512bcf3f662b4303964c99e7bfa93d54e91da/registry/tasks.jsonl",
-  "registry_sha256": "38cbd002230b971f2a7c764472976ec458f0d074c4867cc81c239ea6b1f3aa53",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/f47bd43dece9ebd7c2658fc9022664391510585a/registry/tasks.jsonl",
+  "registry_sha256": "ddba766f4ebf1dc299c5d37f100527aa8bd43d227fe868e70cee3047a6743353",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -12039,6 +12039,15 @@
           "path": "artifacts/tasks/0400-0499/0475-Task475_F024CompressedBeadContact3D/task-v1/env-1.0.6/windows/Task475_F024CompressedBeadContact3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 14669359,
           "sha256": "595496e076bc8389f04e47a32a841a5c11ccc2a9baa3aad16beb8d25bb0474cf",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/f47bd43dece9ebd7c2658fc9022664391510585a/artifacts/tasks/0400-0499/0475-Task475_F024CompressedBeadContact3D/task-v1/env-1.0.6/linux/Task475_F024CompressedBeadContact3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0400-0499/0475-Task475_F024CompressedBeadContact3D/task-v1/env-1.0.6/linux/Task475_F024CompressedBeadContact3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 31953145,
+          "sha256": "5d155626ebd83298d4029a46dbe30e37d3d0d3044e9adb48decc3475862808c3",
           "archive_format": "zip"
         }
       }
