@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "b8f1d5ffeaaecdca7f6f6767f2c7e3bdee864f56",
-  "manifest_sha256": "6712cad7e50a53a911c8be85835ee9da29ead2290b6cad881209a99be2742238",
+  "registry_revision": "42cbae36467e471529f9fa8cf5f449247e0c1572",
+  "manifest_sha256": "f5c827592655a00dd40a569bf92dbcdaa947f2b0a65948eace2af360676a5729",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/b8f1d5ffeaaecdca7f6f6767f2c7e3bdee864f56/registry/tasks.jsonl",
-  "registry_sha256": "775b1ad1c0ba0095f6fc216bf54063ea7e7ee467cffa0159ef0775409671eb3c",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/42cbae36467e471529f9fa8cf5f449247e0c1572/registry/tasks.jsonl",
+  "registry_sha256": "68b8b78c992a692c35036956cf17f081fa12baf55a8426598dbcc0e14964bf6f",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -9842,6 +9842,23 @@
         }
       }
     },
+    "InductionLoopCoastHold3D": {
+      "task_id": 373,
+      "task_name": "InductionLoopCoastHold3D",
+      "task_version": "r3",
+      "env_version": "1.0.6",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/42cbae36467e471529f9fa8cf5f449247e0c1572/artifacts/tasks/0300-0399/0373-InductionLoopCoastHold3D/task-r3/env-1.0.6/linux/InductionLoopCoastHold3D-task-r3-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0373-InductionLoopCoastHold3D/task-r3/env-1.0.6/linux/InductionLoopCoastHold3D-task-r3-env-1.0.6-linux.zip",
+          "size_bytes": 2129612,
+          "sha256": "d30a2509b07920e1db391bcdb0aa8e7b87d3420803994a9532d79d463ed998eb",
+          "archive_format": "zip"
+        }
+      }
+    },
     "Task368_StateDependentQuantifiedLanternProgram3D": {
       "task_id": 368,
       "task_name": "Task368_StateDependentQuantifiedLanternProgram3D",
@@ -10011,6 +10028,15 @@
           "path": "artifacts/tasks/0300-0399/0395-ExcitableShellQuiescence3D/task-1.0/env-1.0.6/windows/ExcitableShellQuiescence3D-task-1.0-env-1.0.6-windows.zip",
           "size_bytes": 342357944,
           "sha256": "e728a4839327965fd976c74cb7a855b1e978054e08979a6715c1e499e5a7a449",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/42cbae36467e471529f9fa8cf5f449247e0c1572/artifacts/tasks/0300-0399/0395-ExcitableShellQuiescence3D/task-1.0/env-1.0.6/linux/ExcitableShellQuiescence3D-task-1.0-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0300-0399/0395-ExcitableShellQuiescence3D/task-1.0/env-1.0.6/linux/ExcitableShellQuiescence3D-task-1.0-env-1.0.6-linux.zip",
+          "size_bytes": 343269921,
+          "sha256": "37805ae7386a1f19cbc9c366cc086d4a7c67dd0c126a4ae92e69d91721e6bebf",
           "archive_format": "zip"
         }
       }
