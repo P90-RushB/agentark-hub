@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "e3c657e8d0c13c33ad25de3fd5217c5cf8166adb",
-  "manifest_sha256": "8667b1104acec8ee26bd079f49744e5889308f78c24768863bcd9dbdd55bd567",
+  "registry_revision": "50f512bcf3f662b4303964c99e7bfa93d54e91da",
+  "manifest_sha256": "7e53fa1c2080afd071aa7dc3ed7ac7713495f6ece9e34058540feb1858c9e79b",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/e3c657e8d0c13c33ad25de3fd5217c5cf8166adb/registry/tasks.jsonl",
-  "registry_sha256": "71e34ac9d15561c94aa1dd20ca28a4634b14ad2b8481749e30ab2d068dd13159",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/50f512bcf3f662b4303964c99e7bfa93d54e91da/registry/tasks.jsonl",
+  "registry_sha256": "38cbd002230b971f2a7c764472976ec458f0d074c4867cc81c239ea6b1f3aa53",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -11208,6 +11208,15 @@
           "size_bytes": 7536632,
           "sha256": "e241e573c2aebdb86f822c48abe126606e7b50199bf57f02bb7234cb350f4c7d",
           "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/50f512bcf3f662b4303964c99e7bfa93d54e91da/artifacts/tasks/0400-0499/0443-Task443_NontransitiveSolidAngleBoxes3D/task-v1/env-1.0.6/linux/Task443_NontransitiveSolidAngleBoxes3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0400-0499/0443-Task443_NontransitiveSolidAngleBoxes3D/task-v1/env-1.0.6/linux/Task443_NontransitiveSolidAngleBoxes3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 17434243,
+          "sha256": "565ae51b4a18c18a0a47b915ac7315d30e2d451e0e8cd43f604b0a19805b796b",
+          "archive_format": "zip"
         }
       }
     },
@@ -11224,6 +11233,15 @@
           "path": "artifacts/tasks/0400-0499/0444-Task444_FourierBarrelGrooveSynthesis3D/task-v1/env-1.0.6/windows/Task444_FourierBarrelGrooveSynthesis3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 7848209,
           "sha256": "a0d358679e785859292bf48736388bfb27d4d7544b392c16f5f3b63dabef62e9",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/50f512bcf3f662b4303964c99e7bfa93d54e91da/artifacts/tasks/0400-0499/0444-Task444_FourierBarrelGrooveSynthesis3D/task-v1/env-1.0.6/linux/Task444_FourierBarrelGrooveSynthesis3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0400-0499/0444-Task444_FourierBarrelGrooveSynthesis3D/task-v1/env-1.0.6/linux/Task444_FourierBarrelGrooveSynthesis3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 17520937,
+          "sha256": "1e33f4852b6f74b691cbd0cdb66b1e6cc0e7130701786b845605c23bdc716cff",
           "archive_format": "zip"
         }
       }
@@ -11892,6 +11910,15 @@
           "size_bytes": 7217527,
           "sha256": "24bbfb5e10124cf42b8c60894600d4c6884f08676c955812faa9c81c3d2f387f",
           "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/50f512bcf3f662b4303964c99e7bfa93d54e91da/artifacts/tasks/0400-0499/0470-F003BraceUniqueness3D/task-v1/env-1.0.6/linux/F003BraceUniqueness3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0400-0499/0470-F003BraceUniqueness3D/task-v1/env-1.0.6/linux/F003BraceUniqueness3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 16736892,
+          "sha256": "1fc50845b80e8ec4c4019aa03e80f5f5726e06a7a65b15fa34dacba7a17c2b0b",
+          "archive_format": "zip"
         }
       }
     },
@@ -12367,6 +12394,15 @@
           "path": "artifacts/tasks/0400-0499/0489-F070ViscoelasticReleaseMemory3D/task-v1/env-1.0.6/windows/F070ViscoelasticReleaseMemory3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 10338466,
           "sha256": "96661e777e4e5060227cdf0aff55469ca107d8705fdbaa8034c28cecad8ef180",
+          "archive_format": "zip"
+        },
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/50f512bcf3f662b4303964c99e7bfa93d54e91da/artifacts/tasks/0400-0499/0489-F070ViscoelasticReleaseMemory3D/task-v1/env-1.0.6/linux/F070ViscoelasticReleaseMemory3D-task-v1-env-1.0.6-linux.zip",
+          "path": "artifacts/tasks/0400-0499/0489-F070ViscoelasticReleaseMemory3D/task-v1/env-1.0.6/linux/F070ViscoelasticReleaseMemory3D-task-v1-env-1.0.6-linux.zip",
+          "size_bytes": 22130753,
+          "sha256": "19de55b1b42f8e8116664d244a4cddc690ed7f0c9cffe7c65c6333b98a70085e",
           "archive_format": "zip"
         }
       }
