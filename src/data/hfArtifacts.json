@@ -2,11 +2,11 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "f47bd43dece9ebd7c2658fc9022664391510585a",
-  "manifest_sha256": "e17bd9b6c8811e2b03db2868dd6149b3dac016f1b675d3a34b910cb242084afb",
+  "registry_revision": "141b1e953f0b430766819a4247c2cd5161d2c3ed",
+  "manifest_sha256": "a98438a28b449485273a0f033215b7e9733e4a3770d29579e319e2c211a4d5b6",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/f47bd43dece9ebd7c2658fc9022664391510585a/registry/tasks.jsonl",
-  "registry_sha256": "ddba766f4ebf1dc299c5d37f100527aa8bd43d227fe868e70cee3047a6743353",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/141b1e953f0b430766819a4247c2cd5161d2c3ed/registry/tasks.jsonl",
+  "registry_sha256": "d558b1c4f6f4d2dbbcd1bc70f97a0cc9bb68ad90bd69863d456fdbf991e48ba1",
   "current_release": "env-1.0.6",
   "tasks": {
     "MarbleStop": {
@@ -11914,10 +11914,10 @@
         "linux": {
           "label": "Linux",
           "platform": "linux",
-          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/50f512bcf3f662b4303964c99e7bfa93d54e91da/artifacts/tasks/0400-0499/0470-F003BraceUniqueness3D/task-v1/env-1.0.6/linux/F003BraceUniqueness3D-task-v1-env-1.0.6-linux.zip",
-          "path": "artifacts/tasks/0400-0499/0470-F003BraceUniqueness3D/task-v1/env-1.0.6/linux/F003BraceUniqueness3D-task-v1-env-1.0.6-linux.zip",
-          "size_bytes": 16736892,
-          "sha256": "1fc50845b80e8ec4c4019aa03e80f5f5726e06a7a65b15fa34dacba7a17c2b0b",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/141b1e953f0b430766819a4247c2cd5161d2c3ed/artifacts/tasks/0400-0499/0470-F003BraceUniqueness3D/task-v1/env-1.0.6/linux/portable-r1/F003BraceUniqueness3D-task-v1-env-1.0.6-linux-portable-r1.zip",
+          "path": "artifacts/tasks/0400-0499/0470-F003BraceUniqueness3D/task-v1/env-1.0.6/linux/portable-r1/F003BraceUniqueness3D-task-v1-env-1.0.6-linux-portable-r1.zip",
+          "size_bytes": 8161402,
+          "sha256": "683817409bead721d7cd7f7b2719bc994764b26a6a7e88e5ad4ddff90db67655",
           "archive_format": "zip"
         }
       }
