@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import roboticsRuntime from "../../data/roboticsRuntime.json";
 import { downloadsForTask, getTaskBySlug, hfDatasetUrl, kaggleBenchUrl, taskEntries } from "../../lib/tasks.js";
 import { formatBytes, withBase } from "../../lib/site.js";
 
@@ -11,6 +12,10 @@ const task = getTaskBySlug(Astro.params.slug);
 const Content = task.Content;
 const downloads = downloadsForTask(task.data.taskId);
 const dedicatedBenchmark = task.data.benchmarkUrl;
+const roboticsPlayerDownloads = task.data.tags.includes("robotics") &&
+  task.artifact.env_version === roboticsRuntime.env_version
+  ? Object.values(roboticsRuntime.platforms)
+  : [];
 const videoId = task.data.videoUrl.match(/\/video\/(BV[0-9A-Za-z]{10})(?:\/|$)/)?.[1];
 const videoEmbedUrl = videoId
   ? `https://player.bilibili.com/player.html?isOutside=true&bvid=${videoId}&p=1&autoplay=0`
@@ -39,7 +44,14 @@ const videoEmbedUrl = videoId
     </div>
     <aside>
       <div class="detail-panel"><h2>Task profile</h2><dl><dt>Format</dt><dd>{task.data.dimension.toUpperCase()}</dd><dt>Tags</dt><dd>{task.data.tags.join(", ")}</dd><dt>Version</dt><dd>{task.artifact.task_version} · {task.artifact.env_version}</dd></dl></div>
-      <div class="detail-panel"><h2>Public artifacts</h2><p class="muted">Available from <a href={hfDatasetUrl}>P90-RushB/AgentArk</a>.</p>{task.data.setupUrl ? <p class="muted">Task archives need a compatible AgentArk Player. <a href={task.data.setupUrl}>Windows & Linux setup ↗</a></p> : null}<div class="download-list">{downloads.map((download) => <a class="download-link" href={download.url}><strong>{download.label} zip</strong><span>{formatBytes(download.size_bytes)}</span></a>)}</div></div>
+      <div class="detail-panel"><h2>Public artifacts</h2><p class="muted">Available from <a href={hfDatasetUrl}>P90-RushB/AgentArk</a>.</p>{task.data.setupUrl ? <p class="muted">Task archives need a compatible AgentArk Player. <a href={task.data.setupUrl}>Windows & Linux setup ↗</a></p> : null}<div class="download-list">{downloads.map((download) => <a class="download-link" href={download.url}><strong>{download.label} zip</strong><span>{formatBytes(download.size_bytes)}</span></a>)}</div></div>{roboticsPlayerDownloads.length > 0 && <div class="detail-panel" style="overflow-wrap: anywhere">
+        <h2>Run locally</h2>
+        <p>Use AgentArk Player {roboticsRuntime.env_version} and the <a href={`https://github.com/P90-RushB/AgentArk/tree/${roboticsRuntime.wrapper_revision}`}>matching Python wrapper from Git</a>.</p>
+        <div class="download-list">{roboticsPlayerDownloads.map((download) => <a class="download-link" href={download.url}><strong>{download.label} Player</strong><span>{formatBytes(download.size_bytes)}</span></a>)}</div>
+        <p>Extract the task zip into <code>AgentArk_Data/Resources/Mods/all_tasks/{task.data.taskId}/</code> inside the Player directory.</p>
+        <p>Install the wrapper in a Python 3.10.12 environment. <code>python -m pip install "git+https://github.com/P90-RushB/AgentArk.git@{roboticsRuntime.wrapper_revision}"</code></p>
+        <p>Synchronous execution (<code>sync</code>) is the default. To opt into <code>realtime</code>, pass the parsed <code>cfg/realtime_profile.yaml</code> mapping as <code>env_config_overrides</code> to <code>ArkEnv</code> or <code>ArkSubEnv</code>.</p>
+      </div>}
       <div class="detail-panel"><h2>Benchmark</h2>{dedicatedBenchmark ? <><p class="muted">Compare paintings, watch recorded runs and reproduce the task with {task.data.benchmarkName}.</p><a class="button" href={dedicatedBenchmark}>Open {task.data.benchmarkName}</a></> : <><p class="muted">Public evaluation results live on Kaggle AgentArk Bench.</p><a class="button" href={kaggleBenchUrl}>Open AgentArk Bench</a></>}</div>
     </aside>
   </div></section>

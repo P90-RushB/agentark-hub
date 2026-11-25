@@ -2,12 +2,12 @@
   "repo_id": "P90-RushB/AgentArk",
   "dataset_url": "https://huggingface.co/datasets/P90-RushB/AgentArk",
   "registry_created_at": "2026-09-19T13:48:12+00:00",
-  "registry_revision": "35b944f45eb2e7bf3cc4c8b0002e04a1be4aa0ab",
-  "manifest_sha256": "59300149a538aab6251c692ddf41dab558ef0c0cc5e19195dc81f69cb054f099",
+  "registry_revision": "4e9f7f84ca36b262df87a86e3b7d166e80973163",
+  "manifest_sha256": "e617c3e81512e6a401263592340a6a707de83b9bc4ac1c71df7db6633f16dd28",
   "registry_path": "registry/tasks.jsonl",
-  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/35b944f45eb2e7bf3cc4c8b0002e04a1be4aa0ab/registry/tasks.jsonl",
-  "registry_sha256": "2a63db40f6b50a37ccb0abd025a16810a946526986b2ad5936ac86d381ec4ac9",
-  "current_release": "env-1.0.6",
+  "registry_url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/registry/tasks.jsonl",
+  "registry_sha256": "424b0b4e677fe8cb87fe57de6770783728fbc7e0c8a5c1180bbcb2e9eb497577",
+  "current_release": "env-1.0.7",
   "tasks": {
     "MarbleStop": {
       "task_id": 0,
@@ -12698,6 +12698,500 @@
           "path": "artifacts/tasks/0500-0599/0500-Task500_F084AdhesiveSupportCalibration3D/task-v1/env-1.0.6/windows/Task500_F084AdhesiveSupportCalibration3D-task-v1-env-1.0.6-windows.zip",
           "size_bytes": 840165,
           "sha256": "c3aa680dba6da2ce83f2192d3ee9b8dd1ad91e02e546abba1b15e1af96ee0b48",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ToolCabinetStow": {
+      "task_id": 502,
+      "task_name": "ToolCabinetStow",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0502-ToolCabinetStow/task-v1/env-1.0.7/linux/ToolCabinetStow-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0502-ToolCabinetStow/task-v1/env-1.0.7/linux/ToolCabinetStow-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5826149,
+          "sha256": "9fea19d991d7631a4b87efc121e01f3855937024da03af88a56a8bd0f5e7c7ff",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0502-ToolCabinetStow/task-v1/env-1.0.7/windows/ToolCabinetStow-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0502-ToolCabinetStow/task-v1/env-1.0.7/windows/ToolCabinetStow-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 5392708,
+          "sha256": "7c45f82a1aa31bdb0d6da6df5250d374012458f72e63c1fbd773054dc760eca2",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "KeyedModuleInsertion": {
+      "task_id": 503,
+      "task_name": "KeyedModuleInsertion",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0503-KeyedModuleInsertion/task-v1/env-1.0.7/linux/KeyedModuleInsertion-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0503-KeyedModuleInsertion/task-v1/env-1.0.7/linux/KeyedModuleInsertion-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5192415,
+          "sha256": "3ed6ee501e633c2c925d5ca880c1c0302047f76aecfd9554f5ea35b4acb212ff",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0503-KeyedModuleInsertion/task-v1/env-1.0.7/windows/KeyedModuleInsertion-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0503-KeyedModuleInsertion/task-v1/env-1.0.7/windows/KeyedModuleInsertion-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4768390,
+          "sha256": "b0185b2ef081bee848327ec9b708305e7ccb47f8839e677d3beda84d6736c31f",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "BimanualMugHandoff": {
+      "task_id": 504,
+      "task_name": "BimanualMugHandoff",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0504-BimanualMugHandoff/task-v1/env-1.0.7/linux/BimanualMugHandoff-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0504-BimanualMugHandoff/task-v1/env-1.0.7/linux/BimanualMugHandoff-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5118480,
+          "sha256": "e6a240fffaca1d333986e92884020ec0b0462e254fdcd02d0d1f46d444e2eb30",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0504-BimanualMugHandoff/task-v1/env-1.0.7/windows/BimanualMugHandoff-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0504-BimanualMugHandoff/task-v1/env-1.0.7/windows/BimanualMugHandoff-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4689642,
+          "sha256": "08f57c0aa761336142f2aa73389349e29ddae0a359bf4d6f10141330d1b2ac11",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "PhotoFixtureRestore": {
+      "task_id": 505,
+      "task_name": "PhotoFixtureRestore",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0505-PhotoFixtureRestore/task-v1/env-1.0.7/linux/PhotoFixtureRestore-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0505-PhotoFixtureRestore/task-v1/env-1.0.7/linux/PhotoFixtureRestore-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 4840909,
+          "sha256": "5f29da727a2631e1b8d5e91471641becc6e80ccc1d59cd9350af021eb0e2f7be",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0505-PhotoFixtureRestore/task-v1/env-1.0.7/windows/PhotoFixtureRestore-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0505-PhotoFixtureRestore/task-v1/env-1.0.7/windows/PhotoFixtureRestore-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4409366,
+          "sha256": "9a768d08de90de5f949955ab05726020624f577add3ecec164f1ab3d93da0bf2",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "SpatulaFlipServe": {
+      "task_id": 506,
+      "task_name": "SpatulaFlipServe",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0506-SpatulaFlipServe/task-v1/env-1.0.7/linux/SpatulaFlipServe-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0506-SpatulaFlipServe/task-v1/env-1.0.7/linux/SpatulaFlipServe-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5743376,
+          "sha256": "20528ae51a4943f1d53ba5b1a4f92186025598d4e7a27a0718e74e9ed817c9d5",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0506-SpatulaFlipServe/task-v1/env-1.0.7/windows/SpatulaFlipServe-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0506-SpatulaFlipServe/task-v1/env-1.0.7/windows/SpatulaFlipServe-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 5313450,
+          "sha256": "1bc522a558ea0e19dabadd1581fe33cd9591cca08e969daa187f4bb95823731a",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "BimanualInterlockRelease": {
+      "task_id": 507,
+      "task_name": "BimanualInterlockRelease",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0507-BimanualInterlockRelease/task-v1/env-1.0.7/linux/BimanualInterlockRelease-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0507-BimanualInterlockRelease/task-v1/env-1.0.7/linux/BimanualInterlockRelease-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5485751,
+          "sha256": "d1889c8a8a9e20af368f9531fcc791fc01077285c65d696641bcd8765f708acb",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0507-BimanualInterlockRelease/task-v1/env-1.0.7/windows/BimanualInterlockRelease-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0507-BimanualInterlockRelease/task-v1/env-1.0.7/windows/BimanualInterlockRelease-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 5054697,
+          "sha256": "6171210437fdf20d87fdbc95d4b89c1e72d794273ca4549ba98c8d4c00fd19d0",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "BimanualPlungerDosing": {
+      "task_id": 508,
+      "task_name": "BimanualPlungerDosing",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0508-BimanualPlungerDosing/task-v1/env-1.0.7/linux/BimanualPlungerDosing-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0508-BimanualPlungerDosing/task-v1/env-1.0.7/linux/BimanualPlungerDosing-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5981760,
+          "sha256": "40f695ba73fd812453259cfc4ad74248fe1de5373bf3677263f14802bbec1afc",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0508-BimanualPlungerDosing/task-v1/env-1.0.7/windows/BimanualPlungerDosing-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0508-BimanualPlungerDosing/task-v1/env-1.0.7/windows/BimanualPlungerDosing-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 5395692,
+          "sha256": "eb76fea59bd79728162f751c9ce7224cb9c76938dfeacfffb549f47bea79c33c",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "SwingingLoadDock": {
+      "task_id": 512,
+      "task_name": "SwingingLoadDock",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0512-SwingingLoadDock/task-v1/env-1.0.7/linux/SwingingLoadDock-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0512-SwingingLoadDock/task-v1/env-1.0.7/linux/SwingingLoadDock-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 4478459,
+          "sha256": "66f395c5e12e20d819bfb317c127ed1191813c0a1cedcc848cffb9dafb8d80e9",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0512-SwingingLoadDock/task-v1/env-1.0.7/windows/SwingingLoadDock-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0512-SwingingLoadDock/task-v1/env-1.0.7/windows/SwingingLoadDock-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4047733,
+          "sha256": "e442211bfde0897070d31a62021eae5e839ab6a3c0b8a820c8fdb57b0f0f135c",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "PlanarDispatchPandaPrecision": {
+      "task_id": 513,
+      "task_name": "PlanarDispatchPandaPrecision",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0513-PlanarDispatchPandaPrecision/task-v1/env-1.0.7/linux/PlanarDispatchPandaPrecision-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0513-PlanarDispatchPandaPrecision/task-v1/env-1.0.7/linux/PlanarDispatchPandaPrecision-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5107594,
+          "sha256": "6a64b7ab7dd9664bf23a90f752a5c2c90c61aba9aa3da65a0d7dd80645dfef18",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0513-PlanarDispatchPandaPrecision/task-v1/env-1.0.7/windows/PlanarDispatchPandaPrecision-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0513-PlanarDispatchPandaPrecision/task-v1/env-1.0.7/windows/PlanarDispatchPandaPrecision-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4671959,
+          "sha256": "df39b2bdbcdad66fd21cf8ddd4c968dbf1550df3fc22d87cba426368f0772af9",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "TreadBrushCleanConstrained": {
+      "task_id": 514,
+      "task_name": "TreadBrushCleanConstrained",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0514-TreadBrushCleanConstrained/task-v1/env-1.0.7/linux/TreadBrushCleanConstrained-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0514-TreadBrushCleanConstrained/task-v1/env-1.0.7/linux/TreadBrushCleanConstrained-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5815233,
+          "sha256": "e0b4b6b3f6c70b187ac2b2404f28689e066e630ab45e677142440faaa3ea8413",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0514-TreadBrushCleanConstrained/task-v1/env-1.0.7/windows/TreadBrushCleanConstrained-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0514-TreadBrushCleanConstrained/task-v1/env-1.0.7/windows/TreadBrushCleanConstrained-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 5202204,
+          "sha256": "09bd4c2b1f942a3073502e2331e540262e4b4d71538a7d6de83dcb00a215d7d9",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "BimanualTrayRecoveryDischarge": {
+      "task_id": 515,
+      "task_name": "BimanualTrayRecoveryDischarge",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0515-BimanualTrayRecoveryDischarge/task-v1/env-1.0.7/linux/BimanualTrayRecoveryDischarge-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0515-BimanualTrayRecoveryDischarge/task-v1/env-1.0.7/linux/BimanualTrayRecoveryDischarge-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 4930695,
+          "sha256": "d08831b535f0683cbf2fc8fce5c605aa0dea57f49e33c3b9f09b3170a8c93471",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0515-BimanualTrayRecoveryDischarge/task-v1/env-1.0.7/windows/BimanualTrayRecoveryDischarge-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0515-BimanualTrayRecoveryDischarge/task-v1/env-1.0.7/windows/BimanualTrayRecoveryDischarge-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4178816,
+          "sha256": "a8dc41482b6b9396aa7cda49f4424f996456b7d22493dd5bbb83ddc39653542c",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "BayonetSealBench": {
+      "task_id": 516,
+      "task_name": "BayonetSealBench",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0516-BayonetSealBench/task-v1/env-1.0.7/linux/BayonetSealBench-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0516-BayonetSealBench/task-v1/env-1.0.7/linux/BayonetSealBench-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5739036,
+          "sha256": "f4adbb69de383577d764c9d5c62a42a140dc7270dcc2460f13b680d1368725b1",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0516-BayonetSealBench/task-v1/env-1.0.7/windows/BayonetSealBench-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0516-BayonetSealBench/task-v1/env-1.0.7/windows/BayonetSealBench-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4962630,
+          "sha256": "778268682c95f9d19ba5e22c6a31639d7b46d56b06ec706b5c1a665503a87796",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "BimanualCrankCounterhold": {
+      "task_id": 517,
+      "task_name": "BimanualCrankCounterhold",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0517-BimanualCrankCounterhold/task-v1/env-1.0.7/linux/BimanualCrankCounterhold-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0517-BimanualCrankCounterhold/task-v1/env-1.0.7/linux/BimanualCrankCounterhold-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5517990,
+          "sha256": "7d65c2afa540a295af2832deabad9861a09f77554a12f179e6c37e67bae8e20a",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0517-BimanualCrankCounterhold/task-v1/env-1.0.7/windows/BimanualCrankCounterhold-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0517-BimanualCrankCounterhold/task-v1/env-1.0.7/windows/BimanualCrankCounterhold-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 5089509,
+          "sha256": "145888abc4badd9fa8151af1a426b9118d7a02b987e023f306a2dd176189e8d2",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "CaptiveLoopRoute": {
+      "task_id": 518,
+      "task_name": "CaptiveLoopRoute",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0518-CaptiveLoopRoute/task-v1/env-1.0.7/linux/CaptiveLoopRoute-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0518-CaptiveLoopRoute/task-v1/env-1.0.7/linux/CaptiveLoopRoute-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5586763,
+          "sha256": "0ca7edaa76cd40f0067e2bbcfaed045d16be796980689dbb1eccc28716d66aad",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0518-CaptiveLoopRoute/task-v1/env-1.0.7/windows/CaptiveLoopRoute-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0518-CaptiveLoopRoute/task-v1/env-1.0.7/windows/CaptiveLoopRoute-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 5157450,
+          "sha256": "ec98bab2e64bd0e80a7cf0598f10282b76a54b042c796c649588d94b1315ddb0",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "FoldoutStandProof": {
+      "task_id": 519,
+      "task_name": "FoldoutStandProof",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0519-FoldoutStandProof/task-v1/env-1.0.7/linux/FoldoutStandProof-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0519-FoldoutStandProof/task-v1/env-1.0.7/linux/FoldoutStandProof-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5425331,
+          "sha256": "10a26771687e065a1c1ad760fe1c5bbea0f0ffa826ab05380904ffac3b7aa029",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0519-FoldoutStandProof/task-v1/env-1.0.7/windows/FoldoutStandProof-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0519-FoldoutStandProof/task-v1/env-1.0.7/windows/FoldoutStandProof-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 5006225,
+          "sha256": "901dfa32c611aa916194e3236c55d9977a30010a2f52ed4a5f97e0ff50a2958e",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "SnapRingGuard": {
+      "task_id": 520,
+      "task_name": "SnapRingGuard",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0520-SnapRingGuard/task-v1/env-1.0.7/linux/SnapRingGuard-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0520-SnapRingGuard/task-v1/env-1.0.7/linux/SnapRingGuard-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 5676757,
+          "sha256": "a5bc76ad1caf9cc50914a61125ca98754c44ac8dea781f2635956a5e1e437f59",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0520-SnapRingGuard/task-v1/env-1.0.7/windows/SnapRingGuard-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0520-SnapRingGuard/task-v1/env-1.0.7/windows/SnapRingGuard-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 5004156,
+          "sha256": "267f0a0dd220420c41268cc3cfb5d19959fe978cbc697416507edba1a1bb48a1",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "FulcrumTrimBalance": {
+      "task_id": 521,
+      "task_name": "FulcrumTrimBalance",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0521-FulcrumTrimBalance/task-v1/env-1.0.7/linux/FulcrumTrimBalance-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0521-FulcrumTrimBalance/task-v1/env-1.0.7/linux/FulcrumTrimBalance-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 4810154,
+          "sha256": "5f2757f3f4932784986d80152c54c5fe116cd591268c1ca11cd24c4f5587cb2a",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0521-FulcrumTrimBalance/task-v1/env-1.0.7/windows/FulcrumTrimBalance-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0521-FulcrumTrimBalance/task-v1/env-1.0.7/windows/FulcrumTrimBalance-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4386418,
+          "sha256": "ec79cfac6e9feb75d0e7f77324c142d0ad05fc72ed9d6b0e2f5a479cca3d10fa",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "UnderShelfHookRecovery": {
+      "task_id": 522,
+      "task_name": "UnderShelfHookRecovery",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0522-UnderShelfHookRecovery/task-v1/env-1.0.7/linux/UnderShelfHookRecovery-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0522-UnderShelfHookRecovery/task-v1/env-1.0.7/linux/UnderShelfHookRecovery-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 4736512,
+          "sha256": "c53feab11f74a19511f4a7db91acbf5ff1ef36f37eabb98e523ce0863f043730",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0522-UnderShelfHookRecovery/task-v1/env-1.0.7/windows/UnderShelfHookRecovery-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0522-UnderShelfHookRecovery/task-v1/env-1.0.7/windows/UnderShelfHookRecovery-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4321198,
+          "sha256": "1444dfab3d9439a155d8cd829417c906fd13d0eb501fde224e6b488dd99f37da",
+          "archive_format": "zip"
+        }
+      }
+    },
+    "ConveyorBrakeHandoff": {
+      "task_id": 523,
+      "task_name": "ConveyorBrakeHandoff",
+      "task_version": "v1",
+      "env_version": "1.0.7",
+      "platforms": {
+        "linux": {
+          "label": "Linux",
+          "platform": "linux",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0523-ConveyorBrakeHandoff/task-v1/env-1.0.7/linux/ConveyorBrakeHandoff-task-v1-env-1.0.7-linux.zip",
+          "path": "artifacts/tasks/0500-0599/0523-ConveyorBrakeHandoff/task-v1/env-1.0.7/linux/ConveyorBrakeHandoff-task-v1-env-1.0.7-linux.zip",
+          "size_bytes": 4775387,
+          "sha256": "dc673e46e7ff18f30868c8b814e2c64f468453d12f1854e6840f95d46d989c18",
+          "archive_format": "zip"
+        },
+        "windows": {
+          "label": "Windows",
+          "platform": "windows",
+          "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/tasks/0500-0599/0523-ConveyorBrakeHandoff/task-v1/env-1.0.7/windows/ConveyorBrakeHandoff-task-v1-env-1.0.7-windows.zip",
+          "path": "artifacts/tasks/0500-0599/0523-ConveyorBrakeHandoff/task-v1/env-1.0.7/windows/ConveyorBrakeHandoff-task-v1-env-1.0.7-windows.zip",
+          "size_bytes": 4360050,
+          "sha256": "b7160a4d1f20769560bc6fbe89c00f814570587ad6df24e67e616cd6a1f5af40",
           "archive_format": "zip"
         }
       }

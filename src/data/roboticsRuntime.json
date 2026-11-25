@@ -1,0 +1,24 @@
+{
+  "env_version": "1.0.7",
+  "wrapper_revision": "886c74b31df858a033494ba67b2ec6f838c41e5d",
+  "platforms": {
+    "linux": {
+      "label": "Linux",
+      "platform": "linux",
+      "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/envs/1.0.7/linux/AgentArk-env-1.0.7-linux-empty.zip",
+      "path": "artifacts/envs/1.0.7/linux/AgentArk-env-1.0.7-linux-empty.zip",
+      "size_bytes": 57404908,
+      "sha256": "bca2970af6d78be2928e3cb19ec194549a96f7a7a794c55a21bd2df78a0f2f46",
+      "archive_format": "zip"
+    },
+    "windows": {
+      "label": "Windows",
+      "platform": "windows",
+      "url": "https://huggingface.co/datasets/P90-RushB/AgentArk/resolve/4e9f7f84ca36b262df87a86e3b7d166e80973163/artifacts/envs/1.0.7/windows/AgentArk-env-1.0.7-windows-empty.zip",
+      "path": "artifacts/envs/1.0.7/windows/AgentArk-env-1.0.7-windows-empty.zip",
+      "size_bytes": 61124018,
+      "sha256": "2bd18d260b4392fc93dac047ed5ebdc27fc58ba4c3c24d3accca917d418f3eda",
+      "archive_format": "zip"
+    }
+  }
+}

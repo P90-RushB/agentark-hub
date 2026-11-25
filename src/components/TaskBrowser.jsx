@@ -5,7 +5,7 @@ const tagLabels = {
   "3d": "3D", "2d": "2D", multimodal: "Multimodal", gui: "GUI", "charts-data": "Charts & Data",
   color: "Color Lab", "arc-like": "ARC-like", pvz: "PvZ", "pure-text": "Pure text", physics: "Physics",
   probuilder: "3D Creation", grid: "Grid", "multi-view": "Multi-view", video: "Video", timing: "Timing",
-  "code-mode": "Code mode", "tables-data": "Tables & Data", strategy: "Strategy"
+  "code-mode": "Code mode", "tables-data": "Tables & Data", strategy: "Strategy", robotics: "Robotics"
 };
 
 function coverUrl(basePath, cover) {
