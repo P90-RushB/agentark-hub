@@ -44,7 +44,8 @@ function normalizeTags(tags, dimension) {
     "text-obs": "pure-text",
     xcharts: "charts-data",
     chart: "charts-data",
-    "physics-based": "physics"
+    "physics-based": "physics",
+    robotics: "robot"
   };
   const normalized = tags.map((tag) => aliases[tag] || tag).filter(Boolean);
   if (dimension === "2d" || dimension === "3d") normalized.unshift(dimension);

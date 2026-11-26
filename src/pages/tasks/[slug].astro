@@ -12,7 +12,7 @@ const task = getTaskBySlug(Astro.params.slug);
 const Content = task.Content;
 const downloads = downloadsForTask(task.data.taskId);
 const dedicatedBenchmark = task.data.benchmarkUrl;
-const roboticsPlayerDownloads = task.data.tags.includes("robotics") &&
+const roboticsPlayerDownloads = task.data.tags.includes("robot") &&
   task.artifact.env_version === roboticsRuntime.env_version
   ? Object.values(roboticsRuntime.platforms)
   : [];

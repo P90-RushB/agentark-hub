@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 
-const featuredTags = ["3d", "2d", "multimodal", "gui", "charts-data", "color", "arc-like", "pvz", "pure-text", "physics"];
+const featuredTags = ["3d", "2d", "multimodal", "gui", "charts-data", "color", "arc-like", "pvz", "pure-text", "physics", "robot"];
 const tagLabels = {
   "3d": "3D", "2d": "2D", multimodal: "Multimodal", gui: "GUI", "charts-data": "Charts & Data",
   color: "Color Lab", "arc-like": "ARC-like", pvz: "PvZ", "pure-text": "Pure text", physics: "Physics",
   probuilder: "3D Creation", grid: "Grid", "multi-view": "Multi-view", video: "Video", timing: "Timing",
-  "code-mode": "Code mode", "tables-data": "Tables & Data", strategy: "Strategy", robotics: "Robotics"
+  "code-mode": "Code mode", "tables-data": "Tables & Data", strategy: "Strategy", robot: "Robot"
 };
 
 function coverUrl(basePath, cover) {
@@ -13,7 +13,8 @@ function coverUrl(basePath, cover) {
 }
 
 function getInitialTag() {
-  return typeof window === "undefined" ? "all" : new URLSearchParams(window.location.search).get("tag") || "all";
+  const tag = new URLSearchParams(window.location.search).get("tag");
+  return tag === "robotics" ? "robot" : tag || "all";
 }
 
 function displayTag(tag) {
@@ -23,7 +24,7 @@ function displayTag(tag) {
 export default function TaskBrowser({ tasks, basePath, pageSize = 12 }) {
   const [query, setQuery] = useState("");
   const [dimension, setDimension] = useState("all");
-  const [tag, setTag] = useState(getInitialTag);
+  const [tag, setTag] = useState("all");
   const [page, setPage] = useState(1);
   const normalizedPageSize = Math.max(1, Number(pageSize) || 12);
   const tagCounts = useMemo(() => {
@@ -44,6 +45,7 @@ export default function TaskBrowser({ tasks, basePath, pageSize = 12 }) {
   const visibleTasks = filtered.slice(startIndex, startIndex + normalizedPageSize);
   const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
+  useEffect(() => setTag(getInitialTag()), []);
   useEffect(() => setPage(1), [dimension, query, tag]);
 
   return (
